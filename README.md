@@ -7,6 +7,6 @@ Desenvolvido a seção home da página que consiste em uma apresentação.
 ![Pré Visualização](https://github.com/SilasRodrigues19/potfolio/blob/master/img/preview.png)
 
 ### Links utilizados
-#### Fontes do Google - [Google Fonts](https://fonts.google.com/)
-#### Icones - [Font Awesome](https://fontawesome.com/)
-#### Edição de imagem - [PhotoShop Online](http://www.photoshoponline.net.br/)
+#### Fontes do Google - [Google Fonts](https://fonts.google.com/){:target="_blank"}
+#### Icones - [Font Awesome](https://fontawesome.com/){:target="_blank"}
+#### Edição de imagem - [PhotoShop Online](http://www.photoshoponline.net.br/){:target="_blank"}

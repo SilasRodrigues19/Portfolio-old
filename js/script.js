@@ -1,7 +1,7 @@
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Web Developer", "Web Designer", "Free Lancer"];
+const textArray = ["Web Developer", "Programador", "Free Lancer"];
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTextDelay = 2000; // Delay between current and next text
@@ -39,3 +39,10 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+
+/* Alert */
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+

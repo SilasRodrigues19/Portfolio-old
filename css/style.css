@@ -5,14 +5,9 @@
 	--color-profession: #C01D46;
 }
 
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-
 ::-webkit-scrollbar {
     width: 8px;
+    height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -20,7 +15,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(17, 17, 17, 17.5);
+    background: rgba(17, 17, 17, .8);
 }
 
 ::-webkit-scrollbar-track {
@@ -29,7 +24,7 @@
 
 ::selection {
     background: #007998;
-    color: #fff;
+    color: #FFF;
 }
 
 html {
@@ -37,13 +32,15 @@ html {
 	font-family: 'Montserrat', sans-serif;
 }
 
-a {
-	text-decoration: none;
+p {
+	color: #000;
+	font-size: 1.4rem;
+	margin-top: 5px;
+	line-height: 2.5rem;
+	font-weight: 300;
+	letter-spacing: .05rem;
 }
-
-.fa-paint-brush{
-	font-size: 50px;
-}
+/*------------------------------------ Classes -----------------------------------------------*/
 
 .container {
 	min-height: 100vh;
@@ -51,6 +48,27 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.section-title {
+	font-size: 4rem;
+	font-weight: 300;
+	color: #000;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	text-align: center;
+}
+
+.section-title span {
+	color: var(--color-profession);
+}
+
+.info {
+	user-select: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .typed-text {
@@ -71,119 +89,16 @@ a {
 	animation: none;
 }
 
-/* Home Section */
-#home {
-	background-image: url(../img/code.gif);
-	background-size: cover;
-	background-position: top center;
-	position: relative;
-	z-index: 1;
-}
-
-#home::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background-color: #000;
-	opacity: .7;
-	z-index: -1;
-}
-
-#home .home {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 50px;
-	justify-content: flex-start;
-}
-
-#home h1 {
-	display: block;
-	width: fit-content;
-	font-size: 4rem;
-	position: relative;
-	color: transparent;
-	animation: text_reveal .5s ease forwards;
-	animation-delay: 1s;
-}
-
-#home h1:nth-child(1) {
-	animation-delay: 1s;
-}
-
-#home h1:nth-child(2) {
-	animation-delay: 2s;
-}
-
-#home h1:nth-child(3) {
-	animation: text_reveal_name .5s ease forwards;
-	animation-delay: 3s;
-}
-
-#home h1 span {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 0;
-	background-color: var(--color-background);
-	animation: text_reveal_box 1s ease;
-	animation-delay: .5s;
-}
-
-#home h1:nth-child(1) span {
-	animation-delay: .5s;
-}
-
-#home h1:nth-child(2) span {
-	animation-delay: 1.5s;
-}
-
-#home h1:nth-child(3) span {
-	animation-delay: 2.5s;
-}
-
-#home h2 {
-	margin-top: 5px;
-	font-size: 3rem;
-	font-weight: bold;
-	letter-spacing: 0.1rem;
-	animation: text_reveal .5s ease forwards;
-	animation-delay: 1.5s;
-}
-
-#home .cta {
-	display: inline-block;
-	padding: 10px 30px;
-	color: #FFF;
-	background-color: transparent;
-	border: 2px solid var(--color-background);
-	font-size: 2rem;
-	text-transform: uppercase;
-	letter-spacing: .2rem;
-	margin-top: 30px;
-	transition: 4s ease;
-	transition-property: background-color, color;
-}
-
-#home .cta:hover {
-	color: #FFF;
-	background-color: var(--color-background);
-}
-/* End Section */
-
-/* Service Section */
-#services {
+.tooltip-inner {
+    max-width: 400px;
+   	font-size: 18px;
 
 }
+/*----------------------------------End Classes -----------------------------------------------*/
 
-#services .services {
-	flex-direction: column;
-}
-/* End Service Section */
 
+/*------------------------------------ IDs -----------------------------------------------*/
+/*----------------------------------End IDs -----------------------------------------------*/
 
 /* Key Frames */
 

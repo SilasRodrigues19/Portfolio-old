@@ -1,0 +1,75 @@
+/* Projetcs Section */
+#projects {
+	background-image: linear-gradient(to top, #b1f4cf 0%, #9890e3 100%);
+}
+
+#projects .projects {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+
+#projects .projects-header h1 {
+	margin-bottom: 50px;
+}
+
+#projects .all-projects {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#projects .project-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+#projects .project-info {
+	padding: 70px;
+	flex-basis: 50px;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	color: #FFF;
+}
+
+#projects .project-info h1 {
+	font-size: 4rem;
+	font-weight: 500;
+}
+
+#projects .project-info h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-top: 10px;
+}
+
+#projects .project-info p {
+	color: #FFF;
+}
+
+#projects .project-info a {
+	text-align: center;
+	font-size: 3rem;
+	color: var(--color-profession);
+}
+#projects .project-info a:hover {
+	color: #f30c0c;
+}
+
+#projects .project-img {
+	flex-basis: 50%;
+	height: 200px;
+}
+/* End Projects Section */

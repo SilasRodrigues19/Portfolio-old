@@ -90,7 +90,7 @@
 	text-transform: uppercase;
 	letter-spacing: .2rem;
 	margin-top: 30px;
-	transition: 4s ease;
+	transition: 1s ease;
 	transition-property: background-color, color;
 }
 

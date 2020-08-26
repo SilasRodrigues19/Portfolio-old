@@ -1,0 +1,8 @@
+#loader {
+    position: fixed;
+    width: 100vw !important;
+    height: 100vh;
+    z-index: 1;
+    overflow: visible;
+    background: #000 url('../img/loader3.gif') no-repeat center center;
+}

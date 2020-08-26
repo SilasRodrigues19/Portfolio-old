@@ -1,0 +1,45 @@
+#certificates {
+	background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.certificate-header h1 {
+	color: #fff;
+}
+
+.certificate-header .section-title {
+	padding-bottom: 20px;
+}
+
+.certificate-header .section-title, .section-title p {
+	color: #fff;
+	margin-top: 10px;
+}
+
+#certificates .certificates {
+	flex-direction: column;
+	text-align: center;
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 100px 0;
+
+}
+
+.certificate {
+	width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+.certificate table {
+	margin-right: 10px;
+	width: 1000px;
+	max-height: 100%;
+	overflow-x: auto;
+}
+
+.certificate table iframe {
+	width: 1000px;
+	height: 735px;
+	border: none;
+}
+

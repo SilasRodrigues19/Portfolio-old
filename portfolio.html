@@ -27,7 +27,12 @@
 	<link rel="stylesheet" href="css/projects.css">
 	<link rel="stylesheet" href="css/carousel.css">
 	<link rel="stylesheet" href="css/certificates.css">
+	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Media Queries -->
+	<link rel="stylesheet" href="css/mediaquery_tablet.css">
+
 	<!-- Font Awesome Script -->
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<!-- JQuery Plugin Script -->
@@ -44,36 +49,6 @@
  	</script>
 </head>
 <body>
-	<!-- Loader -->
-
-	 <script>
-        
-        var loader;
-        function loadNow(opacity) {
-            if(opacity <= 0) {
-                displayContent();
-            }
-            else {
-                loader.style.opacity = opacity;
-                window.setTimeout(function() {
-                    loadNow(opacity - 0.05)
-                }, 285);
-            }
-        }
-        
-        function displayContent() {
-            loader.style.display = 'none';
-            document.getElementById('content').style.display = 'block';
-        }
-        
-        document.addEventListener("DOMContentLoaded", function() {
-            loader = document.getElementById('loader');
-            loadNow(1);
-        });
-        
-    </script>
-
-	<!-- End Loader -->
 	<!-- Home Section -->
 	<section id="home">
 		<div id="loader"></div>
@@ -87,7 +62,7 @@
 				<h2>Eu sou <span class="typed-text"></span><span class="cursor typing">&nbsp;</span></h2>
 			</div>
 
-			<div class="social">
+			<aside class="social">
 				<ul>
 					<li>
 						<a href="https://whats.link/silasrodrigues21" target="_blank"><i class="fab fa-whatsapp"></i>
@@ -105,7 +80,7 @@
 						</a>
 					</li>
 				</ul>
-			</div>
+			</aside>
 
 		</div>
 
@@ -114,7 +89,7 @@
 
 
 	<!-- Service Section -->
-	<section id="services">
+	<section id="services" hidden>
 		<div class="services container">
 			<div class="service-top">
 				<h1 class="section-title">
@@ -265,12 +240,37 @@
 			</div>
 		</div>
 	</section>
+	<!-- End Certificate Section -->
+
+
+	<!-- Footer -->
+		<footer id="footer">
+			<div class="footer container">
+				<div class="brand">
+					<h1>Silas <span>Rodrigues</span></h1>
+				</div>
+				<h2>Desenvolvimento de sites</h2>
+				<div class="contact-icon">
+					<div class="contact-item text" data-toggle="tooltip" title="Sumaré - São Paulo">
+						<i class="fas fa-globe-americas"></i>
+					</div>
+					<div class="contact-item" data-toggle="tooltip" title="Me contate por e-mail">
+						<a href="mailto:silasrodrigues.ti@hotmail.com"><i class="fas fa-envelope"></i></a>
+					</div>
+					<div class="contact-item" data-toggle="tooltip" title="Baixe meu curriculo">
+						<a href="#cv" download="Curriculo.jpg"><i class="fas fa-file-pdf"></i></a>
+					</div>
+				</div>
+				<p>Copyright &copy 2020 Silas Rodrigues. Todos os direitos reservados.</p>
+			</div>
+		</footer>
+	<!-- End footer -->
 
 	<!-- Bootstrap JS -->
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<script src="js/script.js"></script>
 
 	

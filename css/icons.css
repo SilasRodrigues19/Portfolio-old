@@ -1,9 +1,9 @@
 /* Font Awesome Icons */
-.fa-paint-brush, .fa-code, .fa-laptop, .fa-envelope, .fa-phone, .fa-file-pdf, .fa-globe-americas {
+.fa-paint-brush, .fa-code, .fa-laptop-house, .fa-envelope, .fa-phone, .fa-file-pdf, .fa-globe-americas, .fa-file-word {
 	font-size: 50px;
 }
 
-.fa-paint-brush:hover, .fa-code:hover, .fa-laptop:hover, .fa-envelope, .fa-phone, .fa-file-pdf, .fa-globe-americas {
+.fa-paint-brush:hover, .fa-code:hover, .fa-laptop-house:hover, .fa-envelope, .fa-phone, .fa-file-pdf, .fa-globe-americas, .fa-file-word:hover {
 	color: var(--color-profession);
 }
 

@@ -29,7 +29,7 @@
 #home h1 {
 	display: block;
 	width: fit-content;
-	font-size: 4rem;
+	font-size: 5rem;
 	position: relative;
 	color: transparent;
 	animation: text_reveal .5s ease forwards;
@@ -73,20 +73,20 @@
 }
 #home h2 {
 	margin-top: 5px;
-	font-size: 3rem;
+	font-size: 4rem;
 	font-weight: bold;
-	letter-spacing: 0.1rem;
+	letter-spacing: 0.2rem;
 	animation: text_reveal .5s ease forwards;
 	animation-delay: 1.5s;
 }
 
 #home .cta {
 	display: inline-block;
-	padding: 10px 30px;
+	padding: 15px 35px;
 	color: #FFF;
 	background-color: transparent;
 	border: 2px solid var(--color-background);
-	font-size: 2rem;
+	font-size: 3rem;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
 	margin-top: 30px;

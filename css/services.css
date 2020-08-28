@@ -79,16 +79,20 @@
 
 #services .service-item h2 {
 	font-size: 2rem;
-	color: #FFF;
+	color: #000;
 	margin-bottom: 10px;
 	text-transform: uppercase;
 }
 
 #services .service-item p {
-	text-align: center;
 	font-size: 1.4rem;
+	font-weight: 400;
 	line-height: 1.9rem;
-	color: #FFF;
+	color: #000;
+}
+
+.service-top p {
+	width: 50rem;
 }
 
 /* End Service Section */

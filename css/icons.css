@@ -1,10 +1,14 @@
 /* Font Awesome Icons */
-.fa-paint-brush, .fa-code, .fa-laptop{
+.fa-paint-brush, .fa-code, .fa-laptop, .fa-envelope, .fa-phone, .fa-file-pdf, .fa-globe-americas {
 	font-size: 50px;
 }
 
-.fa-paint-brush:hover, .fa-code:hover, .fa-laptop:hover {
+.fa-paint-brush:hover, .fa-code:hover, .fa-laptop:hover, .fa-envelope, .fa-phone, .fa-file-pdf, .fa-globe-americas {
 	color: var(--color-profession);
+}
+
+.seuTxt {
+	z-index: 9999;
 }
 
 .fa-linkedin:hover {
@@ -17,6 +21,10 @@
 
 .fa-github:hover {
 	filter: invert(1);
+}
+
+.fa-envelope:hover, .fa-phone:hover, .fa-file-pdf:hover, .fa-globe-americas:hover {
+	color: #000;
 }
 /* Fim Font Awesome Icons */
 

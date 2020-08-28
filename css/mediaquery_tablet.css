@@ -2,10 +2,34 @@
 	.cta {
 		font-size: 1.5rem;
 	}
+
+	h1.section-title, #services .section-title {
+		font-size: 3rem;
+	}
+
+	/* Home section */
+
 	#home h1 {
 		font-size: 3.4rem;
 	}
 	#home h2 {
 		font-size: 2.4rem;
 	}
-}
+	#home .cta {
+		padding: 10px 20px;
+		font-size: 2rem;
+	}
+
+	/* End Home section */
+
+	/* Services section */
+
+	#services .service-item {
+		text-align: center;
+		flex-basis: 45%;
+		align-items: center;
+		margin: 2.5%;
+	}
+
+	/* End Services section */
+

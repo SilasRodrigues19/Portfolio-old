@@ -8,6 +8,7 @@ const newTextDelay = 2000; // Delay between current and next text
 let textArrayIndex = 0;
 let charIndex = 0;
 
+/* Data Words */
 function type() {
   if (charIndex < textArray[textArrayIndex].length) {
     if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
@@ -46,3 +47,27 @@ $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();   
 });
 
+
+/* Loader */      
+var loader;
+function loadNow(opacity) {
+    if(opacity <= 0) {
+        displayContent();
+    }
+    else {
+        loader.style.opacity = opacity;
+        window.setTimeout(function() {
+            loadNow(opacity - 0.05)
+        }, 285);
+    }
+}
+
+function displayContent() {
+    loader.style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    loader = document.getElementById('loader');
+    loadNow(1);
+});

@@ -1,0 +1,50 @@
+/* Footer */
+
+footer {
+	user-select: none;
+    background-image: linear-gradient(to right, #111 0%, #434343 100%);
+}
+
+footer .footer {
+	min-height: 200px;
+	flex-direction: column;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+
+#footer h2 {
+	color: #FFF;
+	font-weight: 500;
+	font-size: 1.8rem;
+	letter-spacing: .7rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#footer .contact-icon {
+	display: flex;
+	margin: 20px 0 20px 0;
+}
+
+#footer .contact-item {
+	height: 50px;
+	width: 75px;
+	margin: 0 10px;
+}
+
+#footer p {
+	color: #FFF;
+	font-size: 1.3rem;
+}
+
+.brand h1 {
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: #FFF;
+}
+
+.brand h1 span {
+	color: var(--color-profession);
+}
+
+/* End Footer */

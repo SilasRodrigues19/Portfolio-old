@@ -41,6 +41,13 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
+/* Smoth scroll */
+ jQuery(document).ready(function($) {
+   $("#back").click(function(event){
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 3500);
+   });
+  });
 
 /* Alert */
 $(document).ready(function(){
@@ -98,3 +105,4 @@ menu_item.forEach((item) => {
     mobile_menu.classList.toggle('active');
   });
 });
+

@@ -1,8 +1,4 @@
 @media only screen and (max-width: 768px) {
-	html {
-		font-family: 'Montserrat', cursive;
-	}
-	
 	.cta {
 		font-size: 1.5rem;
 	}
@@ -34,44 +30,6 @@
 		align-items: center;
 		margin: 2.5%;
 	}
-	/* Form Section */
-	.my-form {
-  		width: 80%;
-	}
-	/* End Form Section */
-}
 
 	/* End Services section */
-
-@media only screen and (max-width: 500px) {
-	/* Header Section and Footer Section */
-	.brand h1 {
-		font-size: 2rem;
-	}
-
-	/* End Header Section and Footer Section */
-
-	/* Service Section */
-	.service-top p {
-		width: 35rem;
-	}
-	/* End Service Section */
-
-	/* Certificate Section */
-	.certificates table {
-		display: none;
-	}
-	.certificate-header p {
-		display: initial;
-		color: #fff;
-	}
-	/* End Certificate Section */
-}
-
-@media only screen and (max-width: 386px) {
-	/* Header Section and Footer Section */
-	.brand h1 {
-		font-size: 1.6rem;
-	}
-}
 

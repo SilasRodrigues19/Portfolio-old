@@ -22,12 +22,14 @@ footer .footer {
 }
 
 #footer .contact-icon {
+	overflow: hidden;
 	display: flex;
 	margin: 20px 0 20px 0;
 }
 
 #footer .contact-item {
 	height: 50px;
+	overflow: hidden;
 	width: 75px;
 	margin: 0 10px;
 }

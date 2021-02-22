@@ -1,0 +1,134 @@
+:root {
+	--color-background: #DC143C;
+	--color-profession: #C01D46;
+	--scrollbar: #a6c1ee;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: -webkit-gradient(linear,left top,left bottom,from(var(--scrollbar)),to(#fbc2eb));
+    background: -moz-gradient(linear,left top,left bottom,from(var(--scrollbar)),to(#fbc2eb));
+    background: linear-gradient(360deg,var(--scrollbar),#fbc2eb);
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: -webkit-gradient(linear,left top,left bottom,from(#fbc2eb),to(var(--scrollbar)));
+    background: -moz-gradient(linear,left top,left bottom,from(#fbc2eb),to(var(--scrollbar)));
+    background: linear-gradient(360deg,#fbc2eb,var(--scrollbar));
+}
+
+::-webkit-scrollbar-track {
+   background: linear-gradient(90deg,#201c29,#201c29 1px,#100e17 0,#100e17);
+}
+
+#form {
+	background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.error {
+  margin-top: 3px;
+  color: rgba(255, 0, 0, .5);
+  animation: bounce;
+  animation-duration: 1s;
+
+}
+
+#form .form {
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.form-header .section-title p {
+  color: #000;
+}
+
+.my-form {
+  user-select: none;
+  width: 100%;
+}
+
+.form-control {
+  font-size: 1.5rem;
+  height: calc(2.5em + .75rem + 2px);
+}
+
+label {
+    margin-bottom: .5rem !important;
+}
+
+.btn-secondary, label {
+  font-size: 17.5px;
+}
+
+.form-control, .form-control:active {
+    background-color: transparent !important;
+    border: 1px solid #000 !important;
+}
+
+.form-control:focus {
+  color: #000 !important;
+  background-color: #fff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.7) !important;
+}
+
+.form-control.error, .form-control.error:focus, .form-control.error:active, textarea.error,
+textarea.error:focus,
+textarea.error:active {
+  color: #000;
+  background-color: rgba(255, 0, 0, .1);
+}
+
+textarea {
+  height: 15em !important;
+	resize: none;
+}
+
+textarea[name='mensagem']::-webkit-scrollbar {
+    width: 10px;
+    height: 20px;
+    cursor: pointer;
+}
+
+textarea[name='mensagem']::-webkit-scrollbar-thumb {
+    background: -webkit-gradient(linear,left top,left bottom,from(#ddd),to(#000));
+    background: -moz-gradient(linear,left top,left bottom,from(#ddd),to(#000));
+    background: linear-gradient(360deg,#ddd,#000);
+    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+    border-radius: 10px;
+ }
+
+textarea[name='mensagem']::-webkit-scrollbar-thumb:hover {
+    background: -webkit-gradient(linear,left top,left bottom,from(#000),to(#ddd));
+    background: -moz-gradient(linear,left top,left bottom,from(#000),to(#ddd));
+    background: linear-gradient(360deg,#000,#ddd);
+}
+
+textarea[name='mensagem']::-webkit-scrollbar-track {
+    background: linear-gradient(90deg,#201c29,#201c29 1px,#100e17 0,#100e17);
+}
+
+.btn-secondary:hover {
+  color: #000;
+  background-color: #5a6268 !important;
+  opacity: 0.3;
+  border-color: #545b62;
+}
+
+.btn-secondary:active {
+	color: #fff !important;
+}

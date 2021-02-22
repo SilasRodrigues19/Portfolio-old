@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100&display=swap');
+@import url('https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css');
 
 :root {
 	--color-background: #DC143C;
@@ -37,8 +39,7 @@
 
 html {
 	font-size: 10px;
-	font-family: 'Montserrat', sans-serif;
-}
+	font-family: Bradley Hand, cursive;}
 
 p {
 	color: #000;
@@ -48,6 +49,7 @@ p {
 	font-weight: 300;
 	letter-spacing: .05rem;
 }
+
 /*------------------------------------ Classes -----------------------------------------------*/
 
 .container {
@@ -80,7 +82,6 @@ p {
 }
 
 .typed-text {
-	font-family: Bradley Hand, cursive;
 	font-weight: normal;
 	color: var(--color-profession);
 }

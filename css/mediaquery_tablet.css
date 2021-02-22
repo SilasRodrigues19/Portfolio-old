@@ -1,4 +1,8 @@
 @media only screen and (max-width: 768px) {
+	html {
+		font-family: 'Montserrat', cursive;
+	}
+
 	.cta {
 		font-size: 1.5rem;
 	}
@@ -32,4 +36,74 @@
 	}
 
 	/* End Services section */
+
+
+	/* Form Section */
+
+	.my-form {
+  		width: 80%;
+	}
+
+	/* End Form Section */
+
+
+	/* Icons */
+
+	.social {
+		left: 10px;
+	}
+
+	/* End Icons */
+}
+
+
+@media only screen and (max-width: 500px) {
+	/* Header Section and Footer Section */
+
+	.brand h1 {
+		font-size: 2rem;
+	}
+
+	/* End Header Section and Footer Section */
+
+
+	/* Service Section */
+
+	.service-top p {
+		width: 35rem;
+	}
+
+	/* End Service Section */
+
+
+	/* Certificate Section */
+
+	.certificates table {
+		display: none;
+	}
+	.certificate-header p {
+		display: initial;
+		color: #fff;
+	}
+
+	/* End Certificate Section */
+}
+
+@media only screen and (max-width: 386px) {
+
+	/* Header Section and Footer Section */
+	.brand h1, #footer h2 {
+		font-size: 1.6rem;
+		text-align: center;
+	}
+	/* End Header Section and Footer Section */
+
+	/* Icons */
+
+	.fa-paint-brush, .fa-code, .fa-laptop-house, .fa-envelope, .fa-phone, .fa-file-pdf, .fa-globe-americas, .fa-file-word, .fa-arrow-up {
+		font-size: 30px;
+	}
+
+	/* End Icons */
+}
 

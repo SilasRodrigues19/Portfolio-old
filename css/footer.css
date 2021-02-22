@@ -27,6 +27,11 @@ footer .footer {
 	margin: 20px 0 20px 0;
 }
 
+.contact-icon #back {
+	position: absolute;
+	right: 5%;
+}
+
 #footer .contact-item {
 	height: 50px;
 	overflow: hidden;

@@ -1,9 +1,9 @@
 /* Font Awesome Icons */
-.fa-paint-brush, .fa-code, .fa-laptop-house, .fa-envelope, .fa-phone, .fa-file-pdf, .fa-globe-americas, .fa-file-word {
+.fa-paint-brush, .fa-code, .fa-laptop-house, .fa-envelope, .fa-phone, .fa-file-pdf, .fa-globe-americas, .fa-file-word, .fa-arrow-up {
 	font-size: 50px;
 }
 
-.fa-paint-brush:hover, .fa-code:hover, .fa-laptop-house:hover, .fa-envelope, .fa-phone, .fa-file-pdf, .fa-globe-americas, .fa-file-word:hover {
+.fa-paint-brush:hover, .fa-code:hover, .fa-laptop-house:hover, .fa-envelope, .fa-phone, .fa-file-pdf, .fa-globe-americas, .fa-file-word:hover, .fa-arrow-up {
 	color: var(--color-profession);
 }
 
@@ -23,7 +23,7 @@
 	filter: invert(1);
 }
 
-.fa-envelope:hover, .fa-phone:hover, .fa-file-pdf:hover, .fa-globe-americas:hover {
+.fa-envelope:hover, .fa-phone:hover, .fa-file-pdf:hover, .fa-globe-americas:hover, .fa-arrow-up:hover {
 	color: #000;
 }
 /* Fim Font Awesome Icons */

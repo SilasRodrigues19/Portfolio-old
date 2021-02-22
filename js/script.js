@@ -8,7 +8,9 @@ const newTextDelay = 2000; // Delay between current and next text
 let textArrayIndex = 0;
 let charIndex = 0;
 
+
 /* Data Words */
+
 function type() {
   if (charIndex < textArray[textArrayIndex].length) {
     if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
@@ -41,13 +43,6 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
-/* Smoth scroll */
- jQuery(document).ready(function($) {
-   $("#back").click(function(event){
-    event.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 3500);
-   });
-  });
 
 /* Alert */
 $(document).ready(function(){

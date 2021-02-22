@@ -39,7 +39,8 @@
 
 html {
 	font-size: 10px;
-	font-family: Bradley Hand, cursive;}
+	font-family: Bradley Hand, cursive;
+}
 
 p {
 	color: #000;
@@ -51,6 +52,16 @@ p {
 }
 
 /*------------------------------------ Classes -----------------------------------------------*/
+
+.logo {
+	position: absolute;
+	top: 5px;
+}
+.logo a img{
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+}
 
 .container {
 	min-height: 100vh;

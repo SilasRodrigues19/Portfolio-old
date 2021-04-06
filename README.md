@@ -10,6 +10,7 @@ Desenvolvido a seção home da página que consiste em uma apresentação.
 * #### Fontes do Google - [Google Fonts](https://fonts.google.com/)
 * #### Icones - [Font Awesome](https://fontawesome.com/)
 * #### Edição de imagem - [PhotoShop Online](http://www.photoshoponline.net.br/)
+* #### Animações - [AOS Animate](https://michalsnik.github.io/aos/)
 
 ### Hospedagem pelo GitHub Pages
-* #### Veja o site aqui - [Portfolio](https://silasrodrigues19.github.io/Portfolio/portfolio)
+* #### Veja o site aqui - [Portfolio](silasrodrigues19.github.io)

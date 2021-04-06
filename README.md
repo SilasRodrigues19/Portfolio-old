@@ -13,4 +13,4 @@ Desenvolvido a seção home da página que consiste em uma apresentação.
 * #### Animações - [AOS Animate](https://michalsnik.github.io/aos/)
 
 ### Hospedagem pelo GitHub Pages
-* #### Veja o site aqui - [Portfolio](silasrodrigues19.github.io)
+* #### Veja o site aqui - [Portfolio](https://silasrodrigues19.github.io)

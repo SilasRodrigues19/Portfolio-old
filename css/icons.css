@@ -19,6 +19,10 @@
 	color: #4FCE5D;
 }
 
+.fa-twitter:hover {
+	color: #1DA1F2;
+}
+
 .fa-github:hover {
 	filter: invert(1);
 }
@@ -38,7 +42,7 @@
 }
 
 .social ul li {
-	margin: 5px 0;
+	margin: 15px 0;
 }
 
 .social ul li a {

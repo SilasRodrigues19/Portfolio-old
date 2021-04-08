@@ -12,7 +12,7 @@
 #header .header {
 	min-height: 8vh;
 	background-color: rgba(31, 30, 30, 0.24);
-	transition: .3s ease background-color;
+	transition: .5s ease background-color;
 }
 
 #header .nav-bar {
@@ -77,6 +77,7 @@
 
 #header .nav-list ul li:hover a {
 	color: crimson;
+	animation: flash .6s;
 }
 
 #header .menu {
@@ -102,7 +103,7 @@
 	width: 100%;
 	border-radius: 50%;
 	border: 3px solid white;
-	animation: menu_puls 1s ease infinite;
+	animation: 1s ease infinite;
 }
 
 #header .menu:hover:after {

@@ -2512,13 +2512,18 @@ fieldset:disabled a.btn {
 }
 
 .btn-secondary {
-  color: #fff;
+  color: #000;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  transition: letter-spacing 0.5s;
   background-color: #6c757d;
   border-color: #6c757d;
 }
 
 .btn-secondary:hover {
   color: #fff;
+  letter-spacing: 15px;
+  transition: letter-spacing 0.5s;
   background-color: #5a6268;
   border-color: #545b62;
 }

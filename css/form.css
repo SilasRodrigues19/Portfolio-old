@@ -27,6 +27,10 @@
    background: linear-gradient(90deg,#201c29,#201c29 1px,#100e17 0,#100e17);
 }
 
+::placeholder {
+  letter-spacing: 3px;
+}
+
 #form {
 	background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
@@ -123,9 +127,8 @@ textarea[name='mensagem']::-webkit-scrollbar-track {
 }
 
 .btn-secondary:hover {
-  color: #000;
-  background-color: #5a6268 !important;
-  opacity: 0.3;
+  color: #fff;
+  background-color: rgba(90, 98, 104, 0.1) !important;
   border-color: #545b62;
 }
 

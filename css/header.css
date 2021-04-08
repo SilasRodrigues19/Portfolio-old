@@ -63,8 +63,8 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0);
-	color: rgba(240, 248, 255, 0.021);
-	font-size: 13rem;
+	color: rgba(220, 20, 60, 0.2222);
+	font-size: 5rem;
 	letter-spacing: 50px;
 	z-index: -1;
 	transition: .3s ease letter-spacing;
@@ -72,7 +72,8 @@
 
 #header .nav-list ul li:hover a::after {
 	transform: translate(-50%, -50%) scale(1);
-	letter-spacing: initial;
+	letter-spacing: 20px;
+	transition: 2s ease letter-spacing;
 }
 
 #header .nav-list ul li:hover a {

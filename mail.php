@@ -10,7 +10,7 @@
 	</style>
 </head>
 <body>
-/* nome, sobrenome, email, celular, mensagem */
+
 <?php 
 	$nome = $_POST['nome'];
 	$sobrenome = $_POST['nick'];
@@ -47,7 +47,7 @@ $envio = mail($to, $subject, $message, $header);
 	{
 		?>
 		<script>
-			sweetAlert("Ooops...", "Seu email não foi enviado", "fail");
+			sweetAlert("Ooops...", "Seu email não foi enviado", "error");
 			setTimeout(function(){location.href="index.html"} , 5000);
 		</script>
 		<?php

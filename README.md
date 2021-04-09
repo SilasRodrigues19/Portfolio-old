@@ -12,5 +12,8 @@ Desenvolvido a seção home da página que consiste em uma apresentação.
 * #### Edição de imagem - [PhotoShop Online](http://www.photoshoponline.net.br/)
 * #### Animações - [AOS Animate](https://michalsnik.github.io/aos/)
 
-### Hospedagem pelo GitHub Pages
+### Hospedagem pelo GitHub Pages (Sem suporte pra PHP)
 * #### Veja o site aqui - [Portfolio](https://silasrodrigues19.github.io)
+
+### Hospedagem pela versão Free do 000WebHost (Com suporte pra PHP)
+* ####  - [Portfolio](https://silasportfolio.000webhostapp.com/index.html)

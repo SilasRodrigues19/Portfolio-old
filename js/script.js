@@ -50,19 +50,12 @@ $(document).ready(function(){
 });
 
 
-/* Loader */      
+/* Loader */  
+window.onload = displayContent;
+
+
 var loader;
-function loadNow(opacity) {
-    if(opacity <= 0) {
-        displayContent();
-    }
-    else {
-        loader.style.opacity = opacity;
-        window.setTimeout(function() {
-            loadNow(opacity - 0.05)
-        }, 285);
-    }
-}
+
 
 function displayContent() {
     loader.style.display = 'none';
@@ -71,7 +64,6 @@ function displayContent() {
 
 document.addEventListener("DOMContentLoaded", function() {
     loader = document.getElementById('loader');
-    loadNow(1);
 });
 
 const menu = document.querySelector('.header .nav-bar .nav-list .menu');

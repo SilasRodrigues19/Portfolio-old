@@ -4,6 +4,7 @@
 
 :root {
 	--color-background: #DC143C;
+	--portfolio-hover: rgba(220, 20, 60, 0.5);
 	--color-profession: #C01D46;
 	--scrollbar: #FF0009;
 }

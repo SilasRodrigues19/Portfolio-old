@@ -20,7 +20,7 @@
 ?>
 
 <?php
-	$to = "silasrodrigues.ti@hotmail.com";
+	$to = "silasrodrigues.fatec@gmail.com";
 	$subject = "Contato do Portfólio";
 	$message = "Nome: $nome $sobrenome\nEmail: $email\nCelular: $celular\nMensagem: $mensagem";
 	$header = "MIME-Version 1.1\n";

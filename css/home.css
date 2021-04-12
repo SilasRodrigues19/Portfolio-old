@@ -97,9 +97,11 @@
 }
 
 #home .cta:hover {
+	animation: tada .8s;
 	color: #FFF;
 	box-shadow: 1px 1px 25px 10px var(--portfolio-hover);
 	background-color: var(--color-background);
+	transition: 2s;
 }
 
 .cta:before {

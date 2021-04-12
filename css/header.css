@@ -78,7 +78,7 @@
 
 #header .nav-list ul li:hover a {
 	color: crimson;
-	animation: flash .6s;
+	animation: fadeIn .7s;
 }
 
 #header .menu {

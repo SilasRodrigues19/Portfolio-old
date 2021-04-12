@@ -13,10 +13,12 @@
 
 <?php 
 	$nome = $_POST['nome'];
-	$sobrenome = $_POST['nick'];
+	$sobrenome = $_POST['sobrenome'];
 	$email = $_POST['email'];
 	$celular = $_POST['celular'];
 	$mensagem = $_POST['mensagem'];
+
+	require 'PHPMailer/PHPMailerAutoload.php';
 ?>
 
 <?php

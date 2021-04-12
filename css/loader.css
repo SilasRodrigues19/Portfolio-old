@@ -1,8 +1,9 @@
 #loader {
     position: fixed;
-    width: 100vw !important;
+    width: 100vw;
     height: 100vh;
     z-index: 1;
     overflow: visible;
-    background: #000 url('../img/loader3.gif') no-repeat center center;
+    background: #000 url('../img/loader.gif') no-repeat center center;
+    background-size: cover;
 }

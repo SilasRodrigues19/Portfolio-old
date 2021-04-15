@@ -78,7 +78,7 @@
 
 #header .nav-list ul li:hover a {
 	color: crimson;
-	animation: fadeIn .7s;
+	animation: zoomOut .3s;
 }
 
 #header .menu {

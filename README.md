@@ -20,7 +20,7 @@ Desenvolvido a seção home da página que consiste em uma apresentação.
 ### Hospedagem pela versão Free do 000WebHost (Com suporte pra PHP)
 * ####  - [Portfolio](https://silasportfolio.000webhostapp.com/index.html)
 
-### Para o formulário funcionar, caso queira utilizar acesse [PHP Mailer](https://github.com/PHPMailer/PHPMailer) clique em `Code` -> `Download ZIP` após baixar e extrair abra a pasta `PHPMailer-master` copie a pasta `src` e cole pra pasta raíz do seu projeto. 
+## Para o formulário funcionar, caso queira utilizar acesse [PHP Mailer](https://github.com/PHPMailer/PHPMailer) clique em `Code` -> `Download ZIP` após baixar e extrair abra a pasta `PHPMailer-master` copie a pasta `src` e cole pra pasta raíz do seu projeto. 
 Também é necessário configurar:
 * `$mail->Host` no arquivo `mail.php` e a `$mail->Port` que podem variar de acordo com o seu e-mail/hospedagem
 * `$mail->Username` e `$mail->Password` com o e-mail e senha da sua hospedagem

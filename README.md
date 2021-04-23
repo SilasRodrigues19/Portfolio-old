@@ -24,4 +24,4 @@ Desenvolvido a seção home da página que consiste em uma apresentação.
 * Clique em `Code` -> `Download ZIP` após baixar e extrair abra a pasta `PHPMailer-master` copie a pasta `src` e cole pra pasta raíz do seu projeto. 
 Também é necessário configurar:
 * `$mail->Host` no arquivo `mail.php` e a `$mail->Port` que podem variar de acordo com o seu e-mail/hospedagem
-* `$mail->Username` e `$mail->Password` com o e-mail e senha da sua hospedagem
+* `$mail->Username` e `$mail->Password` com o e-mail e senha do seu e-mail

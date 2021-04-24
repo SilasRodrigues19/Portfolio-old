@@ -4,7 +4,7 @@ Desenvolvido a seção home da página que consiste em uma apresentação.
 
 
 ### Home preview
-![Pré Visualização](https://github.com/SilasRodrigues19/potfolio/blob/master/img/preview.png)
+![Pré Visualização](https://github.com/SilasRodrigues19/silasrodrigues19.github.io/blob/master/assets/img/preview.png)
 
 ### Links utilizados
 * #### Fontes do Google - [Google Fonts](https://fonts.google.com/)

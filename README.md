@@ -14,6 +14,3 @@ Desenvolvido a seção home da página que consiste em uma apresentação.
 
 ### Hospedagem pelo GitHub Pages (Sem suporte pra PHP)
 * #### Veja o site aqui - [Portfolio](https://silasrodrigues19.github.io/public/)
-
-### Hospedagem pela versão Free do 000WebHost (Com suporte pra PHP)
-* ####  - [Portfolio](https://silasportfolio.000webhostapp.com/index.html)

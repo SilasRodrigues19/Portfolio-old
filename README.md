@@ -13,7 +13,7 @@ Desenvolvido a seção home da página que consiste em uma apresentação.
 * #### Animações - [AOS Animate](https://michalsnik.github.io/aos/)
 
 ### Hospedagem pelo GitHub Pages (Sem suporte pra PHP)
-* #### Veja o site aqui - [Portfolio](https://silasrodrigues19.github.io)
+* #### Veja o site aqui - [Portfolio](https://silasrodrigues19.github.io/public/)
 
 ### Hospedagem pela versão Free do 000WebHost (Com suporte pra PHP)
 * ####  - [Portfolio](https://silasportfolio.000webhostapp.com/index.html)

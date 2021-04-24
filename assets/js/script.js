@@ -93,3 +93,17 @@ menu_item.forEach((item) => {
   });
 });
 
+$(document).ready(function() {
+  $('.sign-up-form').on('submit', submit);
+  $('.reset-button').on('click', reset);
+  $('.sign-up-container').addClass('hidden2');
+});
+
+$('.buttonFm').click(function(event){
+  $('.sign-up-container').addClass('submitted');
+  $('.sign-up-container').addClass('hideMe');
+  event.preventDefault();
+})
+
+
+

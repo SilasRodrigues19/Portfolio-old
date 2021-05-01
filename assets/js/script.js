@@ -59,7 +59,17 @@ var loader;
 
 function displayContent() {
     loader.style.display = 'none';
-    document.getElementById('content').style.display = 'block';
+    $('.infoText').addClass('infoAnimation');
+}
+
+/* Removendo mensagem de alerta ao acessar mail.php via URL */
+let buttonMailAlert = document.getElementById('btnsection');
+let mailAlert = document.getElementById('psection');
+
+if (mailAlert != null) { /* Evitar que de erro de variavel vazia quando não tentarem acessar via URL */
+buttonMailAlert.addEventListener('click', function() {
+  mailAlert.style.display = 'none';
+});
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -92,18 +102,3 @@ menu_item.forEach((item) => {
     mobile_menu.classList.toggle('active');
   });
 });
-
-$(document).ready(function() {
-  $('.sign-up-form').on('submit', submit);
-  $('.reset-button').on('click', reset);
-  $('.sign-up-container').addClass('hidden2');
-});
-
-$('.buttonFm').click(function(event){
-  $('.sign-up-container').addClass('submitted');
-  $('.sign-up-container').addClass('hideMe');
-  event.preventDefault();
-})
-
-
-

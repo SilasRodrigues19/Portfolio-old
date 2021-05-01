@@ -1,6 +1,7 @@
 /* Header section */
 #header {
 	position: fixed;
+	font-family: Bradley Hand, cursive;
 	user-select: none;
 	z-index: 1000;
 	left: 0;
@@ -78,7 +79,7 @@
 
 #header .nav-list ul li:hover a {
 	color: crimson;
-	animation: zoomOut .3s;
+	animation: zoomIn .5s;
 }
 
 #header .menu {

@@ -74,6 +74,10 @@
 		font-size: 2rem;
 	}
 
+	#header .nav-list ul a {
+		animation: none !important;
+	}
+
 	#home h1 {
     	font-size: 2.4rem;	
 	}

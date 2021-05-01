@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100&display=swap');
 @import url('https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
 
 :root {
 	--color-background: #DC143C;
@@ -40,7 +41,7 @@
 
 html {
 	font-size: 10px;
-	font-family: Bradley Hand, cursive;
+	font-family: 'Special Elite', cursive;
 	overflow-x: hidden;
 }
 
@@ -137,29 +138,6 @@ p {
 	}
 }
 
-@keyframes text_reveal_box {
-	50% {
-		width: 100%;
-		left: 0;
-	}
-	100% {
-		width: 0%;
-		left: 100%;
-	}
-}
-
-@keyframes text_reveal {
-	100% {
-		color: #FFF;
-	}
-}
-
-@keyframes text_reveal_name {
-	100% {
-		color: var(--color-profession);
-		font-weight: 500;
-	}
-}
 @keyframes zoom {
   0% {
     transform: scale(1.3);

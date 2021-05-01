@@ -1,10 +1,14 @@
 /* Home Section */
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+
 #home {
+	font-family: Bradley Hand, cursive;
 	background-image: url(../img/code.jpg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
 	z-index: 1;
+	animation: bgAnimation 40s linear infinite alternate;
 }
 
 #home::after {
@@ -27,57 +31,29 @@
 }
 
 #home h1 {
+	opacity: .1;
 	display: block;
 	width: fit-content;
 	font-size: 5rem;
 	position: relative;
-	color: transparent;
-	animation: text_reveal .5s ease forwards;
-	animation-delay: 1s;
+  	text-shadow: 6px 3px 0 rgba(0, 0, 0, .3);      
 }
 
-#home h1:nth-child(1) {
-	animation-delay: 1s;
-}
-
-#home h1:nth-child(2) {
-	animation-delay: 2s;
+.infoAnimation {
+	animation: moveInfo 2.5s 0s forwards !important;
+	color: #fff !important;
 }
 
 #home h1:nth-child(3) {
-	animation: text_reveal_name .5s ease forwards;
-	animation-delay: 3s;
+	color: var(--color-profession) !important;
 }
 
-#home h1 span {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 0;
-	background-color: var(--color-background);
-	animation: text_reveal_box 1s ease;
-	animation-delay: .5s;
-}
-
-#home h1:nth-child(1) span {
-	animation-delay: .5s;
-}
-
-#home h1:nth-child(2) span {
-	animation-delay: 1.5s;
-}
-
-#home h1:nth-child(3) span {
-	animation-delay: 2.5s;
-}
 #home h2 {
 	margin-top: 5px;
 	font-size: 4rem;
 	font-weight: bold;
 	letter-spacing: 0.2rem;
-	animation: text_reveal .5s ease forwards;
-	animation-delay: 1.5s;
+	color: #fff;
 }
 
 #home .cta {
@@ -87,7 +63,9 @@
 	padding: 15px 35px;
 	color: #FFF;
 	background-color: transparent;
-	border: 2px solid var(--color-background);
+	border: 2px var(--color-background);
+	border-style: double solid;
+	border-radius: 15px;
 	font-size: 3rem;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
@@ -97,11 +75,10 @@
 }
 
 #home .cta:hover {
-	animation: tada .8s;
 	color: #FFF;
 	box-shadow: 1px 1px 25px 10px var(--portfolio-hover);
 	background-color: var(--color-background);
-	transition: 2s;
+	transition: 3s;
 }
 
 .cta:before {
@@ -132,3 +109,26 @@
 }
 
 /*------------------------------------ End Classes -------------------------------------------*/
+
+
+/* Keyframes */
+
+@keyframes bgAnimation {
+  50% {
+  	background-position: center;
+  }
+  75% {
+  	background-position: bottom center;
+  }
+}
+
+@keyframes moveInfo {
+  0% {
+    transform: translateY(10rem) rotateY(-30deg);
+  }
+
+  100% {
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+  }
+}

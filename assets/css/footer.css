@@ -1,6 +1,7 @@
 /* Footer */
 
 footer {
+	font-family: Bradley Hand, cursive;
 	user-select: none;
     background-image: linear-gradient(to right, #111 0%, #434343 100%);
 }

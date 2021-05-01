@@ -44,8 +44,8 @@ if ($resultBtn) {
 		$mail->isSMTP(); // To use SMTP
 		$mail->Host = 'smtp.gmail.com'; // Change if u don't use Gmail
 		$mail->SMTPAuth = true; // Authentication
-		$mail->Username = 'silasrodrigues.fatec@gmail.com'; // Your domain e-mail
-		$mail->Password = 'gawb23132new'; // Your pass
+		$mail->Username = 'email@domain.com'; // Your domain e-mail
+		$mail->Password = 'password'; // Your pass
 		$mail->Port = 587; // Gmail default port
 
 		// Recipients

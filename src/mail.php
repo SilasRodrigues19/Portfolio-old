@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<?php 
+<?php
 session_start();
 
 require_once('PHPMailer.php');
@@ -26,11 +26,11 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-$nome = $_POST['nome'];
-$sobrenome = $_POST['sobrenome'];
+$nome = utf8_decode($_POST['nome']);
+$sobrenome = utf8_decode($_POST['sobrenome']);
 $email = $_POST['email'];
 $celular = $_POST['celular'];
-$mensagem = $_POST['mensagem'];
+$mensagem = utf8_decode($_POST['mensagem']);
 
 $resultBtn = filter_input(INPUT_POST, 'btnSubmit', FILTER_SANITIZE_STRING);
 
@@ -44,7 +44,7 @@ if ($resultBtn) {
 		$mail->isSMTP(); // To use SMTP
 		$mail->Host = 'smtp.gmail.com'; // Change if u don't use Gmail
 		$mail->SMTPAuth = true; // Authentication
-		$mail->Username = 'email@domain.com'; // Your domain e-mail
+		$mail->Username = 'emil@domain.com'; // Your domain e-mail
 		$mail->Password = 'password'; // Your pass
 		$mail->Port = 587; // Gmail default port
 
@@ -56,13 +56,12 @@ if ($resultBtn) {
 		// Content
 		$mail->isHTML(true); // Set HTML format
 		$mail->Subject = 'Contato - Portfolio';
-		$mail->Body = "<div style='padding: 2rem 1rem; margin: 1rem 4rem 1rem 1rem; background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-	 background-blend-mode: multiply,multiply; border-radius: 0.3rem;'><p style='color:#fff;'><strong>Nome: </strong>$nome $sobrenome</p> <hr><br><p style='color:#fff'><strong>Email: </strong>$email</p> <hr><br><p style='color:#fff;'><strong>Celular: </strong>$celular</p> <hr><br><p style='color:#fff;'><strong>Mensagem: </strong>$mensagem</p></div>";
+		$mail->Body = "<html><body><meta charset='utf-8'><table align='center' bgcolor='#EFEEEA' border='0' cellpadding='0' cellspacing='0' height='100%' width='100%' id='m_1274380306070959983bodyTable'> <tbody> <tr> <td align='center' valign='top' id='m_1274380306070959983bodyCell' style='padding-bottom:60px'> <span style='color:#ffe01b;display:none;font-size:0px;height:0px;width:0px'>Mensagem recebida!</span> <table align='center' border='0' cellpadding='0' cellspacing='0' width='100%'> <tbody> <tr> <td align='center' valign='top' bgcolor='#DC143C' style='background-color:#C01D46'> <table align='center' border='0' cellpadding='0' cellspacing='0' style='max-width:640px' width='100%'> <tbody> <tr> <td align='center' valign='top' style='padding:40px'> <a href='#' style='text-decoration:none' target='_blank'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Email_icon-black.svg/1200px-Email_icon-black.svg.png' width='60' style='border:0;color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,Verdana,sans-serif;font-size:12px;font-weight:400;height:auto;letter-spacing:-1px;padding:0;margin:0;outline:none;text-align:center;text-decoration:none' class='CToWUd'></a> </td> </tr> <tr> <td style='background-color:#ffffff;padding-top:40px'>&nbsp;</td> </tr> </tbody> </table> </td> </tr> <tr> <td align='center' valign='top'> <table align='center' bgcolor='#FFFFFF' border='0' cellpadding='0' cellspacing='0' style='background-color:#ffffff;max-width:640px' width='100%'> <tbody> <tr> <td align='center' valign='top' bgcolor='#FFFFFF' style='padding-right:40px;padding-bottom:40px;padding-left:40px'> <h1 style='color:#241c15;font-family:Georgia,Times,'Times New Roman',serif;font-size:30px;font-style:normal;font-weight:400;line-height:42px;letter-spacing:normal;margin:0;padding:0;text-align:center'>Mensagem recebida do portfolio<br></h1></td> </tr> <tr> <td> <h3 style='color:#241c15;font-family:Georgia,Times,'Times New Roman',serif;font-size:12px;font-style:normal;letter-spacing:normal;margin:10px;padding:0;text-align:center'> <p style='color:#000; margin:12px;'><strong>Nome: </strong>$nome $sobrenome</p> <hr> <br> <p style='color:#000; margin:12px;'><strong>Email: </strong>$email</p> <hr> <br> <p style='color:#000; margin:12px;'><strong>Celular: </strong>$celular</p> <hr> <br> <p style='color:#000; margin:12px; height:100px'><strong>Mensagem: </strong>$mensagem</p> </h3> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table> </td> </tr> </tbody></table></body></html>";
 
 
 	?>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-	<?php 
+	<?php
 
 		if ($mail->send()) {
 			?>
@@ -72,7 +71,7 @@ if ($resultBtn) {
 				  text: "Seu email foi enviado com sucesso",
 				  icon: "success",
 				});
-				setTimeout(function(){location.href="../public/index.php"} , 5000); 
+				setTimeout(function(){location.href="../public/index.php"} , 5000);
 			</script>
 			<?php
 		} else {
@@ -97,7 +96,7 @@ if ($resultBtn) {
 		</script>
 		<?php
 	}
-  // Caso contrário, ou seja, não clicou no botão e acessou a URL vai exibit uma caixa de alerta informando que não da pra acessar via URL direto	
+  // Caso contrário, ou seja, não clicou no botão e acessou a URL vai exibir uma caixa de alerta informando que não da pra acessar via URL direto
 } else {
 	$_SESSION['msg'] = "<p id='psection' style='position:fixed; top: 90px; z-index:9999; color:#000; text-transform:uppercase; border-radius:10px; animation:fadeInDown 4s;' class='alert alert-warning w-50 text-center'>Acesso negado<br> Preencha o formulário e clique em enviar ao invés de acessar via URL <br> <button id='btnsection' class='btn btn-outline-danger w-100'>Fechar</button></p>";
 	header("Location: ../public/index.php");

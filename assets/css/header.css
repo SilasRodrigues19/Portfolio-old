@@ -52,7 +52,7 @@
 	font-weight: 500;
 	letter-spacing: .2rem;
 	text-decoration: none;
-	color: white;
+	color: #cacaca;
 	text-transform: uppercase;
 	padding: 20px;
 	display: block;
@@ -78,15 +78,16 @@
 }
 
 #header .nav-list ul li:hover a {
-	color: crimson;
-	animation: zoomIn .5s;
+	color: var(--primary-color);
+	transform: scale(.9);
+	transition: ease-in-out .2s;
 }
 
 #header .menu {
 	height: 60px;
 	width: 60px;
 	display: inline-block;
-	border: 3px solid white;
+	border: 3px solid #cacaca;
 	border-radius: 50%;
 	position: relative;
 	display: flex;
@@ -104,7 +105,7 @@
 	height: 100%;
 	width: 100%;
 	border-radius: 50%;
-	border: 3px solid white;
+	border: 3px solid #cacaca;
 	animation: 1s ease infinite;
 }
 
@@ -116,7 +117,7 @@
 	height: 2px;
 	width: 30px;
 	position: relative;
-	background-color: white;
+	background-color: #cacaca;
 	z-index: -1;
 }
 
@@ -127,7 +128,7 @@
 	height: 100%;
 	width: 100%;
 	left: 0;
-	background-color: white;
+	background-color: #cacaca;
 	transition: .3s ease;
 	transition-property: top, bottom;
 }
@@ -177,6 +178,5 @@
 	#header .nav-list ul a:after {
 		display: none;
 	}
+}
 	/* End header */
-
-

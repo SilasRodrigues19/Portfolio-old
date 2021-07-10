@@ -1,16 +1,28 @@
 /* Font Awesome Icons */
-.fa-tools, .fa-code, .fa-laptop-house, .fa-envelope, .fa-phone, .fa-file-pdf, .fa-globe-americas, .fa-file-word, .fa-arrow-up {
+.fa-tools, .fa-code, .fa-laptop-code, .fa-envelope, .fa-phone, .fa-file-pdf, .fa-globe-americas, .fa-file-word, .fa-arrow-up {
 	font-size: 50px;
+	transition: all ease .7s;
 }
 
-.fa-tools:hover, .fa-code:hover, .fa-laptop-house:hover, .fa-envelope, .fa-phone, .fa-file-pdf, .fa-globe-americas, .fa-file-word:hover, .fa-arrow-up {
-	color: var(--color-profession);
-	animation: pulse 1.5s;
+.fa-tools:hover, .fa-code:hover, .fa-laptop-code:hover, .fa-file-word:hover, .fa-envelope, .fa-phone, .fa-file-pdf, .fa-globe-americas, .fa-arrow-up {
+	color: var(--primary-color);
 }
 
-.seuTxt {
+.fa-tools:hover, .fa-code:hover, .fa-laptop-code:hover, .fa-file-word:hover {
+	transform: scale(1.1);
+}
+
+.fa-linkedin, .fa-whatsapp, .fa-twitter, .fa-github {
+	transition: all ease 4s;
+}
+
+.fa-linkedin:hover, .fa-whatsapp:hover, .fa-twitter:hover, .fa-github:hover {
+	transition: all ease 1.2s;
+}
+
+/*.seuTxt {
 	z-index: 9999;
-}
+}*/
 
 .fa-linkedin:hover {
 	color: #007bb6;
@@ -95,6 +107,5 @@
 }
 
 .service-imgBx img:hover {
-  animation: pulse 1.5s;
+  transform: scale(1.2) !important;
 }
-

@@ -3,7 +3,7 @@
 
 #home {
 	font-family: Bradley Hand, cursive;
-	background-image: url(../img/code.jpg);
+	background-image: url(../img/code.jpeg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -36,16 +36,16 @@
 	width: fit-content;
 	font-size: 5rem;
 	position: relative;
-  	text-shadow: 6px 3px 0 rgba(0, 0, 0, .3);      
+  text-shadow: 6px 3px 0 rgba(0, 0, 0, .1);
 }
 
 .infoAnimation {
 	animation: moveInfo 2.5s 0s forwards !important;
-	color: #fff !important;
+	color: #cacaca !important;
 }
 
 #home h1:nth-child(3) {
-	color: var(--color-profession) !important;
+	color: var(--primary-color) !important;
 }
 
 #home h2 {
@@ -53,7 +53,7 @@
 	font-size: 4rem;
 	font-weight: bold;
 	letter-spacing: 0.2rem;
-	color: #fff;
+	color: #cacaca !important;
 }
 
 #home .cta {
@@ -61,9 +61,9 @@
 	overflow: hidden;
 	display: inline-block;
 	padding: 15px 35px;
-	color: #FFF;
+	color: #cacaca;
 	background-color: transparent;
-	border: 2px var(--color-background);
+	border: 2px var(--primary-color);
 	border-style: double solid;
 	border-radius: 15px;
 	font-size: 3rem;
@@ -75,10 +75,8 @@
 }
 
 #home .cta:hover {
-	color: #FFF;
 	box-shadow: 1px 1px 25px 10px var(--portfolio-hover);
-	background-color: var(--color-background);
-	transition: 3s;
+	background-color: var(--primary-color);
 }
 
 .cta:before {

@@ -11,14 +11,21 @@
 		font-size: 3rem;
 	}
 
+	#loader {
+		background: #000 url('../img/loader.gif') no-repeat center center;
+    background-size: contain;
+	}
+
 	/* Home section */
 
 	#home h1 {
 		font-size: 3.4rem;
 	}
+
 	#home h2 {
 		font-size: 2.4rem;
 	}
+
 	#home .cta {
 		padding: 10px 20px;
 		font-size: 2rem;
@@ -43,6 +50,10 @@
 		flex-basis: 45%;
 		align-items: center;
 		margin: 2.5%;
+	}
+
+	.serviceSvg {
+		display: none;
 	}
 
 	/* End Services section */
@@ -79,7 +90,7 @@
 	}
 
 	#home h1 {
-    	font-size: 2.4rem;	
+    	font-size: 2.4rem;
 	}
 
 	#home h2 {
@@ -111,15 +122,16 @@
 
 	/* Certificate Section */
 
-	.certificates table {
-		display: none;
-	}
-	.certificate-header p {
-		display: initial;
-		color: #fff;
+	.certificate {
+		height: 200px;
 	}
 
 	/* End Certificate Section */
+
+	/* Home and Footer*/
+	#footer h2, #footer p, .brand h1, #home h1, #home h2, #home .cta, #form {
+		font-family: 'Montserrat', cursive !important;
+	}
 }
 
 @media only screen and (max-width: 386px) {
@@ -129,6 +141,7 @@
 		font-size: 1.6rem;
 		text-align: center;
 	}
+
 	/* End Header Section and Footer Section */
 
 	/* Icons */
@@ -139,4 +152,3 @@
 
 	/* End Icons */
 }
-

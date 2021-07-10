@@ -3,7 +3,7 @@
 footer {
 	font-family: Bradley Hand, cursive;
 	user-select: none;
-    background-image: linear-gradient(to right, #111 0%, #434343 100%);
+  background-color: #0f0e17;
 }
 
 footer .footer {
@@ -14,7 +14,7 @@ footer .footer {
 }
 
 #footer h2 {
-	color: #FFF;
+	color: #cacaca;
 	font-weight: 500;
 	font-size: 1.8rem;
 	letter-spacing: .7rem;
@@ -41,18 +41,18 @@ footer .footer {
 }
 
 #footer p {
-	color: #FFF;
+	color: #cacaca;
 	font-size: 1.3rem;
 }
 
 .brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
-	color: #FFF;
+	color: #cacaca;
 }
 
 .brand h1 span {
-	color: var(--color-profession);
+	color: var(--primary-color);
 }
 
 /* End Footer */

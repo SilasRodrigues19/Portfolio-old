@@ -2,7 +2,7 @@ const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
 const textArray = ["Web Developer", "Programador", "Free Lancer"];
-const typingDelay = 100;
+const typingDelay = 50;
 const erasingDelay = 50;
 const newTextDelay = 2000; // Delay between current and next text
 let textArrayIndex = 0;
@@ -17,7 +17,7 @@ function type() {
     typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
     charIndex++;
     setTimeout(type, typingDelay);
-  } 
+  }
   else {
     cursorSpan.classList.remove("typing");
   	setTimeout(erase, newTextDelay);
@@ -30,7 +30,7 @@ function erase() {
     typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
     charIndex--;
     setTimeout(erase, erasingDelay);
-  } 
+  }
   else {
     cursorSpan.classList.remove("typing");
     textArrayIndex++;
@@ -46,11 +46,11 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
 
 /* Alert */
 $(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();   
+  $('[data-toggle="tooltip"]').tooltip();
 });
 
 
-/* Loader */  
+/* Loader */
 window.onload = displayContent;
 
 
@@ -60,9 +60,11 @@ var loader;
 function displayContent() {
     loader.style.display = 'none';
     $('.infoText').addClass('infoAnimation');
+    $('.cta').addClass('infoAnimation');
+    $('.arrayText').addClass('infoAnimation');
 }
 
-/* Removendo mensagem de alerta ao acessar mail.php via URL */
+/* Adicionando mensagem de alerta ao acessar mail.php via URL */
 let buttonMailAlert = document.getElementById('btnsection');
 let mailAlert = document.getElementById('psection');
 
@@ -88,9 +90,9 @@ menu.addEventListener('click', () => {
 
 document.addEventListener('scroll', () => {
   var scroll_position = window.scrollY;
-  if (scroll_position > 250) {
-    header.style.backgroundColor = '#434343';
-    
+  if (scroll_position > 100) {
+    header.style.backgroundColor = '#0f0e17';
+
   } else {
     header.style.backgroundColor = 'transparent';
   }

@@ -7,7 +7,7 @@
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #fff;
+  color: #000;
   text-align: center;
   animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 4s; /* don't forget to set a duration! */
@@ -29,21 +29,25 @@
 }
 
 .carousel-indicators li {
+  margin: 20px 5px;
   width: 60px !important;
-  height: 4px !important;
+  height: 8px !important;
+  border-radius: 5px;
   background-color: rgba(0,0,0,.6) !important;
 }
 
 .carousel-indicators .active {
-  background-color: #fff !important;
+  background-color: #000 !important;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
+    filter: invert(1);
     width: 40px;
     height: 40px;
 }
 
 #jobsCarousel {
+  font-family: Bradley Hand, cursive;
 	user-select: none;
 }
 

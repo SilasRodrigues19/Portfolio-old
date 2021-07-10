@@ -2,25 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100&display=swap');
 @import url('https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css');
 @import url('https://fonts.googleapis.com/css?family=Special+Elite');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
 
 :root {
-	--color-background: #DC143C;
-	--portfolio-hover: rgba(220, 20, 60, 0.5);
-	--color-profession: #C01D46;
-	--scrollbar: #FF0009;
+	--primary-color: #810000;
+	--portfolio-hover: rgba(129, 0, 0, 0.5);
+	--scrollbar: #111;
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
 }
 
 ::-webkit-scrollbar-thumb {
     background: -webkit-gradient(linear,left top,left bottom,from(var(--scrollbar)),to(#000));
     background: -moz-gradient(linear,left top,left bottom,from(var(--scrollbar)),to(#000));
     background: linear-gradient(360deg,var(--scrollbar),#000);
-    border-radius: 10px;
-    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 1px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -41,7 +42,7 @@
 
 html {
 	font-size: 10px;
-	font-family: 'Special Elite', cursive;
+	font-family: 'MedievalSharp', cursive;
 	overflow-x: hidden;
 }
 
@@ -50,7 +51,7 @@ p {
 	font-size: 1.4rem;
 	margin-top: 5px;
 	line-height: 2.5rem;
-	font-weight: 300;
+	font-weight: 400;
 	letter-spacing: .05rem;
 }
 
@@ -76,7 +77,7 @@ p {
 
 .section-title {
 	font-size: 4rem;
-	font-weight: 300;
+	font-weight: 400;
 	color: #000;
 	margin-bottom: 10px;
 	text-transform: uppercase;
@@ -85,7 +86,7 @@ p {
 }
 
 .section-title span {
-	color: var(--color-profession);
+	color: var(--primary-color);
 }
 
 .info {
@@ -97,13 +98,13 @@ p {
 
 .typed-text {
 	font-weight: normal;
-	color: var(--color-profession);
+	color: var(--primary-color);
 }
 
 .cursor {
 	display: inline-block;
 	width: 2px;
-	background-color: var(--color-profession);
+	background-color: var(--primary-color);
 	margin-left: 0.1rem;
 	animation: blink 1s infinite;
 }
@@ -160,4 +161,3 @@ p {
 
 
 /* End Key Frames */
-

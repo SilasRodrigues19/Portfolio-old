@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 @media only screen and (max-width: 768px) {
 	html {
 		font-family: 'Montserrat', cursive;
@@ -9,11 +11,6 @@
 
 	h1.section-title, #services .section-title {
 		font-size: 3rem;
-	}
-
-	#loader {
-		background: #000 url('../img/loader.gif') no-repeat center center;
-    background-size: contain;
 	}
 
 	/* Home section */
@@ -85,6 +82,34 @@
 		font-size: 2rem;
 	}
 
+	#header .nav-list ul a::before {
+		position: absolute;
+    color: gray;
+    left: 69px;
+    font-family: "Material Icons";
+    font-size: 25px;
+	}
+
+	#header .nav-list ul a:hover::before {
+		content: '' !important;
+	}
+
+	#header .nav-list ul li:nth-child(1) a::before {
+		content: '\ef54';
+	}
+
+	#header .nav-list ul li:nth-child(2) a::before {
+		content: '\e86f';
+	}
+
+	#header .nav-list ul li:nth-child(3) a::before {
+		content: '\ea3f';
+	}
+
+	#header .nav-list ul li:nth-child(4) a::before {
+		content: '\e0d0';
+	}
+
 	#header .nav-list ul a {
 		animation: none !important;
 	}
@@ -129,7 +154,8 @@
 	/* End Certificate Section */
 
 	/* Home and Footer*/
-	#footer h2, #footer p, .brand h1, #home h1, #home h2, #home .cta, #form {
+	/*#footer h2, #footer p, .brand h1, #home h1, #home h2, #home .cta, #form*/
+	body {
 		font-family: 'Montserrat', cursive !important;
 	}
 }

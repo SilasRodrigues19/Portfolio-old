@@ -72,9 +72,9 @@
 	color: #f30c0c;
 }
 
-#projects .project-img {
+#projects .carousel-item img {
 	flex-basis: 50%;
-	height: 200px;
+	height: 100%;
 }
 
 .carousel-item img:hover {

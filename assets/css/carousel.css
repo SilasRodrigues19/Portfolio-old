@@ -9,8 +9,8 @@
   padding-bottom: 20px;
   color: #000;
   text-align: center;
-  animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 4s; /* don't forget to set a duration! */
+  animation: fadeInLeft;
+  animation-duration: 4s;
 }
 
 .carousel-caption h3 {
@@ -86,4 +86,10 @@
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
+}
+
+/* Lightbox rewrite */
+
+.lb-number {
+  margin-top: 5px;
 }

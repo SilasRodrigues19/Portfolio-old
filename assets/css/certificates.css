@@ -37,7 +37,7 @@
 	filter: none;
 	border-radius: 10px;
   margin: 15px;
-  max-height: 100%;
+	width: 200px;
   height: 150px;
 }
 

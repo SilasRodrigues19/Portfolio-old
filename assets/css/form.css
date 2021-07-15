@@ -97,10 +97,21 @@ textarea[name='mensagem']::-webkit-scrollbar-track {
     background: linear-gradient(90deg,#201c29,#201c29 1px,#100e17 0,#100e17);
 }
 
-.btn-secondary:hover {
-  color: #fff;
-  background-color: rgba(90, 98, 104, 0.1) !important;
-  border-color: #545b62;
+.btn-secondary{
+    color:#000;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    transition:letter-spacing .5s;
+    background-color:#6c757d;
+    border-color:#6c757d
+}
+
+.btn-secondary:hover{
+    background-color: rgba(90, 98, 104, 0.1) !important;
+    border-color: #545b62;
+    color:#fff;
+    letter-spacing:15px;
+    transition:letter-spacing .5s;
 }
 
 .btn-secondary:active {

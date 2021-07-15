@@ -29,7 +29,7 @@
 #header .nav-list ul {
 	list-style: none;
 	position: absolute;
-	background-color: rgb(31, 30, 30);
+	background-color: rgba(31, 30, 30, .95);
 	width: 100vw;
 	height: 100vh;
 	left: 100%;
@@ -73,14 +73,14 @@
 
 #header .nav-list ul li:hover a::after {
 	transform: translate(-50%, -50%) scale(1);
-	letter-spacing: 20px;
-	transition: 2s ease letter-spacing;
+	letter-spacing: 10px;
+	transition: 1s ease letter-spacing;
 }
 
 #header .nav-list ul li:hover a {
 	color: var(--primary-color);
 	transform: scale(.9);
-	transition: ease-in-out .2s;
+	transition: ease .4s;
 }
 
 #header .menu {
@@ -114,26 +114,52 @@
 }
 
 #header .menu .bar {
-	height: 2px;
+	height: 2.5px;
 	width: 30px;
 	position: relative;
-	background-color: #cacaca;
+	background-color: transparent;
 	z-index: -1;
 }
 
-#header .menu .bar::after,
-#header .menu .bar::before {
+#header .menu .bar::after {
 	content: '';
 	position: absolute;
 	height: 100%;
 	width: 100%;
 	left: 0;
 	background-color: #cacaca;
-	transition: .3s ease;
-	transition-property: top, bottom;
+	transition: 1s ease;
+}
+
+#header .menu .bar::before {
+	top: -8px;
+	left: 5px;
+	content: '';
+	border-radius: 20px;
+	background-color: #cacaca;
+	transition: 1s ease;
+	position: absolute;
+	height: 100%;
+	width: 85%;
+}
+
+#hamburger {
+	display: none;
+}
+
+#hamburger:checked ~ label .menu .bar:after {
+	transform: rotate(225deg);
+}
+
+#hamburger:checked ~ label .menu .bar:before {
+	transform: rotate(-405deg);
+	top: 0;
+	left: 0;
+	width: 100%;
 }
 
 #header .menu .bar::after {
+	border-radius: 20px;
 	top: 8px;
 }
 

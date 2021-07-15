@@ -16,12 +16,12 @@
 	<!-- Fonte Awesome and Icons CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.css">
 	<link rel="stylesheet" href="../assets/css/icons.css">
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="../assets/css/bootstrap-4.0.0.css">
+	<!-- Bootstrap 4.0.0 -->
+	<link rel="stylesheet" href="../assets/css/bootstrap.css">
 	<!-- Animate CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
 	<!-- Lightbox -->
-	<link rel="stylesheet" href="../assets/css/lightbox.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 	<!-- Reset CSS -->
 	<link rel="stylesheet" href="../assets/css/reset.css">
 
@@ -125,13 +125,19 @@
 				<div class="brand">
 					<div class="logo" data-toggle="tooltip" title="Acesse meu GitHub!" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2500" data-aos-offset="0">
 						<a href="https://github.com/SilasRodrigues19" target="_blank">
-							<img src="https://avatars.githubusercontent.com/u/47532703?s=460&u=baa5f8880cf95f37d4fe235437acfaac247d13ca&v=4" alt="Silas Rodrigues">
+							<img src="../assets/img/me.jpg" alt="Silas Rodrigues">
 						</a>
 					</div>
 					<a href="#home" class="scroll margin"><h1>Silas <span>Rodrigues</span></h1></a>
 				</div>
 				<div class="nav-list">
-					<div class="menu"><div class="bar"></div></div>
+						<!-- Mobile Menu -->
+						<input id="hamburger" type="checkbox">
+						<label for="hamburger">
+							<div class="menu">
+								<div class="bar"></div>
+							</div>
+						</label>
 						<ul>
 							<li><a class="scroll" href="#services" data-after="Services">Serviços</a></li>
 							<li><a class="scroll" href="#projects" data-after="Projects">Projetos</a></li>
@@ -148,7 +154,11 @@
 
 	<!-- Home Section -->
 	<section id="home">
-		<div id="loader"></div>
+		<div id="loader">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
 		<div class="home container">
 			<div class="info container">
 				<?php
@@ -222,15 +232,15 @@
 					<div class="service-imgBx">
 						<img data-aos="fade-left" data-aos-duration="900" src="../assets/img/languagens/html.png" alt="HTML Logo" data-toggle="tooltip" title="HTML 5">
 						<img data-aos="fade-left" data-aos-duration="700" src="../assets/img/languagens/css.png" alt="CSS Logo" data-toggle="tooltip" title="CSS 3">
-						<img data-aos="fade-left" data-aos-duration="500" src="../assets/img/languagens/javascript.png" alt="JavaScript Logo"  data-toggle="tooltip" title="JavaScript">
+						<img data-aos="fade-left" data-aos-duration="500" src="../assets/img/languagens/javascript.png" alt="JavaScript Logo" data-toggle="tooltip" title="JavaScript">
 						<img data-aos="fade-left" data-aos-duration="300" src="../assets/img/languagens/php.png" alt="PHP Logo" data-toggle="tooltip" title="PHP">
 						<img data-aos="fade-left" data-aos-duration="500" src="../assets/img/languagens/mysql.png" alt="MySQL Logo" data-toggle="tooltip" title="MySQL">
-						<img data-aos="fade-left" data-aos-duration="700" src="../assets/img/languagens/git.png" alt="Git Logo"  data-toggle="tooltip" title="Git">
+						<img data-aos="fade-left" data-aos-duration="700" src="../assets/img/languagens/git.png" alt="Git Logo" data-toggle="tooltip" title="Git">
 						<img data-aos="fade-left" data-aos-duration="900" src="../assets/img/languagens/figma.png" alt="Figma Logo" data-toggle="tooltip" title="Figma">
-						<img data-aos="fade-left" data-aos-duration="1200" src="../assets/img/languagens/react.png" alt="React Logo"  data-toggle="tooltip" title="React JS">
-						<img data-aos="fade-left" data-aos-duration="1400" src="../assets/img/languagens/bootstrap.png" alt="Bootstrap Logo"  data-toggle="tooltip" title="Bootstrap">
-						<img data-aos="fade-left" data-aos-duration="1600" src="../assets/img/languagens/bulma.png" alt="Bulma Logo"  data-toggle="tooltip" title="Bulma">
-						<img data-aos="fade-left" data-aos-duration="1800" src="../assets/img/languagens/jquery.png" alt="jQuery Logo"  data-toggle="tooltip" title="jQuery">
+						<img data-aos="fade-left" data-aos-duration="1200" src="../assets/img/languagens/react.png" alt="React Logo" data-toggle="tooltip" title="React JS">
+						<img data-aos="fade-left" data-aos-duration="1400" src="../assets/img/languagens/bootstrap.png" alt="Bootstrap Logo" data-toggle="tooltip" title="Bootstrap">
+						<img data-aos="fade-left" data-aos-duration="1600" src="../assets/img/languagens/bulma.png" alt="Bulma Logo" data-toggle="tooltip" title="Bulma">
+						<img data-aos="fade-left" data-aos-duration="1800" src="../assets/img/languagens/jquery.png" alt="jQuery Logo" data-toggle="tooltip" title="jQuery">
 					</div>
 				</div>
 
@@ -292,7 +302,7 @@
 								<!-- Project 1 -->
 						    <div class="carousel-item" data-toggle="tooltip" title="Criado para o Streamer Luiz 'SimpSonsS' Gulherme, clique para visualizar!">
 						      <a href="https://siimpsonss.vercel.app" target="_blank">
-						      	<img class="d-block w-100" src="../assets/img/project1.png" alt="Stream do SimpSonsS">
+						      	<img class="d-block w-100" src="../assets/img/project1.jpeg" alt="Stream do SimpSonsS">
 						      </a>
 						      <div class="carousel-caption">
 						        <h3>Stream do Luiz "SimpSonsS" Guilherme</h3>
@@ -301,7 +311,7 @@
 								<!-- Project 2 -->
 						    <div class="carousel-item" data-toggle="tooltip" title="Venda de serviço para jogo online">
 						      <a href="https://jobison-services.vercel.app" target="_blank">
-						      	<img class="d-block w-100" src="../assets/img/project2.png" alt="Jobison Services">
+						      	<img class="d-block w-100" src="../assets/img/project2.jpeg" alt="Jobison Services">
 						      </a>
 						      <div class="carousel-caption">
 						        <h3>Serviço de Elo Job League of Legends</h3>
@@ -310,7 +320,7 @@
 								<!-- Project 3 -->
 						    <div class="carousel-item" data-toggle="tooltip" title="Sistema de cadastro de aluno e gerenciamento de cursos, alunos e matriculas">
 						      <a href="https://github.com/SilasRodrigues19/PHP-MySQL-DogCursos" target="_blank">
-						      	<img class="d-block w-100" src="../assets/img/project3.png" alt="Sistema de cadastro de cursos">
+						      	<img class="d-block w-100" src="../assets/img/project3.jpeg" alt="Sistema de cadastro de cursos">
 						      </a>
 						      <div class="carousel-caption">
 						        <h3>Dog Cursos - Matricule-se</h3>
@@ -319,7 +329,7 @@
 								<!-- Project 4 -->
 								<div class="carousel-item" data-toggle="tooltip" title="Jogo da cobrinha">
 						      <a href="https://snake-game-silasrodrigues19.vercel.app" target="_blank">
-						      	<img class="d-block w-100" src="../assets/img/project4.png" alt="Snake Game">
+						      	<img class="d-block w-100" src="../assets/img/project4.jpeg" alt="Snake Game">
 						      </a>
 						      <div class="carousel-caption">
 						        <h3>Jogo da cobrinha feito em JavaScript</h3>
@@ -328,7 +338,7 @@
 								<!-- Project 5 -->
 								<div class="carousel-item active" data-toggle="tooltip" title="Custom Clone Instagram">
 						      <a href="https://clone-insta-homepage.vercel.app" target="_blank">
-						      	<img class="d-block w-100" src="../assets/img/project5.png" alt="Clone personalizado da home page do instagram">
+						      	<img class="d-block w-100" src="../assets/img/project5.jpeg" alt="Clone personalizado da home page do instagram">
 						      </a>
 						      <div class="carousel-caption">
 						        <h3>Clone da Home Page do Instagram</h3>
@@ -337,7 +347,7 @@
 								<!-- Project 6 -->
 								<div class="carousel-item" data-toggle="tooltip" title="Buscando perfils com API do GitHub">
 						      <a href="#" target="_blank">
-						      	<img class="d-block w-100" src="../assets/img/project6.png" alt="Pesquisando com API do GitHub">
+						      	<img class="d-block w-100" src="../assets/img/project6.jpeg" alt="Pesquisando com API do GitHub">
 						      </a>
 						      <div class="carousel-caption">
 						        <h3>Pesquisando com API do GitHub</h3>
@@ -369,35 +379,35 @@
 				<hr data-aos="fade-up">
 			</div>
 			<div class="certificate" data-aos="fade-left" data-aos-duration="1200">
-				<a href="../assets/img/Certificados/bootstrap.jpg" data-lightbox="mygallery" data-title="Bootstrap">
-					<img src="../assets/img/Certificados/bootstrap.jpg" alt="Certificado Bootstrap" data-aos="fade-left" data-aos-duration="1200" data-aos-easing="ease-in-sine">
+				<a href="../assets/img/Certificados/bootstrap.jpeg" data-lightbox="mygallery" data-title="Bootstrap">
+					<img src="../assets/img/Certificados/bootstrap.jpeg" alt="Certificado Bootstrap" data-aos="fade-left" data-aos-duration="1200" data-aos-easing="ease-in-sine">
 				</a>
-				<a href="../assets/img/Certificados/git.jpg" data-lightbox="mygallery" data-title="Git">
-					<img src="../assets/img/Certificados/git.jpg" alt="Certificado Git" data-aos="fade-left" data-aos-duration="1250" data-aos-easing="ease-in-sine">
+				<a href="../assets/img/Certificados/git.jpeg" data-lightbox="mygallery" data-title="Git">
+					<img src="../assets/img/Certificados/git.jpeg" alt="Certificado Git" data-aos="fade-left" data-aos-duration="1250" data-aos-easing="ease-in-sine">
 				</a>
-				<a href="../assets/img/Certificados/HTML E CSS.jpg" data-lightbox="mygallery" data-title="HTML e CSS">
-					<img src="../assets/img/Certificados/HTML E CSS.jpg" alt="Certificado HTML e CSS" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+				<a href="../assets/img/Certificados/HTML E CSS.jpeg" data-lightbox="mygallery" data-title="HTML e CSS">
+					<img src="../assets/img/Certificados/HTML E CSS.jpeg" alt="Certificado HTML e CSS" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
-				<a href="../assets/img/Certificados/HTML E CSS2.jpg" data-lightbox="mygallery" data-title="HTML e CSS 2">
-					<img src="../assets/img/Certificados/HTML E CSS2.jpg" alt="Certificado HTML e CSS 2" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+				<a href="../assets/img/Certificados/HTML E CSS2.jpeg" data-lightbox="mygallery" data-title="HTML e CSS 2">
+					<img src="../assets/img/Certificados/HTML E CSS2.jpeg" alt="Certificado HTML e CSS 2" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
-				<a href="../assets/img/Certificados/html-basico.jpg" data-lightbox="mygallery" data-title="HTML básico">
-					<img src="../assets/img/Certificados/html-basico.jpg" alt="Certificado HTML básico" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+				<a href="../assets/img/Certificados/html-basico.jpeg" data-lightbox="mygallery" data-title="HTML básico">
+					<img src="../assets/img/Certificados/html-basico.jpeg" alt="Certificado HTML básico" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
-				<a href="../assets/img/Certificados/jquery.jpg" data-lightbox="mygallery" data-title="jQuery">
-					<img src="../assets/img/Certificados/jquery.jpg" alt="Certificado jQuery" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+				<a href="../assets/img/Certificados/jquery.jpeg" data-lightbox="mygallery" data-title="jQuery">
+					<img src="../assets/img/Certificados/jquery.jpeg" alt="Certificado jQuery" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
-				<a href="../assets/img/Certificados/logica.jpg" data-lightbox="mygallery" data-title="Lógica">
-					<img src="../assets/img/Certificados/logica.jpg" alt="Certificado Lógica" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+				<a href="../assets/img/Certificados/logica.jpeg" data-lightbox="mygallery" data-title="Lógica">
+					<img src="../assets/img/Certificados/logica.jpeg" alt="Certificado Lógica" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
-				<a href="../assets/img/Certificados/MySQL.jpg" data-lightbox="mygallery" data-title="MySQL">
-					<img src="../assets/img/Certificados/MySQL.jpg" alt="Certificado MySQL" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+				<a href="../assets/img/Certificados/MySQL.jpeg" data-lightbox="mygallery" data-title="MySQL">
+					<img src="../assets/img/Certificados/MySQL.jpeg" alt="Certificado MySQL" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
-				<a href="../assets/img/Certificados/php.jpg" alt="Certificado PHP" data-lightbox="mygallery" data-title="PHP">
-					<img src="../assets/img/Certificados/php.jpg" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+				<a href="../assets/img/Certificados/php.jpeg" alt="Certificado PHP" data-lightbox="mygallery" data-title="PHP">
+					<img src="../assets/img/Certificados/php.jpeg" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
-				<a href="../assets/img/Certificados/WebDesign.jpg" data-lightbox="mygallery" data-title="Web Design">
-					<img src="../assets/img/Certificados/WebDesign.jpg" alt="Certificado Web Design" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+				<a href="../assets/img/Certificados/WebDesign.jpeg" data-lightbox="mygallery" data-title="Web Design">
+					<img src="../assets/img/Certificados/WebDesign.jpeg" alt="Certificado Web Design" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
 
 			</div>
@@ -413,7 +423,7 @@
 				<h1 class="section-title">
 					<div data-aos="fade-down"><span>Contato</span> pessoal</div>
 					<hr data-aos="fade-up">
-					<p data-aos="fade-up">Me contate por e-mail atravéz do formulário se preferir</p>
+					<p data-aos="fade-up">Utilize o formulário abaixo para me enviar um e-mail para contato</p>
 				</h1>
 			</div>
 			<div class="my-form" data-aos="zoom-in-up">

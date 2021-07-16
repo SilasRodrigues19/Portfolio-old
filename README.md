@@ -113,7 +113,7 @@ Project Link: [https://github.com/SilasRodrigues19/silasdev.epizy.com](https://g
 [stars-url]: https://github.com/SilasRodrigues19/silasdev.epizy.com/stargazers
 [issues-shield]: https://img.shields.io/github/issues/SilasRodrigues19/silasdev.epizy.com.svg?style=for-the-badge
 [issues-url]: https://github.com/SilasRodrigues19/silasdev.epizy.com/issues
-[license-shield]: https://img.shields.io/github/license/SilasRodrigues19/silasdev.epizy.com?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/SilasRodrigues19/silasdev.epizy.com?style=for-badge
 [license-url]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/LICENSE
 [product-screenshot]: https://i.ibb.co/dD1Cbnv/Desktop-preview.png
 [product-screenshot-mobile]: https://i.ibb.co/WtF63rT/Mobile-preview.png

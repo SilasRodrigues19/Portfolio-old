@@ -2,10 +2,10 @@
 	session_start();
 ?>
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<meta name="description" content="Meu nome é Silas Rodrigues e este é meu portfolio com todos os trabalhos já realizados até então,
 	sou programador e desenvolvo aplicações web">
 	<meta name="keywords" content="Silas Rodrigues, freelancer, programador, desenvolvedor">
@@ -13,20 +13,15 @@
 	<title>Portfólio | Silas Rodrigues</title>
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="../public/favicon.ico">
-	<!-- Fonte Awesome and Icons CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.css">
-	<link rel="stylesheet" href="../assets/css/icons.css">
+
 	<!-- Bootstrap 4.0.0 -->
 	<link rel="stylesheet" href="../assets/css/bootstrap.css">
-	<!-- Animate CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
-	<!-- Lightbox -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
 	<!-- Reset CSS -->
 	<link rel="stylesheet" href="../assets/css/reset.css">
 
 	<!-- My styles -->
-	<link rel="stylesheet" href="../assets/css/loader.css">
+	<link rel="stylesheet" href="../assets/css/style.css">
 	<link rel="stylesheet" href="../assets/css/header.css">
 	<link rel="stylesheet" href="../assets/css/home.css">
 	<link rel="stylesheet" href="../assets/css/services.css">
@@ -35,19 +30,29 @@
 	<link rel="stylesheet" href="../assets/css/certificates.css">
 	<link rel="stylesheet" href="../assets/css/form.css">
 	<link rel="stylesheet" href="../assets/css/footer.css">
-	<link rel="stylesheet" href="../assets/css/style.css">
+	<link rel="stylesheet" href="../assets/css/loader.css">
+
+	<!-- Fonte Awesome and Icons CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.css">
+	<link rel="stylesheet" href="../assets/css/icons.css">
+
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
+
+	<!-- Lightbox -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 
 	<!-- Media Queries -->
 	<link rel="stylesheet" href="../assets/css/mediaquery.css">
 
-	<!-- Font Awesome Script -->
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<!-- JQuery Plugin Script -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 	<!-- JQuery Compatible with JQuery Mask-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<!-- JQuery Validator -->
 	<script src="../assets/js/jquery.validate.min.js"></script>
+	<!-- Form Validator -->
+	<script src="../assets/js/formvalidator.js"></script>
 	<!-- Validator Messages -->
 	<script src="../assets/js/localization/messages_pt_BR.js"></script>
 	<!-- Mask Plugin JQuery -->
@@ -55,64 +60,7 @@
 
 	<!-- Smooth Scroll Function -->
 	<script src="../assets/js/smoth-scroll.js"></script>
-	<!-- Form Validator -->
- 	<script>
 
-	  jQuery(function ($) {
-
-          $.validator.addMethod("alphabetsnspace", function(value, element) {
-                return this.optional(element) || /^[a-zA-ZÀ-ú' ]*$/.test(value);
-            });
-
-        $("#formContact").validate({
-          rules: {
-             nome: {
-              alphabetsnspace: true,
-              minlength: 2,
-              maxlength: 15,
-              required: true
-
-             },
-             sobrenome: {
-              required: true,
-              minlength: 3,
-              maxlength: 20,
-              alphabetsnspace: true
-             },
-             email: {
-              required: true,
-              email: true
-             },
-             celular: {
-              required: true,
-              minlength: 15
-             },
-             mensagem: {
-              required: true,
-              maxlength: 450
-             }
-          },
-          messages:{
-             nome: {
-              required:"Por favor, informe seu nome",
-              alphabetsnspace: "Por favor, apenas letras"
-             },
-             sobrenome: {
-              required:"Por favor, informe seu sobrenome",
-              alphabetsnspace: "Por favor, apenas letras"
-             },
-             email: {
-              required:"Por favor, informe seu e-mail para contato"
-             },
-             celular: {
-              required:"Por favor, informe seu número de celular",
-              minlength:"Por favor, insira 11 dígitos (somente números)"
-             }
-            }
-        })
-      });
-        $("#celular").mask("(00) 00000-0000");
- 	</script>
 	<!-- Lightbox -->
 	<!-- Need to import before others libraries for solve tooltip conflict -->
 	<script src="../assets/js/lightbox-plus-jquery.min.js"></script>
@@ -124,7 +72,7 @@
 			<div class="nav-bar">
 				<div class="brand">
 					<div class="logo" data-toggle="tooltip" title="Acesse meu GitHub!" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2500" data-aos-offset="0">
-						<a href="https://github.com/SilasRodrigues19" target="_blank">
+						<a href="https://github.com/SilasRodrigues19" target="_blank" rel="noreferrer">
 							<img src="../assets/img/me.jpg" alt="Silas Rodrigues">
 						</a>
 					</div>
@@ -139,11 +87,11 @@
 							</div>
 						</label>
 						<ul>
-							<li><a class="scroll" href="#services" data-after="Services">Serviços</a></li>
-							<li><a class="scroll" href="#projects" data-after="Projects">Projetos</a></li>
-							<li><a class="scroll" href="#certificates" data-after="Courses">Certificados</a>
+							<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="450"><a class="scroll" href="#services" data-after="Services">Serviços</a></li>
+							<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="650"><a class="scroll" href="#projects" data-after="Projects">Projetos</a></li>
+							<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="850"><a class="scroll" href="#certificates" data-after="Courses">Certificados</a>
 							</li>
-							<li><a class="scroll" href="#form" data-after="Contact">Contato</a>
+							<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1050"><a class="scroll" href="#form" data-after="Contact">Contato</a>
 							</li>
 						</ul>
 				</div>
@@ -177,22 +125,22 @@
 			<aside class="social">
 				<ul>
 					<li>
-						<a href="https://whats.link/silasrodrigues21" target="_blank"><i class="fab fa-whatsapp"></i>
+						<a href="https://whats.link/silasrodrigues21" target="_blank" rel="noreferrer"><i class="fab fa-whatsapp"></i>
 							<span>WhatsApp</span>
 						</a>
 					</li>
 					<li>
-						<a href="https://twitter.com/Jinuye1" target="_blank"><i class="fab fa-twitter"></i>
+						<a href="https://twitter.com/Jinuye1" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i>
 							<span>Twitter</span>
 						</a>
 					</li>
 					<li>
-						<a href=""><i class="fab fa-linkedin"></i>
+						<a href="#"><i class="fab fa-linkedin" rel="noreferrer"></i>
 							<span>LinkedIn</span>
 						</a>
 					</li>
 					<li>
-						<a href="https://github.com/SilasRodrigues19" target="_blank"><i class="fab fa-github"></i>
+						<a href="https://github.com/SilasRodrigues19" target="_blank" rel="noreferrer"><i class="fab fa-github"></i>
 							<span>GitHub</span>
 						</a>
 					</li>
@@ -300,69 +248,70 @@
 							 </ol>
 						  <div class="carousel-inner">
 								<!-- Project 1 -->
-						    <div class="carousel-item" data-toggle="tooltip" title="Criado para o Streamer Luiz 'SimpSonsS' Gulherme, clique para visualizar!">
-						      <a href="https://siimpsonss.vercel.app" target="_blank">
+						    <div class="carousel-item" data-toggle="tooltip" title="Criado para o Streamer Luiz 'SimpSonsS' Guilherme, clique para visualizar!">
+						      <a href="https://siimpsonss.vercel.app" rel="noreferrer" target="_blank">
 						      	<img class="d-block w-100" src="../assets/img/project1.jpeg" alt="Stream do SimpSonsS">
 						      </a>
 						      <div class="carousel-caption">
-						        <h3>Stream do Luiz "SimpSonsS" Guilherme</h3>
+						        <h2>Stream do Luiz "SimpSonsS" Guilherme</h2>
 						      </div>
 						    </div>
 								<!-- Project 2 -->
 						    <div class="carousel-item" data-toggle="tooltip" title="Venda de serviço para jogo online">
-						      <a href="https://jobison-services.vercel.app" target="_blank">
+						      <a href="https://jobison-services.vercel.app" rel="noreferrer" target="_blank">
 						      	<img class="d-block w-100" src="../assets/img/project2.jpeg" alt="Jobison Services">
 						      </a>
 						      <div class="carousel-caption">
-						        <h3>Serviço de Elo Job League of Legends</h3>
+						        <h2>Serviço de Elo Job League of Legends</h2>
 						      </div>
 						    </div>
 								<!-- Project 3 -->
 						    <div class="carousel-item" data-toggle="tooltip" title="Sistema de cadastro de aluno e gerenciamento de cursos, alunos e matriculas">
-						      <a href="https://github.com/SilasRodrigues19/PHP-MySQL-DogCursos" target="_blank">
+						      <a href="https://github.com/SilasRodrigues19/PHP-MySQL-DogCursos" rel="noreferrer" target="_blank">
 						      	<img class="d-block w-100" src="../assets/img/project3.jpeg" alt="Sistema de cadastro de cursos">
 						      </a>
 						      <div class="carousel-caption">
-						        <h3>Dog Cursos - Matricule-se</h3>
+						        <h2>Dog Cursos - Matricule-se</h2>
 						      </div>
 						    </div>
 								<!-- Project 4 -->
 								<div class="carousel-item" data-toggle="tooltip" title="Jogo da cobrinha">
-						      <a href="https://snake-game-silasrodrigues19.vercel.app" target="_blank">
+						      <a href="https://snake-game-silasrodrigues19.vercel.app" rel="noreferrer" target="_blank">
 						      	<img class="d-block w-100" src="../assets/img/project4.jpeg" alt="Snake Game">
 						      </a>
 						      <div class="carousel-caption">
-						        <h3>Jogo da cobrinha feito em JavaScript</h3>
+						        <h2>Jogo da cobrinha feito em JavaScript</h2>
 						      </div>
 						    </div>
 								<!-- Project 5 -->
 								<div class="carousel-item active" data-toggle="tooltip" title="Custom Clone Instagram">
-						      <a href="https://clone-insta-homepage.vercel.app" target="_blank">
+						      <a href="https://clone-insta-homepage.vercel.app" rel="noreferrer" target="_blank">
 						      	<img class="d-block w-100" src="../assets/img/project5.jpeg" alt="Clone personalizado da home page do instagram">
 						      </a>
 						      <div class="carousel-caption">
-						        <h3>Clone da Home Page do Instagram</h3>
+						        <h2>Clone da Home Page do Instagram</h2>
 						      </div>
 						    </div>
 								<!-- Project 6 -->
 								<div class="carousel-item" data-toggle="tooltip" title="Buscando perfils com API do GitHub">
-						      <a href="#" target="_blank">
+						      <a href="#" rel="noreferrer" target="_blank">
 						      	<img class="d-block w-100" src="../assets/img/project6.jpeg" alt="Pesquisando com API do GitHub">
 						      </a>
 						      <div class="carousel-caption">
-						        <h3>Pesquisando com API do GitHub</h3>
+						        <h2>Pesquisando com API do GitHub</h2>
 						      </div>
 						    </div>
 						  </div>
 							<!-- Prev button -->
 						  <a class="carousel-control-prev" href="#jobsCarousel" role="button" data-slide="prev">
-						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						    <span class="sr-only"></span>
+
+						    <span class="carousel-control-prev-icon"></span>
+						    <span class="sr-only">prev</span>
 						  </a>
 							<!-- Next button -->
 						  <a class="carousel-control-next" href="#jobsCarousel" role="button" data-slide="next">
-						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-						    <span class="sr-only"></span>
+						    <span class="carousel-control-next-icon"></span>
+						    <span class="sr-only">next</span>
 						  </a>
 						</div>
 						<!-- End Caroussel-->
@@ -379,35 +328,35 @@
 				<hr data-aos="fade-up">
 			</div>
 			<div class="certificate" data-aos="fade-left" data-aos-duration="1200">
-				<a href="../assets/img/Certificados/bootstrap.jpeg" data-lightbox="mygallery" data-title="Bootstrap">
-					<img src="../assets/img/Certificados/bootstrap.jpeg" alt="Certificado Bootstrap" data-aos="fade-left" data-aos-duration="1200" data-aos-easing="ease-in-sine">
+				<a href="../assets/img/certificados/bootstrap.jpeg" data-lightbox="mygallery" data-title="Bootstrap">
+					<img src="../assets/img/certificados/bootstrap.jpeg" alt="Certificado Bootstrap" data-aos="fade-left" data-aos-duration="1200" data-aos-easing="ease-in-sine">
 				</a>
-				<a href="../assets/img/Certificados/git.jpeg" data-lightbox="mygallery" data-title="Git">
-					<img src="../assets/img/Certificados/git.jpeg" alt="Certificado Git" data-aos="fade-left" data-aos-duration="1250" data-aos-easing="ease-in-sine">
+				<a href="../assets/img/certificados/git.jpeg" data-lightbox="mygallery" data-title="Git">
+					<img src="../assets/img/certificados/git.jpeg" alt="Certificado Git" data-aos="fade-left" data-aos-duration="1250" data-aos-easing="ease-in-sine">
 				</a>
-				<a href="../assets/img/Certificados/HTML E CSS.jpeg" data-lightbox="mygallery" data-title="HTML e CSS">
-					<img src="../assets/img/Certificados/HTML E CSS.jpeg" alt="Certificado HTML e CSS" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+				<a href="../assets/img/certificados/HTML E CSS.jpeg" data-lightbox="mygallery" data-title="HTML e CSS">
+					<img src="../assets/img/certificados/HTML E CSS.jpeg" alt="Certificado HTML e CSS" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
-				<a href="../assets/img/Certificados/HTML E CSS2.jpeg" data-lightbox="mygallery" data-title="HTML e CSS 2">
-					<img src="../assets/img/Certificados/HTML E CSS2.jpeg" alt="Certificado HTML e CSS 2" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+				<a href="../assets/img/certificados/HTML E CSS2.jpeg" data-lightbox="mygallery" data-title="HTML e CSS 2">
+					<img src="../assets/img/certificados/HTML E CSS2.jpeg" alt="Certificado HTML e CSS 2" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
-				<a href="../assets/img/Certificados/html-basico.jpeg" data-lightbox="mygallery" data-title="HTML básico">
-					<img src="../assets/img/Certificados/html-basico.jpeg" alt="Certificado HTML básico" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+				<a href="../assets/img/certificados/html-basico.jpeg" data-lightbox="mygallery" data-title="HTML básico">
+					<img src="../assets/img/certificados/html-basico.jpeg" alt="Certificado HTML básico" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
-				<a href="../assets/img/Certificados/jquery.jpeg" data-lightbox="mygallery" data-title="jQuery">
-					<img src="../assets/img/Certificados/jquery.jpeg" alt="Certificado jQuery" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+				<a href="../assets/img/certificados/jquery.jpeg" data-lightbox="mygallery" data-title="jQuery">
+					<img src="../assets/img/certificados/jquery.jpeg" alt="Certificado jQuery" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
-				<a href="../assets/img/Certificados/logica.jpeg" data-lightbox="mygallery" data-title="Lógica">
-					<img src="../assets/img/Certificados/logica.jpeg" alt="Certificado Lógica" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+				<a href="../assets/img/certificados/logica.jpeg" data-lightbox="mygallery" data-title="Lógica">
+					<img src="../assets/img/certificados/logica.jpeg" alt="Certificado Lógica" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
-				<a href="../assets/img/Certificados/MySQL.jpeg" data-lightbox="mygallery" data-title="MySQL">
-					<img src="../assets/img/Certificados/MySQL.jpeg" alt="Certificado MySQL" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+				<a href="../assets/img/certificados/MySQL.jpeg" data-lightbox="mygallery" data-title="MySQL">
+					<img src="../assets/img/certificados/MySQL.jpeg" alt="Certificado MySQL" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
-				<a href="../assets/img/Certificados/php.jpeg" alt="Certificado PHP" data-lightbox="mygallery" data-title="PHP">
-					<img src="../assets/img/Certificados/php.jpeg" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+				<a href="../assets/img/certificados/php.jpeg" data-lightbox="mygallery" data-title="PHP">
+					<img src="../assets/img/certificados/php.jpeg" alt="Certificado PHP" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
-				<a href="../assets/img/Certificados/WebDesign.jpeg" data-lightbox="mygallery" data-title="Web Design">
-					<img src="../assets/img/Certificados/WebDesign.jpeg" alt="Certificado Web Design" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+				<a href="../assets/img/certificados/WebDesign.jpeg" data-lightbox="mygallery" data-title="Web Design">
+					<img src="../assets/img/certificados/WebDesign.jpeg" alt="Certificado Web Design" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
 
 			</div>
@@ -429,7 +378,7 @@
 			<div class="my-form" data-aos="zoom-in-up">
 		    <div class="row">
 		      <div class="col-12 text-center my-5">
-		        <h1 class="display-4"><i class="fa fa-paper-plane" aria-hidden="true"></i> Formulário de Contato</h1>
+		        <h1 class="display-4"><i class="fa fa-paper-plane"></i> Formulário de Contato</h1>
 		      </div>
 		    </div>
 
@@ -502,16 +451,16 @@
 
 					<div class="contact-item" data-toggle="tooltip" title="Me contate por e-mail">
 						<div data-aos="fade-in" data-aos-offset="0">
-							<a href="mailto:silasrodrigues.ti@hotmail.com?subject=Contato Site"><i class="fa fa-envelope"></i></a>
+							<a href="mailto:silasrodrigues.ti@hotmail.com?subject=Contato%20Site"><i class="fa fa-envelope"></i></a>
 						</div>
 					</div>
 
 					<div class="contact-item" data-toggle="tooltip" title="Veja meu curriculo">
 						<div data-aos="fade-right" data-aos-offset="0">
-							<a href="https://resume.io/r/IVkNM7feV" target="_blank"><i class="fa fa-file-pdf"></i></a>
+							<a href="https://resume.io/r/IVkNM7feV" rel="noreferrer" target="_blank"><i class="fa fa-file-pdf"></i></a>
 						</div>
 					</div>
-					<a id="smothScroll" href="#home" class="fa fa-arrow-up" aria-hidden="true" data-toggle="tooltip" title="Voltar para o topo" data-aos="fade-down" data-aos-offset="0"></a>
+					<a id="smothScroll" href="#home" class="fa fa-arrow-up" data-toggle="tooltip" title="Voltar para o topo" data-aos="fade-down" data-aos-offset="0"></a>
 				</div>
 				<p>Copyright &copy 2021 Silas Rodrigues. Todos os direitos reservados.</p>
 			</div>

@@ -149,6 +149,8 @@
 
 #hamburger:checked ~ label .menu .bar:after {
 	transform: rotate(225deg);
+	top: 0;
+	left: 0;
 }
 
 #hamburger:checked ~ label .menu .bar:before {
@@ -172,7 +174,7 @@
 }
 
 #header .menu.active .bar::after {
-	top: 0;
+	top: 8px;
 }
 
 /* End Header section */

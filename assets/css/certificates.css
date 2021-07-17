@@ -37,8 +37,8 @@
 	filter: none;
 	border-radius: 10px;
   margin: 15px;
-	width: 200px;
-  height: 150px;
+	max-width: 200px;
+  max-height: 150px;
 }
 
 .certificate img:hover {

@@ -117,5 +117,5 @@ Project Link: [https://github.com/SilasRodrigues19/silasdev.epizy.com](https://g
 [license-shield]: https://img.shields.io/github/license/SilasRodrigues19/silasdev.epizy.com.svg?style=for-the-badge
 [license-url]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/LICENSE
 [product-screenshot]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/preview.gif
-[product-screenshot]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/preview2.gif
+[product-screenshot2]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/preview2.gif
 

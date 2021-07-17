@@ -13,7 +13,7 @@
   animation-duration: 4s;
 }
 
-.carousel-caption h3 {
+.carousel-caption h2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;

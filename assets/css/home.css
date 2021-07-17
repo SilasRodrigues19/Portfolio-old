@@ -40,7 +40,7 @@
 }
 
 .infoAnimation {
-	animation: moveInfo 2.5s 0s forwards !important;
+	animation: moveInfo 2s 0s forwards !important;
 	color: #cacaca !important;
 }
 

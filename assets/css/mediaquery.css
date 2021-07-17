@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 @media only screen and (max-width: 768px) {
 	html {
-		font-family: 'Montserrat', cursive;
+		font-family: 'Open Sans', sans-serif;
 	}
 
 	.cta {
@@ -154,9 +155,9 @@
 	/* End Certificate Section */
 
 	/* Home and Footer*/
-	/*#footer h2, #footer p, .brand h1, #home h1, #home h2, #home .cta, #form*/
-	body {
-		font-family: 'Montserrat', cursive !important;
+	#footer h2, #footer p, .brand h1, #home h1, #home h2, #home .cta, #form
+	 {
+		font-family: 'Open Sans', sans-serif;
 	}
 }
 

@@ -28,12 +28,12 @@
   <ol>
     <ol>
       <a href="#about-the-project">About The Project</a>
-        <ul>
-          <li><a href="#built-with">Built with</a></li>
-          <li><a href="#desktop-view">Desktop view</a></li>
-          <li><a href="#mobile-view">Mobile view</a></li>
-          <li><a href="#404-mobile-and-desktop-view">404 View</a></li>
-        </ul>
+        <li>
+          <ul><li><a href="#built-with">Built with</a></li></ul>
+          <ul><li><a href="#desktop-view">Desktop view</a></li></ul>
+          <ul><li><a href="#mobile-view">Mobile view</a></li></ul>
+          <ul><li><a href="#404-mobile-and-desktop-view">404 View</a></li></ul>
+        </li>
     </ol>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>

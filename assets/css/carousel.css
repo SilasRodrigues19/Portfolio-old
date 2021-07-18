@@ -89,6 +89,9 @@
 }
 
 /* Lightbox rewrite */
+.lb-details {
+  font-family: Bradley Hand, cursive;
+}
 
 .lb-number {
   margin-top: 5px;

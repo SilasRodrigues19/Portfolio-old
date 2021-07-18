@@ -139,11 +139,6 @@
 						</a>
 					</li>
 					<li>
-						<a href="#"><i class="fab fa-linkedin" rel="noreferrer"></i>
-							<span>LinkedIn</span>
-						</a>
-					</li>
-					<li>
 						<a href="https://github.com/SilasRodrigues19" target="_blank" rel="noreferrer"><i class="fab fa-github"></i>
 							<span>GitHub</span>
 						</a>

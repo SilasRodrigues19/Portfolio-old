@@ -30,10 +30,10 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <ul>
-          <li><a href="#built-with"></a></li>
-          <li><a href="#desktop-view"></a></li>
-          <li><a href="#mobile-view"></a></li>
-          <li><a href="#404-mobile-and-desktop-view"></a></li>
+          <li><a href="#built-with">Built with</a></li>
+          <li><a href="#desktop-view">Desktop view</a></li>
+          <li><a href="#mobile-view">Mobile view</a></li>
+          <li><a href="#404-mobile-and-desktop-view">404 View</a></li>
         </ul>
       </ul>
     </li>

@@ -77,7 +77,10 @@
 
 
 @media only screen and (max-width: 500px) {
-	/* Header Section and Footer Section */
+	/* Header Section, Icons and Footer Section */
+	.social ul li a span {
+		font-family: Bradley Hand, cursive;
+	}
 
 	.brand h1 {
 		font-size: 2rem;
@@ -112,6 +115,7 @@
 	}
 
 	#header .nav-list ul a {
+		font-family: Bradley Hand, cursive;
 		animation: none !important;
 	}
 
@@ -150,6 +154,10 @@
 
 	.certificate {
 		height: 200px;
+	}
+
+	.lb-details {
+	  font-family: Bradley Hand, cursive;
 	}
 
 	/* End Certificate Section */

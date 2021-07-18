@@ -2,10 +2,13 @@
 	session_start();
 ?>
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="Cache-control" content="public">
+	<meta name="robots" content="index, nofollow">
+	<meta http-equiv="content-language" content="pt-br, en-US">
 	<meta name="description" content="Meu nome é Silas Rodrigues e este é meu portfolio com todos os trabalhos já realizados até então,
 	sou programador e desenvolvo aplicações web">
 	<meta name="keywords" content="Silas Rodrigues, freelancer, programador, desenvolvedor">
@@ -56,11 +59,6 @@
 		<div class="header container">
 			<div class="nav-bar">
 				<div class="brand">
-					<div class="logo" data-toggle="tooltip" title="Acesse meu GitHub!" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2500" data-aos-offset="0">
-						<a href="https://github.com/SilasRodrigues19" target="_blank" rel="noreferrer">
-							<img src="../assets/img/me.webp" alt="Silas Rodrigues">
-						</a>
-					</div>
 					<a href="#home" class="scroll margin"><h1>Silas <span>Rodrigues</span></h1></a>
 				</div>
 				<div class="nav-list">
@@ -447,19 +445,17 @@
 		</footer>
 	<!-- End footer -->
 
-
-	<!-- JQuery Plugin Script -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 	<!-- JQuery Compatible with JQuery Mask-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 	<!-- JQuery Validator -->
 	<script src="../assets/js/jquery.validate.min.js"></script>
-	<!-- Form Validator -->
-	<script src="../assets/js/formvalidator.js"></script>
-	<!-- Validator Messages -->
-	<script src="../assets/js/localization/messages_pt_BR.js"></script>
+
 	<!-- Mask Plugin JQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+
+	<!-- Form Validator -->
+	<script src="../assets/js/formvalidator.js"></script>
 
 	<!-- Smooth Scroll Function -->
 	<script src="../assets/js/smoth-scroll.js"></script>
@@ -468,20 +464,21 @@
 	<script src="../assets/js/lightbox-plus-jquery.min.js"></script>
 
 	<!-- Bootstrap JS -->
-
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 	<!-- Aos Animate -->
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script src="../assets/js/script.js"></script>
 
-
-    <script>
-    	AOS.init({
-    				duration: 1200,
-    			});
-    </script>
+	<!-- Validator Messages -->
+	<script src="../assets/js/localization/messages_pt_BR.js"></script>
+  <script>
+  	AOS.init({
+  				duration: 1200,
+  			});
+  </script>
 
 
 </body>

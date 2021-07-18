@@ -29,7 +29,12 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <ul>
+          <li><a href="#built-with"></a></li>
+          <li><a href="#desktop-view"></a></li>
+          <li><a href="#mobile-view"></a></li>
+          <li><a href="#404-mobile-and-desktop-view"></a></li>
+        </ul>
       </ul>
     </li>
     <li><a href="#contributing">Contributing</a></li>

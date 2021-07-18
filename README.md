@@ -45,7 +45,7 @@
 
 [![About View Desktop][product-screenshot]](http://silasdev.epizy.com)
 [![About View Mobile][product-screenshot2]](http://silasdev.epizy.com)
-[![About View Mobile][product-screenshot3]](http://silasdev.epizy.com/Example404)
+[![About View 404][product-screenshot3]](http://silasdev.epizy.com/Example404)
 
 
 This project was built to show some of my projects and my freelancing services.
@@ -119,6 +119,6 @@ Project Link: [https://github.com/SilasRodrigues19/silasdev.epizy.com](https://g
 [license-url]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/LICENSE
 [product-screenshot]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/preview.gif
 [product-screenshot2]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/preview2.gif
-[product-screenshot2]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/preview3.gif
+[product-screenshot3]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/preview3.gif
 
 

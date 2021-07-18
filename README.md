@@ -43,8 +43,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+### Desktop View
 [![About View Desktop][product-screenshot]](http://silasdev.epizy.com)
+
+### Mobile View
 [![About View Mobile][product-screenshot2]](http://silasdev.epizy.com)
+
+### 404 Mobile and Desktop view
 [![About View 404][product-screenshot3]](http://silasdev.epizy.com/Example404)
 
 

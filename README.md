@@ -31,10 +31,9 @@
       <ul>
         <li><a href="#built-with">Built With</a>
           <ul>
-            <li><a href="#built-with">Built With</a>
-            <li><a href="#desktop-view">Desktop View</a>
-            <li><a href="#mobile-view">Mobile View</a>
-            <li><a href="#404-mobile-and-desktop-view">404 View</a>
+            <li><a href="#desktop-view">Desktop View</a></li>
+            <li><a href="#mobile-view">Mobile View</a></li>
+            <li><a href="#404-mobile-and-desktop-view">404 View</a></li>
           </ul>
         </li>
       </ul>

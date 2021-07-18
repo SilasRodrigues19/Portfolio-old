@@ -3,7 +3,7 @@
 
 #home {
 	font-family: Bradley Hand, cursive;
-	background-image: url(../img/code.jpeg);
+	background-image: url(../img/code.webp);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -18,7 +18,7 @@
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(to right, #434343 0%, black 100%);
+	background-image: linear-gradient(to right, #151515 0%, #000 100%);
 	opacity: .7;
 	z-index: -1;
 }

@@ -36,6 +36,9 @@
 	<link rel="stylesheet" href="../assets/css/footer.css">
 	<link rel="stylesheet" href="../assets/css/loader.css">
 
+	<!-- Media Queries -->
+	<link rel="stylesheet" href="../assets/css/mediaquery.css">
+
 	<!-- Fonte Awesome and Icons CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.css">
 	<link rel="stylesheet" href="../assets/css/icons.css">
@@ -46,28 +49,6 @@
 	<!-- Lightbox -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 
-	<!-- Media Queries -->
-	<link rel="stylesheet" href="../assets/css/mediaquery.css">
-
-	<!-- JQuery Plugin Script -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-	<!-- JQuery Compatible with JQuery Mask-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<!-- JQuery Validator -->
-	<script src="../assets/js/jquery.validate.min.js"></script>
-	<!-- Form Validator -->
-	<script src="../assets/js/formvalidator.js"></script>
-	<!-- Validator Messages -->
-	<script src="../assets/js/localization/messages_pt_BR.js"></script>
-	<!-- Mask Plugin JQuery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
-
-	<!-- Smooth Scroll Function -->
-	<script src="../assets/js/smoth-scroll.js"></script>
-
-	<!-- Lightbox -->
-	<!-- Need to import before others libraries for solve tooltip conflict -->
-	<script src="../assets/js/lightbox-plus-jquery.min.js"></script>
 </head>
 <body ondragstart="false">
 	<!-- Header -->
@@ -328,34 +309,34 @@
 			</div>
 			<div class="certificate" data-aos="fade-left" data-aos-duration="1200">
 				<a href="../assets/img/certificados/bootstrap.webp" data-lightbox="mygallery" data-title="Bootstrap">
-					<img src="../assets/img/certificados/bootstrap.webp" alt="Certificado Bootstrap" data-aos="fade-left" data-aos-duration="1200" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/bootstrap.webp" width="200" height="150" alt="Certificado Bootstrap" data-aos="fade-left" data-aos-duration="1200" data-aos-easing="ease-in-sine">
 				</a>
 				<a href="../assets/img/certificados/git.webp" data-lightbox="mygallery" data-title="Git">
-					<img src="../assets/img/certificados/git.webp" alt="Certificado Git" data-aos="fade-left" data-aos-duration="1250" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/git.webp" width="200" height="150" alt="Certificado Git" data-aos="fade-left" data-aos-duration="1250" data-aos-easing="ease-in-sine">
 				</a>
 				<a href="../assets/img/certificados/HTML-CSS.webp" data-lightbox="mygallery" data-title="HTML e CSS">
-					<img src="../assets/img/certificados/HTML-CSS.webp" alt="Certificado HTML e CSS" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/HTML-CSS.webp" width="200" height="150" alt="Certificado HTML e CSS" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
 				<a href="../assets/img/certificados/HTML-CSS2.webp" data-lightbox="mygallery" data-title="HTML e CSS 2">
-					<img src="../assets/img/certificados/HTML-CSS2.webp" alt="Certificado HTML e CSS 2" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/HTML-CSS2.webp" width="200" height="150" alt="Certificado HTML e CSS 2" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
 				<a href="../assets/img/certificados/html-basico.webp" data-lightbox="mygallery" data-title="HTML básico">
-					<img src="../assets/img/certificados/html-basico.webp" alt="Certificado HTML básico" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/html-basico.webp" width="200" height="150" alt="Certificado HTML básico" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
 				<a href="../assets/img/certificados/jquery.webp" data-lightbox="mygallery" data-title="jQuery">
-					<img src="../assets/img/certificados/jquery.webp" alt="Certificado jQuery" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/jquery.webp" width="200" height="150" alt="Certificado jQuery" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
 				<a href="../assets/img/certificados/logica.webp" data-lightbox="mygallery" data-title="Lógica">
-					<img src="../assets/img/certificados/logica.webp" alt="Certificado Lógica" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/logica.webp" width="200" height="150" alt="Certificado Lógica" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
 				<a href="../assets/img/certificados/MySQL.webp" data-lightbox="mygallery" data-title="MySQL">
-					<img src="../assets/img/certificados/MySQL.webp" alt="Certificado MySQL" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/MySQL.webp" width="200" height="150" alt="Certificado MySQL" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
 				<a href="../assets/img/certificados/php.webp" data-lightbox="mygallery" data-title="PHP">
-					<img src="../assets/img/certificados/php.webp" alt="Certificado PHP" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/php.webp" width="200" height="150" alt="Certificado PHP" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
 				<a href="../assets/img/certificados/WebDesign.webp" data-lightbox="mygallery" data-title="Web Design">
-					<img src="../assets/img/certificados/WebDesign.webp" alt="Certificado Web Design" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/WebDesign.webp" width="200" height="150" alt="Certificado Web Design" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
 
 			</div>
@@ -465,6 +446,26 @@
 			</div>
 		</footer>
 	<!-- End footer -->
+
+
+	<!-- JQuery Plugin Script -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+	<!-- JQuery Compatible with JQuery Mask-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<!-- JQuery Validator -->
+	<script src="../assets/js/jquery.validate.min.js"></script>
+	<!-- Form Validator -->
+	<script src="../assets/js/formvalidator.js"></script>
+	<!-- Validator Messages -->
+	<script src="../assets/js/localization/messages_pt_BR.js"></script>
+	<!-- Mask Plugin JQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+
+	<!-- Smooth Scroll Function -->
+	<script src="../assets/js/smoth-scroll.js"></script>
+
+	<!-- Lightbox -->
+	<script src="../assets/js/lightbox-plus-jquery.min.js"></script>
 
 	<!-- Bootstrap JS -->
 

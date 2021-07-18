@@ -56,7 +56,7 @@
 [![About View Mobile][product-screenshot2]](http://silasdev.epizy.com)
 
 ### 404 Mobile and Desktop view
-[![About View 404][product-screenshot3]](http://silasdev.epizy.com/Example404)
+[![About View 404][product-screenshot3]](http://silasrodrigues.epizy.com/Example404)
 
 
 This project was built to show some of my projects and my freelancing services.

@@ -32,8 +32,9 @@
         <li><a href="#built-with">Built With</a>
           <ul>
             <li><a href="#desktop-view">Desktop View</a></li>
+            <li><a href="#404-view">404 View</a></li>
             <li><a href="#mobile-view">Mobile View</a></li>
-            <li><a href="#404-mobile-and-desktop-view">404 View</a></li>
+            <li><a href="#404-mobile-view">404 Mobile View</a></li>
           </ul>
         </li>
       </ul>
@@ -52,11 +53,14 @@
 ### Desktop View
 [![About View Desktop][product-screenshot]](http://silasdev.epizy.com)
 
-### Mobile View
+### 404 View
 [![About View Mobile][product-screenshot2]](http://silasdev.epizy.com)
 
-### 404 Mobile and Desktop view
+### Mobile View
 [![About View 404][product-screenshot3]](http://silasrodrigues.epizy.com/Example404)
+
+### 404 Mobile View
+[![About View 404][product-screenshot4]](http://silasrodrigues.epizy.com/Example404)
 
 
 This project was built to show some of my projects and my freelancing services.
@@ -129,7 +133,8 @@ Project Link: [https://github.com/SilasRodrigues19/silasdev.epizy.com](https://g
 [license-shield]: https://img.shields.io/github/license/SilasRodrigues19/silasdev.epizy.com.svg?style=for-the-badge
 [license-url]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/LICENSE
 [product-screenshot]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/preview.gif
-[product-screenshot2]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/preview2.gif
-[product-screenshot3]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/preview3.gif
+[product-screenshot2]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/preview404.png
+[product-screenshot3]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/preview2.gif
+[product-screenshot4]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/preview404-mobile.png
 
 

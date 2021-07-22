@@ -34,7 +34,6 @@
             <li><a href="#desktop-view">Desktop View</a></li>
             <li><a href="#404-view">404 View</a></li>
             <li><a href="#mobile-view">Mobile View</a></li>
-            <li><a href="#404-mobile-view">404 Mobile View</a></li>
           </ul>
         </li>
       </ul>
@@ -52,15 +51,13 @@
 
 ### Desktop View
 [![About View Desktop][product-screenshot]](http://silasdev.epizy.com)
-
+-
 ### 404 View
 [![About View Mobile][product-screenshot2]](http://silasdev.epizy.com)
 
 ### Mobile View
-[![About View 404][product-screenshot3]](http://silasrodrigues.epizy.com/Example404)
-
-### 404 Mobile View
-[![About View 404][product-screenshot4]](http://silasrodrigues.epizy.com/Example404)
+  [![About View 404][product-screenshot3]](http://silasrodrigues.epizy.com/Example404)
+  [![About View 404][product-screenshot4]](http://silasrodrigues.epizy.com/Example404)
 
 
 This project was built to show some of my projects and my freelancing services.

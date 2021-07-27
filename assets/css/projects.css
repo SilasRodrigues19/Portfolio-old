@@ -75,9 +75,11 @@
 #projects .carousel-item img {
 	flex-basis: 50%;
 	height: 100%;
+	filter: grayscale(1);
 }
 
 .carousel-item img:hover {
-	transform: scale(.9);
+	filter: grayscale(0) !important;
+	transform: scale(.94);
 }
 /* End Projects Section */

@@ -29,7 +29,7 @@
 #header .nav-list ul {
 	list-style: none;
 	position: absolute;
-	background-color: rgba(31, 30, 30, .95);
+	background-color: rgba(0, 0, 0, .75);
 	width: 100vw;
 	height: 100vh;
 	left: 100%;
@@ -159,6 +159,7 @@
 	left: 0;
 	width: 100%;
 }
+
 
 #header .menu .bar::after {
 	border-radius: 20px;

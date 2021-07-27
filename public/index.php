@@ -52,6 +52,21 @@
 	<!-- Lightbox -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 
+	<!-- JQuery Compatible with JQuery Mask-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	<!-- JQuery Validator -->
+	<script src="../assets/js/jquery.validate.min.js"></script>
+
+	<!-- Mask Plugin JQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+	<!-- Form Validator -->
+	<script src="../assets/js/formvalidator.js"></script>
+
+  <!-- Validator Messages -->
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_ptbr.js"></script>
+	<!-- Scripts need to be imported before </head> to resolve validation messages error -->
 </head>
 <body ondragstart="false">
 	<!-- Header -->
@@ -72,7 +87,7 @@
 						<ul>
 							<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="450"><a class="scroll" href="#services" data-after="Services">Serviços</a></li>
 							<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="650"><a class="scroll" href="#projects" data-after="Projects">Projetos</a></li>
-							<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="850"><a class="scroll" href="#certificates" data-after="Courses">Certificados</a>
+							<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="850"><a class="scroll" href="#certificates" data-after="Courses">Cursos</a>
 							</li>
 							<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1050"><a class="scroll" href="#form" data-after="Contact">Contato</a>
 							</li>
@@ -108,7 +123,8 @@
 			<aside class="social">
 				<ul>
 					<li>
-						<a href="https://whats.link/silasrodrigues21" target="_blank" rel="noreferrer"><i class="fab fa-whatsapp"></i>
+						<a href="https://whats.link/silasrodrigues21" target="_blank" rel="noreferrer">
+							<i class="fab fa-whatsapp"></i>
 							<span>WhatsApp</span>
 						</a>
 					</li>
@@ -130,71 +146,89 @@
 	</section>
 	<!-- End Home Section -->
 
-
-	<!-- Service Section -->
-	<section id="services" >
-		<div class="services container">
-			<div class="service-top">
-				<h1 class="section-title" data-aos="fade-down">
-					Habilidades
-				</h1>
-				<p data-aos="fade-up">Abaixo estão as principais ferramentas e tecnologias que eu utilizo para realizar os serviços prestados.</p>
-			</div>
-			<div class="service-bottom">
-				<div class="service-item" data-aos="fade-up-right">
-					<div class="icon">
-						<i class="fa fa-code"></i>
-					</div>
-					<h2 data-aos="fade-down">Web Developer</h2>
-					<p data-aos="fade-up">Desenvolvimento de sites com designs modernos e responsivos.</p>
-				</div>
-
-				<div class="service-item" data-aos="fade-up-left">
-					<div class="icon">
-						<i class="fa fa-tools"></i>
-					</div>
-					<h2 data-aos="fade-down">Tecnologias</h2>
-					<p data-aos="fade-up">Algumas das tecnologias e ferramentas que eu utilizo</p>
-					<div class="service-imgBx">
-						<img data-aos="fade-left" data-aos-duration="900" src="../assets/img/languagens/html.webp" alt="HTML Logo" data-toggle="tooltip" title="HTML 5">
-						<img data-aos="fade-left" data-aos-duration="700" src="../assets/img/languagens/css.webp" alt="CSS Logo" data-toggle="tooltip" title="CSS 3">
-						<img data-aos="fade-left" data-aos-duration="500" src="../assets/img/languagens/javascript.webp" alt="JavaScript Logo" data-toggle="tooltip" title="JavaScript">
-						<img data-aos="fade-left" data-aos-duration="300" src="../assets/img/languagens/php.webp" alt="PHP Logo" data-toggle="tooltip" title="PHP">
-						<img data-aos="fade-left" data-aos-duration="500" src="../assets/img/languagens/mysql.webp" alt="MySQL Logo" data-toggle="tooltip" title="MySQL">
-						<img data-aos="fade-left" data-aos-duration="700" src="../assets/img/languagens/git.webp" alt="Git Logo" data-toggle="tooltip" title="Git">
-						<img data-aos="fade-left" data-aos-duration="900" src="../assets/img/languagens/figma.webp" alt="Figma Logo" data-toggle="tooltip" title="Figma">
-						<img data-aos="fade-left" data-aos-duration="1200" src="../assets/img/languagens/react.webp" alt="React Logo" data-toggle="tooltip" title="React JS">
-						<img data-aos="fade-left" data-aos-duration="1400" src="../assets/img/languagens/bootstrap.webp" alt="Bootstrap Logo" data-toggle="tooltip" title="Bootstrap">
-						<img data-aos="fade-left" data-aos-duration="1600" src="../assets/img/languagens/bulma.webp" alt="Bulma Logo" data-toggle="tooltip" title="Bulma">
-						<img data-aos="fade-left" data-aos-duration="1800" src="../assets/img/languagens/jquery.webp" alt="jQuery Logo" data-toggle="tooltip" title="jQuery">
-					</div>
-				</div>
-
-
-				<div class="service-item" data-aos="fade-up-right">
-					<div class="icon">
-						<i class="fa fa-laptop-code"></i>
-					</div>
-					<h2 data-aos="fade-down">Projetos</h2>
-					<p data-aos="fade-up">Focado em manter a mente ocupada aperfeiçoando o que eu
-					sei e buscando aprender tecnologias, linguagens, padrões de desenvolvimento e
-				 	inumeras outras coisas com foco em desenvolvimento web.</p>
-				</div>
-
-				<div class="service-item" data-aos="fade-up-left">
-					<div class="icon">
-						<i class="fa fa-file-word"></i>
-					</div>
-					<h2 data-aos="fade-down">Documentos em ABNT</h2>
-					<p data-aos="fade-up">Formatação de TCC's e trabalhos acadêmicos nas normas da Associação Brasileira
-					de Normas Técnicas (ABNT)</p>
-				</div>
-			</div>
+  <!-- Service Section -->
+  <section id="services">
+  	<div class="section-title">
+  		<h1 data-aos="fade-down">Conhecimentos</h1>
+			<p data-aos="fade-up">Abaixo estão as principais ferramentas e tecnologias que eu utilizo <br> para realizar os serviços prestados.</p>
+			<hr data-aos="fade-down">
 		</div>
-		<svg class="serviceSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-		  <path fill="#9890e3 " fill-opacity="1" d="M0,160L26.7,165.3C53.3,171,107,181,160,170.7C213.3,160,267,128,320,106.7C373.3,85,427,75,480,90.7C533.3,107,587,149,640,149.3C693.3,149,747,107,800,122.7C853.3,139,907,213,960,229.3C1013.3,245,1067,203,1120,197.3C1173.3,192,1227,224,1280,250.7C1333.3,277,1387,299,1413,309.3L1440,320L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
-		</svg>
-	</section>
+		<div class="knowledges">
+  		<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
+  			<div class="knowledge-header">
+  				<img src="../assets/img/languagens/html.webp" alt="HTML Logo" data-toggle="tooltip" title="HTML 5">
+					<p>Linguagem de marcação de texto para estruturar e apresentar páginas web.</p>
+  			</div>
+  		</div>
+  		<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
+  			<div class="knowledge-header">
+  				<img src="../assets/img/languagens/css.webp" alt="CSS Logo" data-toggle="tooltip" title="CSS">
+					<p>Utilizado para estilizar a aparência de uma página, animar, usar transições e afins.</p>
+  			</div>
+  		</div>
+  		<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
+  			<div class="knowledge-header">
+  				<img src="../assets/img/languagens/javascript.webp" alt="JavaScript Logo" data-toggle="tooltip" title="JavaScript">
+					<p>Linguagem de programação que permite a criação de conteúdos dinâmicos e deixá-lo mais interativo.</p>
+  			</div>
+  		</div>
+  		<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
+  			<div class="knowledge-header">
+  				<img src="../assets/img/languagens/react.webp" alt="ReactJS Logo" data-toggle="tooltip" title="ReactJS">
+					<p>React JS é uma biblioteca JavaScript para a criação de interfaces de usuário ou UI (user interface).</p>
+  			</div>
+  		</div>
+  		<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
+  			<div class="knowledge-header">
+  				<img src="../assets/img/languagens/mysql.webp" alt="MySQL Logo" data-toggle="tooltip" title="MySQL">
+					<p>O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL.</p>
+  			</div>
+  		</div>
+  		<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
+  			<div class="knowledge-header">
+					<img src="../assets/img/languagens/jquery.webp" alt="jquery Logo" data-toggle="tooltip" title="jQuery">
+					<p>jQuery é uma biblioteca JavaScript que facilita a manipulação de eventos, animações, HTML e utilização de AJAX</p>
+  			</div>
+  		</div>
+			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
+  			<div class="knowledge-header">
+  				<img src="../assets/img/languagens/figma.webp" alt="Figma Logo" data-toggle="tooltip" title="Figma">
+					<p>O Figma é uma ferramenta de design para interfaces, que oferece a possibilidade de trabalho colaborativo.</p>
+  			</div>
+  		</div>
+			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
+  			<div class="knowledge-header">
+					<img src="../assets/img/languagens/bulma.webp" alt="Bulma Logo" data-toggle="tooltip" title="Bulma">
+					<p>Bulma é um framework CSS totalmente gratuito, inspirado no Bootstrap e baseado em Flexbox, que já tem uma compatibilidade bem grande entre os navegadores.</p>
+  			</div>
+			</div>
+			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
+				<div class="knowledge-header">
+					<img src="../assets/img/languagens/php.webp" alt="PHP Logo" data-toggle="tooltip" title="PHP">
+					<p>PHP é uma linguagem de programação web que favorece a conexão entre os servidores e a interface do usuário.</p>
+  			</div>
+			</div>
+			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
+				<div class="knowledge-header">
+          <img src="../assets/img/languagens/git.webp" alt="Git Logo" data-toggle="tooltip" title="Git">
+					<p>Git é um sistema de controle de versão de projetos.</p>
+				</div>
+			</div>
+			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
+				<div class="knowledge-header">
+					<img src="../assets/img/languagens/bootstrap.webp" alt="Bootstrap Logo" data-toggle="tooltip" title="Bootstrap">
+					<p>Bootstrap é um framework CSS moderno que organiza e gerencia o layout de um site.</p>
+				</div>
+  		</div>
+			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
+				<div class="knowledge-header">
+					<img src="../assets/img/languagens/sass.webp" alt="SASS Logo" data-toggle="tooltip" title="SASS">
+					<p>SASS é uma linguagem de extensão ao CSS que dá um controle mais profissional e dinâmico.</p>
+				</div>
+  		</div>
+    </div>
+
+  </section>
 	<!-- End Service Section -->
 
 	<!-- Projects Section -->
@@ -445,18 +479,6 @@
 		</footer>
 	<!-- End footer -->
 
-	<!-- JQuery Compatible with JQuery Mask-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-	<!-- JQuery Validator -->
-	<script src="../assets/js/jquery.validate.min.js"></script>
-
-	<!-- Mask Plugin JQuery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
-
-	<!-- Form Validator -->
-	<script src="../assets/js/formvalidator.js"></script>
-
 	<!-- Smooth Scroll Function -->
 	<script src="../assets/js/smoth-scroll.js"></script>
 
@@ -472,8 +494,7 @@
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script src="../assets/js/script.js"></script>
 
-	<!-- Validator Messages -->
-	<script src="../assets/js/localization/messages_pt_BR.js"></script>
+
   <script>
   	AOS.init({
   				duration: 1200,

@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 @media only screen and (max-width: 768px) {
@@ -29,14 +28,12 @@
 		font-size: 2rem;
 	}
 
-	#services .service-bottom {
-		display: initial;
-	}
-
-	#services .service-item {
-		width: 405px;
-		padding: 25px;
-		margin: 2.5% 0 10% 0;
+	.knowledges {
+		font-family: 'Open Sans', sans-serif;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
 	}
 
 	/* End Home section */
@@ -78,45 +75,52 @@
 
 @media only screen and (max-width: 500px) {
 	/* Header Section, Icons and Footer Section */
-	.social ul li a span {
-		font-family: Bradley Hand, cursive;
-	}
-
 	.brand h1 {
 		font-size: 2rem;
 	}
 
+	#header .nav-list ul {
+		clip-path: ellipse(365px 370px at right);
+	}
+
+	#header .nav-list ul a > #hamburger ~ label .menu .bar:before {
+		transform: rotate(0) !important;
+		top: 0;
+		left: 0;
+		width: 100%;
+}
+
 	#header .nav-list ul a::before {
 		position: absolute;
-    color: gray;
-    left: 69px;
-    font-family: "Material Icons";
-    font-size: 25px;
+    left: 80px;
 	}
 
 	#header .nav-list ul a:hover::before {
-		content: '' !important;
+		background-image: none !important;
+	}
+
+	#header .nav-list ul li a::before {
+		content: ' ';
+		filter: invert(1);
+		background-size: cover;
+		width: 25px;
+		height: 25px;
 	}
 
 	#header .nav-list ul li:nth-child(1) a::before {
-		content: '\ef54';
+		background-image: url(../img/code2.webp);
 	}
 
 	#header .nav-list ul li:nth-child(2) a::before {
-		content: '\e86f';
+		background-image: url(../img/computer.webp);
 	}
 
 	#header .nav-list ul li:nth-child(3) a::before {
-		content: '\ea3f';
+		background-image: url(../img/medal.webp);
 	}
 
 	#header .nav-list ul li:nth-child(4) a::before {
-		content: '\e0d0';
-	}
-
-	#header .nav-list ul a {
-		font-family: Bradley Hand, cursive;
-		animation: none !important;
+		background-image: url(../img/contact.webp);
 	}
 
 	#home h1 {
@@ -156,14 +160,11 @@
 		height: 200px;
 	}
 
-	.lb-details {
-	  font-family: Bradley Hand, cursive;
-	}
-
 	/* End Certificate Section */
 
 	/* Home and Footer*/
-	#footer h2, #footer p, .brand h1, #home h1, #home h2, #home .cta, #form
+	#footer h2, #footer p, .brand h1, #home h1, #home h2, #home .cta, #form, .lb-details,
+	#header .nav-list ul a, .social ul li a span
 	 {
 		font-family: 'Open Sans', sans-serif;
 	}

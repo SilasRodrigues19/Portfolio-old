@@ -36,6 +36,11 @@
 		flex-direction: column;
 	}
 
+	.knowledge-header img {
+		transform: scale(.7) !important;
+    margin: 0 35px 0 55px !important;
+	}
+
 	/* End Home section */
 
 	/* Services section */

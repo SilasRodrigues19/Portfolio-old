@@ -1,7 +1,7 @@
 /* Header section */
 #header {
 	position: fixed;
-	font-family: Bradley Hand, cursive;
+	font-family: Bradley Hand, cursive, 'Open Sans', sans-serif;
 	user-select: none;
 	z-index: 1000;
 	left: 0;

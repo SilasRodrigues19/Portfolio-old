@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Special+Elite');
 
 #home {
-	font-family: Bradley Hand, cursive;
+	font-family: Bradley Hand, cursive, 'Open Sans', sans-serif;
 	background-image: url(../img/code.webp);
 	background-size: cover;
 	background-position: top center;

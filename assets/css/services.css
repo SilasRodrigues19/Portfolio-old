@@ -121,7 +121,7 @@
 
 .knowledge-header p {
   font-size: 1.2rem;
-  font-family: Bradley Hand, cursive;
+  font-family: Bradley Hand, cursive, 'Open Sans', sans-serif;
 	color: #111;
 	margin-bottom: 10px;
 }

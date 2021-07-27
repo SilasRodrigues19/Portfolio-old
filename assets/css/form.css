@@ -3,7 +3,7 @@
 }
 
 #form {
-  font-family: 'MedievalSharp', cursive;
+  font-family: 'MedievalSharp', cursive, 'Open Sans', sans-serif;
 	background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
 

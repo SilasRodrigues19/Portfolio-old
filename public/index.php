@@ -19,15 +19,28 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
   <link rel="manifest" href="assets/img/site.webmanifest">
-	<link rel="shortcut icon" href="../public/favicon.ico">
+	<link rel="shortcut icon" type="image/png" href="../public/favicon.ico">
 
 	<!-- Bootstrap 4.0.0 -->
+	<link rel="preload" href="../assets/css/bootstrap.css" as="style">
 	<link rel="stylesheet" href="../assets/css/bootstrap.css">
 
 	<!-- Reset CSS -->
+	<link rel="preload" href="../assets/css/reset.css" as="style">
 	<link rel="stylesheet" href="../assets/css/reset.css">
 
 	<!-- My styles -->
+	<link rel="preload" href="../assets/css/style.css" as="style">
+	<link rel="preload" href="../assets/css/header.css" as="style">
+	<link rel="preload" href="../assets/css/home.css" as="style">
+	<link rel="preload" href="../assets/css/services.css" as="style">
+	<link rel="preload" href="../assets/css/projects.css" as="style">
+	<link rel="preload" href="../assets/css/carousel.css" as="style">
+	<link rel="preload" href="../assets/css/certificates.css" as="style">
+	<link rel="preload" href="../assets/css/form.css" as="style">
+	<link rel="preload" href="../assets/css/footer.css" as="style">
+	<link rel="preload" href="../assets/css/loader.css" as="style">
+
 	<link rel="stylesheet" href="../assets/css/style.css">
 	<link rel="stylesheet" href="../assets/css/header.css">
 	<link rel="stylesheet" href="../assets/css/home.css">
@@ -40,14 +53,18 @@
 	<link rel="stylesheet" href="../assets/css/loader.css">
 
 	<!-- Media Queries -->
+	<link rel="preload" href="../assets/css/mediaquery.css" as="style">
 	<link rel="stylesheet" href="../assets/css/mediaquery.css">
 
 	<!-- Fonte Awesome and Icons CSS -->
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.css" as="style">
+	<link rel="preload" href="../assets/css/icons.css" as="style">
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.css">
 	<link rel="stylesheet" href="../assets/css/icons.css">
 
 	<!-- Animate CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
 
 	<!-- Lightbox -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
@@ -56,16 +73,16 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 	<!-- JQuery Validator -->
-	<script src="../assets/js/jquery.validate.min.js"></script>
+	<script defer src="../assets/js/jquery.validate.min.js"></script>
 
 	<!-- Mask Plugin JQuery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 
 	<!-- Form Validator -->
-	<script src="../assets/js/formvalidator.js"></script>
+	<script defer src="../assets/js/formvalidator.js"></script>
 
   <!-- Validator Messages -->
-	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_ptbr.js"></script>
+	<script defer src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_ptbr.js"></script>
 	<!-- Scripts need to be imported before </head> to resolve validation messages error -->
 </head>
 <body ondragstart="false">
@@ -156,73 +173,73 @@
 		<div class="knowledges">
   		<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
   			<div class="knowledge-header">
-  				<img src="../assets/img/languagens/html.webp" alt="HTML Logo" data-toggle="tooltip" title="HTML 5">
+  				<img src="../assets/img/languagens/html.webp" width="50" height="50" alt="HTML Logo" data-toggle="tooltip" title="HTML 5">
 					<p>Linguagem de marcação de texto para estruturar e apresentar páginas web.</p>
   			</div>
   		</div>
   		<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
   			<div class="knowledge-header">
-  				<img src="../assets/img/languagens/css.webp" alt="CSS Logo" data-toggle="tooltip" title="CSS">
+  				<img src="../assets/img/languagens/css.webp" width="50" height="50" alt="CSS Logo" data-toggle="tooltip" title="CSS">
 					<p>Utilizado para estilizar a aparência de uma página, animar, usar transições e afins.</p>
   			</div>
   		</div>
   		<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
   			<div class="knowledge-header">
-  				<img src="../assets/img/languagens/javascript.webp" alt="JavaScript Logo" data-toggle="tooltip" title="JavaScript">
+  				<img src="../assets/img/languagens/javascript.webp" width="50" height="50" alt="JavaScript Logo" data-toggle="tooltip" title="JavaScript">
 					<p>Linguagem de programação que permite a criação de conteúdos dinâmicos e deixá-lo mais interativo.</p>
   			</div>
   		</div>
   		<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
   			<div class="knowledge-header">
-  				<img src="../assets/img/languagens/react.webp" alt="ReactJS Logo" data-toggle="tooltip" title="ReactJS">
+  				<img src="../assets/img/languagens/react.webp" width="50" height="50" alt="ReactJS Logo" data-toggle="tooltip" title="ReactJS">
 					<p>React JS é uma biblioteca JavaScript para a criação de interfaces de usuário ou UI (user interface).</p>
   			</div>
   		</div>
   		<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
   			<div class="knowledge-header">
-  				<img src="../assets/img/languagens/mysql.webp" alt="MySQL Logo" data-toggle="tooltip" title="MySQL">
+  				<img src="../assets/img/languagens/mysql.webp" width="50" height="50" alt="MySQL Logo" data-toggle="tooltip" title="MySQL">
 					<p>O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL.</p>
   			</div>
   		</div>
   		<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
   			<div class="knowledge-header">
-					<img src="../assets/img/languagens/jquery.webp" alt="jquery Logo" data-toggle="tooltip" title="jQuery">
+					<img src="../assets/img/languagens/jquery.webp" width="50" height="50" alt="jquery Logo" data-toggle="tooltip" title="jQuery">
 					<p>jQuery é uma biblioteca JavaScript que facilita a manipulação de eventos, animações, HTML e utilização de AJAX</p>
   			</div>
   		</div>
 			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
   			<div class="knowledge-header">
-  				<img src="../assets/img/languagens/figma.webp" alt="Figma Logo" data-toggle="tooltip" title="Figma">
+  				<img src="../assets/img/languagens/figma.webp" width="50" height="50" alt="Figma Logo" data-toggle="tooltip" title="Figma">
 					<p>O Figma é uma ferramenta de design para interfaces, que oferece a possibilidade de trabalho colaborativo.</p>
   			</div>
   		</div>
 			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
   			<div class="knowledge-header">
-					<img src="../assets/img/languagens/bulma.webp" alt="Bulma Logo" data-toggle="tooltip" title="Bulma">
+					<img src="../assets/img/languagens/bulma.webp" width="50" height="50" alt="Bulma Logo" data-toggle="tooltip" title="Bulma">
 					<p>Bulma é um framework CSS totalmente gratuito, inspirado no Bootstrap e baseado em Flexbox, que já tem uma compatibilidade bem grande entre os navegadores.</p>
   			</div>
 			</div>
 			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
 				<div class="knowledge-header">
-					<img src="../assets/img/languagens/php.webp" alt="PHP Logo" data-toggle="tooltip" title="PHP">
+					<img src="../assets/img/languagens/php.webp" width="50" height="50" alt="PHP Logo" data-toggle="tooltip" title="PHP">
 					<p>PHP é uma linguagem de programação web que favorece a conexão entre os servidores e a interface do usuário.</p>
   			</div>
 			</div>
 			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
 				<div class="knowledge-header">
-          <img src="../assets/img/languagens/git.webp" alt="Git Logo" data-toggle="tooltip" title="Git">
+          <img src="../assets/img/languagens/git.webp" width="50" height="50" alt="Git Logo" data-toggle="tooltip" title="Git">
 					<p>Git é um sistema de controle de versão de projetos.</p>
 				</div>
 			</div>
 			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
 				<div class="knowledge-header">
-					<img src="../assets/img/languagens/bootstrap.webp" alt="Bootstrap Logo" data-toggle="tooltip" title="Bootstrap">
+					<img src="../assets/img/languagens/bootstrap.webp" width="50" height="50" alt="Bootstrap Logo" data-toggle="tooltip" title="Bootstrap">
 					<p>Bootstrap é um framework CSS moderno que organiza e gerencia o layout de um site.</p>
 				</div>
   		</div>
 			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
 				<div class="knowledge-header">
-					<img src="../assets/img/languagens/sass.webp" alt="SASS Logo" data-toggle="tooltip" title="SASS">
+					<img src="../assets/img/languagens/sass.webp" width="50" height="50" alt="SASS Logo" data-toggle="tooltip" title="SASS">
 					<p>SASS é uma linguagem de extensão ao CSS que dá um controle mais profissional e dinâmico.</p>
 				</div>
   		</div>

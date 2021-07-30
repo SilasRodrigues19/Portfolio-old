@@ -71,7 +71,7 @@
 	height: 50px;
 	color: #FFF;
 	border-radius: 10px;
-  background-image: linear-gradient(to right, #434343 0%, #000 100%);
+  background: rgba(1, 1, 1, .3);
   font-size: 15px;
 	z-index: -1;
 	opacity: 0;

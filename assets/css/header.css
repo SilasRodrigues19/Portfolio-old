@@ -148,13 +148,13 @@
 }
 
 #hamburger:checked ~ label .menu .bar:after {
-	transform: rotate(225deg);
+	transform: rotate(225deg) !important;
 	top: 0;
 	left: 0;
 }
 
 #hamburger:checked ~ label .menu .bar:before {
-	transform: rotate(-405deg);
+	transform: rotate(-405deg) !important;
 	top: 0;
 	left: 0;
 	width: 100%;

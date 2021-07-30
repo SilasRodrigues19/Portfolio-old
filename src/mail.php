@@ -44,7 +44,7 @@ if ($resultBtn) {
 		$mail->isSMTP(); // To use SMTP
 		$mail->Host = 'smtp.gmail.com'; // Change if u don't use Gmail
 		$mail->SMTPAuth = true; // Authentication
-		$mail->Username = 'emil@domain.com'; // Your domain e-mail
+		$mail->Username = 'email@domain.com'; // Your domain e-mail
 		$mail->Password = 'password'; // Your pass
 		$mail->Port = 587; // Gmail default port
 
@@ -88,7 +88,7 @@ if ($resultBtn) {
 		?>
 		<script>
 			swal({
-			  title: "Erro de codificação!",
+			  title: "Erro de autenticação!",
 			  text: "Contate um administrador!",
 			  icon: "error",
 			});

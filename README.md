@@ -88,6 +88,9 @@ Technologies used in the project.
 * [LightBox](https://lokeshdhakar.com/projects/lightbox2/) or cdn [LightBox CDN](https://cdnjs.com/libraries/lightbox2)
 * [Sweet Alert](https://sweetalert2.github.io)
 
+### PHP Libraries
+* [PHPMailer](https://github.com/PHPMailer/PHPMailer) this repo contains everything you need to set up and use
+
 ### Font Script
 * [Font Awesome](https://fontawesome.com)
 

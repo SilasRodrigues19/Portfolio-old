@@ -33,6 +33,7 @@
           <ul>
             <li><a href="#desktop-view">Desktop View</a></li>
             <li><a href="#404-view">404 View</a></li>
+            <li><a href="mail-message-view">Mail Message View</a></li>
             <li><a href="#mobile-view">Mobile View</a></li>
           </ul>
         </li>
@@ -54,6 +55,10 @@
 -
 ### 404 View
 [![About View Mobile][product-screenshot2]](http://silasdev.epizy.com)
+
+### Mail Message View
+  [![Error Mail][product-screenshot5]](http://silasdev.epizy.com)
+  [![Success Mail][product-screenshot6]](http://silasdev.epizy.com)
 
 ### Mobile View
   [![About View 404][product-screenshot3]](http://silasrodrigues.epizy.com/Example404)
@@ -133,5 +138,7 @@ Project Link: [https://github.com/SilasRodrigues19/silasdev.epizy.com](https://g
 [product-screenshot2]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/preview404.png
 [product-screenshot3]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/preview2.gif
 [product-screenshot4]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/preview404-mobile.png
+[product-screenshot5]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/previewErrorMail.png
+[product-screenshot6]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/previewSuccessMail.png
 
 

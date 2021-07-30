@@ -274,6 +274,7 @@
 									<li data-target="#jobsCarousel" data-slide-to="3"></li>
 									<li data-target="#jobsCarousel" data-slide-to="4" class="active"></li>
 									<li data-target="#jobsCarousel" data-slide-to="5"></li>
+									<li data-target="#jobsCarousel" data-slide-to="6"></li>
 							 </ol>
 						  <div class="carousel-inner">
 								<!-- Project 1 -->
@@ -328,6 +329,15 @@
 						      </a>
 						      <div class="carousel-caption">
 						        <h2>Pesquisando com API do GitHub</h2>
+						      </div>
+						    </div>
+								<!-- Project 7 -->
+								<div class="carousel-item" data-toggle="tooltip" title="Buscando dados com Weather App">
+						      <a href="https://weatherproject.vercel.app" rel="noreferrer" target="_blank">
+						      	<img class="d-block w-100" src="../assets/img/project7.webp" alt="Pesquisando com Weather App">
+						      </a>
+						      <div class="carousel-caption">
+						        <h2>Consultando previsão do tempo com Weather App</h2>
 						      </div>
 						    </div>
 						  </div>
@@ -387,7 +397,12 @@
 				<a href="../assets/img/certificados/WebDesign.webp" data-lightbox="mygallery" data-title="Web Design">
 					<img src="../assets/img/certificados/WebDesign.webp" width="200" height="150" alt="Certificado Web Design" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
 				</a>
-
+				<a href="../assets/img/certificados/html-full.webp" data-lightbox="mygallery" data-title="HTML Full Course">
+					<img src="../assets/img/certificados/html-full.webp" width="200" height="150" alt="Certificado HTML Completo" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+				</a>
+				<a href="../assets/img/certificados/css-full.webp" data-lightbox="mygallery" data-title="CSS Full Course">
+					<img src="../assets/img/certificados/css-full.webp" width="200" height="150" alt="Certificado CSS Completo" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+				</a>
 			</div>
 		</div>
 	</section>

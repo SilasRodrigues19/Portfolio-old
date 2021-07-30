@@ -33,7 +33,7 @@
           <ul>
             <li><a href="#desktop-view">Desktop View</a></li>
             <li><a href="#404-view">404 View</a></li>
-            <li><a href="mail-message-view">Mail Message View</a></li>
+            <li><a href="#mail-message-view">Mail Message View</a></li>
             <li><a href="#mobile-view">Mobile View</a></li>
           </ul>
         </li>

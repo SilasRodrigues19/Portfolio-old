@@ -144,5 +144,5 @@ Project Link: [https://github.com/SilasRodrigues19/silasdev.epizy.com](https://g
 [product-screenshot5]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/previewErrorMail.png
 [product-screenshot6]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/previewSuccessMail.png
 
-[⬆ Back to top](#Portfólio)
+[🔼 Back to top](#Portfólio)
 

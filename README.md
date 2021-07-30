@@ -54,7 +54,7 @@
 [![About View Desktop][product-screenshot]](http://silasdev.epizy.com)
 -
 ### 404 View
-[![About View Mobile][product-screenshot2]](http://silasdev.epizy.com)
+[![About View 404][product-screenshot2]](http://silasrodrigues.epizy.com/Example404)
 
 ### Mail Message View
   [![Error Mail][product-screenshot5]](http://silasdev.epizy.com)

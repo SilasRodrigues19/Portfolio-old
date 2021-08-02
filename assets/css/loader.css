@@ -11,12 +11,10 @@
 }
 
 #loader span {
-  width: 35px;
-  height: 35px;
+  background-image: url('../img/blob.svg');
+  width: 75px;
+  height: 75px;
   margin: 0 15px;
-  background-color: #cacaca;
-  border-radius: 50%;
-  display: inline-block;
   animation: dots 1s infinite ease-in-out;
 }
 

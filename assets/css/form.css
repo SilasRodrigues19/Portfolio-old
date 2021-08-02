@@ -3,7 +3,6 @@
 }
 
 #form {
-  font-family: 'MedievalSharp', cursive, 'Open Sans', sans-serif;
 	background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
 
@@ -13,6 +12,7 @@
   align-items: center;
   flex-direction: column;
 }
+
 .error {
   margin-top: 3px;
   color: rgba(255, 0, 0, .5);
@@ -28,14 +28,14 @@
   padding: 100px 0;
 }
 
-.form-header .section-title p {
-  color: #000;
-}
-
 .my-form {
   font-family: Bradley Hand, cursive, 'Open Sans', sans-serif;
   user-select: none;
   width: 100%;
+}
+
+.my-form h1 {
+  font-family: 'Salvation Typeface Font', 'Open Sans', sans-serif;
 }
 
 .form-control {
@@ -48,7 +48,7 @@ label {
 }
 
 .btn-secondary, label {
-  font-size: 17.5px;
+  font-size: 15.5px;
 }
 
 .form-control, .form-control:active {

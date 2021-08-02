@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100&display=swap');
 @import url('https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css');
-@import url('https://fonts.googleapis.com/css?family=Special+Elite');
-@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+@font-face {
+	font-family: 'Salvation Typeface Font';
+	src: url("../fonts/Salvation Typeface Font.otf") format("opentype");
+}
 
 :root {
-	--primary-color: #810000;
-	--portfolio-hover: rgba(129, 0, 0, 0.5);
+	--primary-color: #470ba9;
+	--portfolio-hover: rgba(71, 11, 69, .5);
 	--scrollbar: #111;
 }
 
@@ -34,20 +35,20 @@
    background: linear-gradient(90deg,#201c29,#201c29 1px,#100e17 0,#100e17);
 }
 
-
 ::selection {
     background: #605080;
     color: #FFF;
 }
 
 html {
+	font-family: 'Salvation Typeface Font', 'Open Sans', sans-serif;
 	font-size: 10px;
-	font-family: 'MedievalSharp', cursive;
 	overflow-x: hidden;
 }
 
 p {
-	color: #000;
+	font-family: Bradley Hand, cursive, 'Open Sans', sans-serif;
+	color: #111;
 	font-size: 1.4rem;
 	margin-top: 5px;
 	line-height: 2.5rem;
@@ -87,7 +88,6 @@ p {
 }
 
 .typed-text {
-	font-weight: normal;
 	color: var(--primary-color);
 }
 
@@ -105,7 +105,7 @@ p {
 
 .tooltip-inner {
     max-width: 400px;
-   	font-size: 18px;
+   	font-size: 15px;
 }
 /*----------------------------------End Classes -----------------------------------------------*/
 

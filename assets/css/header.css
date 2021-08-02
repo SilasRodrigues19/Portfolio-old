@@ -64,7 +64,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0);
-	color: rgba(220, 20, 60, 0.2222);
+	color: var(--portfolio-hover);
 	font-size: 5rem;
 	letter-spacing: 50px;
 	z-index: -1;

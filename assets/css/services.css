@@ -9,8 +9,10 @@
 }
 
 .programmer {
-  width: 250px;
-  height: 250px;
+  position: relative;
+  bottom: 3vw;
+  height: 350px;
+  opacity: .5;
 }
 
 #services .services {
@@ -36,7 +38,6 @@
 }
 
 #services .section-title p {
-  color: #000;
   margin-bottom: 30px;
 }
 
@@ -123,7 +124,18 @@
   font-size: 1.2rem;
   font-family: Bradley Hand, cursive, 'Open Sans', sans-serif;
 	color: #111;
-	margin-bottom: 10px;
+	margin: 10px;
+}
+
+.knowledge-icons {
+  filter: drop-shadow(4px 8px 12px #470BA9);
+  font-size: 50px;
+  color: #470ba9;
+	transform: rotate(5deg);
+}
+
+.knowledge-icons:hover {
+  transform: rotate(0deg) scale(1.1);
 }
 
 /* End Service Section */

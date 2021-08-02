@@ -10,14 +10,6 @@
 	padding: 100px 0;
 }
 
-#projects .projects-header h1 {
-	margin-bottom: 50px;
-}
-
-#projects .projects-header p {
-	color: #000;
-}
-
 #projects .all-projects {
 	display: flex;
 	align-items: center;
@@ -60,7 +52,7 @@
 }
 
 #projects .project-info p {
-	color: #FFF;
+	color: #cacaca;
 }
 
 #projects .project-info a {

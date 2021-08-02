@@ -1,5 +1,4 @@
 /* Home Section */
-@import url('https://fonts.googleapis.com/css?family=Special+Elite');
 
 #home {
 	font-family: Bradley Hand, cursive, 'Open Sans', sans-serif;
@@ -59,17 +58,19 @@
 	overflow: hidden;
 	display: inline-block;
 	padding: 15px 35px;
+	text-transform: uppercase;
 	color: #cacaca;
 	background-color: transparent;
-	border: 2px var(--primary-color);
-	border-style: double solid;
+	border: 2px solid;
+	border-color: var(--primary-color);;
 	border-radius: 15px;
-	font-size: 3rem;
-	text-transform: uppercase;
+	font-size: 2rem;
+  font-weight: 500;
 	letter-spacing: .2rem;
 	margin-top: 30px;
 	transition: 1s ease;
 	transition-property: background-color, color;
+
 }
 
 #home .cta:hover {
@@ -95,6 +96,12 @@
 
 .cta:hover:before {
   left: 100%;
+}
+
+.portfolioIcon {
+	font-size: 25px;
+	color: #fff;
+	margin: 0 10px -2px 0;
 }
 /* End Home Section */
 

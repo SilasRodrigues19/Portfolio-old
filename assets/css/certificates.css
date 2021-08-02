@@ -10,11 +10,6 @@
 	padding-bottom: 20px;
 }
 
-.certificate-header .section-title, .section-title p {
-	color: #fff;
-	margin-top: 10px;
-}
-
 #certificates .certificates {
 	flex-direction: column;
 	text-align: center;

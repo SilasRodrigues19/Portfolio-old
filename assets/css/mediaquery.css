@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
 @media only screen and (max-width: 768px) {
 	html {
 		font-family: 'Open Sans', sans-serif;
@@ -113,19 +111,19 @@
 	}
 
 	#header .nav-list ul li:nth-child(1) a::before {
-		background-image: url(../img/code2.webp);
+		background: url('https://api.iconify.design/fluent:window-dev-tools-24-regular.svg') no-repeat center center / contain;
 	}
 
 	#header .nav-list ul li:nth-child(2) a::before {
-		background-image: url(../img/computer.webp);
+		background: url('https://api.iconify.design/entypo:code.svg') no-repeat center center / contain;
 	}
 
 	#header .nav-list ul li:nth-child(3) a::before {
-		background-image: url(../img/medal.webp);
+		background: url('https://api.iconify.design/clarity:certificate-solid.svg') no-repeat center center / contain;
 	}
 
 	#header .nav-list ul li:nth-child(4) a::before {
-		background-image: url(../img/contact.webp);
+		background: url('https://api.iconify.design/ri:mail-send-line.svg') no-repeat center center / contain;
 	}
 
 	#home h1 {
@@ -172,6 +170,12 @@
 	#header .nav-list ul a, .social ul li a span
 	 {
 		font-family: 'Open Sans', sans-serif;
+	}
+	.contact-icon #smothScroll {
+    display: none;
+	}
+	.programmer {
+	  height: 150px;
 	}
 }
 

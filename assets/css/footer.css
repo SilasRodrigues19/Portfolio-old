@@ -3,7 +3,7 @@
 footer {
 	font-family: Bradley Hand, cursive, 'Open Sans', sans-serif;
 	user-select: none;
-  background-color: #0f0e17;
+  background-color: #111;
 }
 
 footer .footer {
@@ -25,12 +25,25 @@ footer .footer {
 #footer .contact-icon {
 	overflow: hidden;
 	display: flex;
-	margin: 20px 0 20px 0;
+	margin: 20px 0px 20px 20px;
 }
 
 .contact-icon #smothScroll {
-	position: absolute;
-	right: 5%;
+	position: fixed;
+	background-color: transparent;
+	border: solid 1px;
+	border-color: #470ba9;
+  padding: 15px;
+  border-radius: 10px;
+  bottom: 50px;
+  right: 25px;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 10px;
+}
+
+.contact-icon #smothScroll:hover {
+	background-color: var(--portfolio-hover);
 }
 
 #footer .contact-item {

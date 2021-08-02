@@ -15,10 +15,10 @@
 	<meta name="author" content="Silas Rodrigues">
 	<title>Portfólio | Silas Rodrigues</title>
 	<!-- Favicon -->
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-  <link rel="manifest" href="assets/img/site.webmanifest">
+	<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
 	<link rel="shortcut icon" type="image/png" href="../public/favicon.ico">
 
 	<!-- Bootstrap 4.0.0 -->
@@ -57,10 +57,7 @@
 	<link rel="stylesheet" href="../assets/css/mediaquery.css">
 
 	<!-- Fonte Awesome and Icons CSS -->
-	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.css" as="style">
 	<link rel="preload" href="../assets/css/icons.css" as="style">
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.css">
 	<link rel="stylesheet" href="../assets/css/icons.css">
 
 	<!-- Animate CSS -->
@@ -133,7 +130,9 @@
 				<h1 class="infoText">Olá,</h1>
 				<h1 class="infoText">Seja bem-vindo(a)</h1>
 				<h1 class="infoText">Conheça meu</h1>
-				<a href="#projects" type="button" class="cta scroll" data-toggle="tooltip" title="Clique e veja meus projetos!">Portfolio</a>
+				<a href="#projects" type="button" class="cta scroll" data-toggle="tooltip" title="Clique e veja meus projetos!">
+					<span class="iconify portfolioIcon" data-icon="dashicons:portfolio" data-inline="false"></span>Portfolio
+				</a>
 				<h2 class="arrayText">Eu sou <span class="typed-text"></span><span class="cursor typing">&nbsp;</span></h2>
 			</div>
 
@@ -141,17 +140,19 @@
 				<ul>
 					<li>
 						<a href="https://whats.link/silasrodrigues21" target="_blank" rel="noreferrer">
-							<i class="fab fa-whatsapp"></i>
+							<span class="iconify whatsapp" data-icon="whh:whatsapp" data-inline="false"></span>
 							<span>WhatsApp</span>
 						</a>
 					</li>
 					<li>
-						<a href="https://twitter.com/Jinuye1" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i>
+						<a href="https://twitter.com/Jinuye1" target="_blank" rel="noreferrer">
+							<span class="iconify twitter" data-icon="websymbol:twitter-bird" data-inline="false"></span>
 							<span>Twitter</span>
 						</a>
 					</li>
 					<li>
-						<a href="https://github.com/SilasRodrigues19" target="_blank" rel="noreferrer"><i class="fab fa-github"></i>
+						<a href="https://github.com/SilasRodrigues19" target="_blank" rel="noreferrer">
+							<span class="iconify" data-icon="la:github-alt" data-inline="false"></span>
 							<span>GitHub</span>
 						</a>
 					</li>
@@ -173,73 +174,97 @@
 		<div class="knowledges">
   		<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
   			<div class="knowledge-header">
-  				<img src="../assets/img/languagens/html.webp" width="50" height="50" alt="HTML Logo" data-toggle="tooltip" title="HTML 5">
+					<div class="knowledge-icons" data-toggle="tooltip" title="HTML 5">
+						<span class="iconify" data-icon="bx:bxs-file-html" data-inline="false"></span>
+					</div>
 					<p>Linguagem de marcação de texto para estruturar e apresentar páginas web.</p>
   			</div>
   		</div>
   		<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
   			<div class="knowledge-header">
-  				<img src="../assets/img/languagens/css.webp" width="50" height="50" alt="CSS Logo" data-toggle="tooltip" title="CSS">
+					<div class="knowledge-icons" data-toggle="tooltip" title="CSS 3">
+						<span class="iconify" data-icon="fluent:document-css-24-regular" data-inline="false"></span>
+					</div>
 					<p>Utilizado para estilizar a aparência de uma página, animar, usar transições e afins.</p>
   			</div>
   		</div>
   		<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
   			<div class="knowledge-header">
-  				<img src="../assets/img/languagens/javascript.webp" width="50" height="50" alt="JavaScript Logo" data-toggle="tooltip" title="JavaScript">
+					<div class="knowledge-icons" data-toggle="tooltip" title="JavaScript">
+						<span class="iconify" data-icon="fluent:document-javascript-24-filled" data-inline="false"></span>
+					</div>
 					<p>Linguagem de programação que permite a criação de conteúdos dinâmicos e deixá-lo mais interativo.</p>
   			</div>
   		</div>
   		<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
   			<div class="knowledge-header">
-  				<img src="../assets/img/languagens/react.webp" width="50" height="50" alt="ReactJS Logo" data-toggle="tooltip" title="ReactJS">
+					<div class="knowledge-icons" data-toggle="tooltip" title="React JS">
+						<span class="iconify" data-inline="false" data-icon="cib:react"></span>
+					</div>
 					<p>React JS é uma biblioteca JavaScript para a criação de interfaces de usuário ou UI (user interface).</p>
   			</div>
   		</div>
   		<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
   			<div class="knowledge-header">
-  				<img src="../assets/img/languagens/mysql.webp" width="50" height="50" alt="MySQL Logo" data-toggle="tooltip" title="MySQL">
+					<div class="knowledge-icons" data-toggle="tooltip" title="MySQL">
+						<span class="iconify" data-inline="false" data-icon="whh:mysqltwo"></span>
+					</div>
 					<p>O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL.</p>
   			</div>
   		</div>
   		<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
   			<div class="knowledge-header">
-					<img src="../assets/img/languagens/jquery.webp" width="50" height="50" alt="jquery Logo" data-toggle="tooltip" title="jQuery">
+					<div class="knowledge-icons" data-toggle="tooltip" title="JQuery">
+						<span class="iconify" data-inline="false" data-icon="cib:jquery"></span>
+					</div>
 					<p>jQuery é uma biblioteca JavaScript que facilita a manipulação de eventos, animações, HTML e utilização de AJAX</p>
   			</div>
   		</div>
 			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
   			<div class="knowledge-header">
-  				<img src="../assets/img/languagens/figma.webp" width="50" height="50" alt="Figma Logo" data-toggle="tooltip" title="Figma">
+					<div class="knowledge-icons" data-toggle="tooltip" title="Figma">
+						<span class="iconify" data-icon="akar-icons:figma-fill" data-inline="false"></span>
+					</div>
 					<p>O Figma é uma ferramenta de design para interfaces, que oferece a possibilidade de trabalho colaborativo.</p>
   			</div>
   		</div>
 			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
   			<div class="knowledge-header">
-					<img src="../assets/img/languagens/bulma.webp" width="50" height="50" alt="Bulma Logo" data-toggle="tooltip" title="Bulma">
+					<div class="knowledge-icons" data-toggle="tooltip" title="Bulma">
+						<span class="iconify" data-inline="false" data-icon="mdi:bulma"></span>
+					</div>
 					<p>Bulma é um framework CSS totalmente gratuito, inspirado no Bootstrap e baseado em Flexbox, que já tem uma compatibilidade bem grande entre os navegadores.</p>
   			</div>
 			</div>
 			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
 				<div class="knowledge-header">
-					<img src="../assets/img/languagens/php.webp" width="50" height="50" alt="PHP Logo" data-toggle="tooltip" title="PHP">
+					<div class="knowledge-icons" data-toggle="tooltip" title="PHP">
+						<span class="iconify" data-inline="false" data-icon="file-icons:php"></span>
+					</div>
 					<p>PHP é uma linguagem de programação web que favorece a conexão entre os servidores e a interface do usuário.</p>
   			</div>
 			</div>
 			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
 				<div class="knowledge-header">
-          <img src="../assets/img/languagens/git.webp" width="50" height="50" alt="Git Logo" data-toggle="tooltip" title="Git">
+					<div class="knowledge-icons" data-toggle="tooltip" title="Git">
+						<span class="iconify" data-inline="false" data-icon="cib:git"></span>
+					</div>
 					<p>Git é um sistema de controle de versão de projetos.</p>
 				</div>
 			</div>
 			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
 				<div class="knowledge-header">
-					<img src="../assets/img/languagens/bootstrap.webp" width="50" height="50" alt="Bootstrap Logo" data-toggle="tooltip" title="Bootstrap">
+					<div class="knowledge-icons" data-toggle="tooltip" title="Bootstrap">
+						<span class="iconify" data-inline="false" data-icon="fa-brands:bootstrap"></span>
+					</div>
 					<p>Bootstrap é um framework CSS moderno que organiza e gerencia o layout de um site.</p>
 				</div>
   		</div>
 			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
 				<div class="knowledge-header">
-					<img src="../assets/img/languagens/sass.webp" width="50" height="50" alt="SASS Logo" data-toggle="tooltip" title="SASS">
+					<div class="knowledge-icons" data-toggle="tooltip" title="SASS">
+						<span class="iconify" data-inline="false" data-icon="cib:sass-alt"></span>
+					</div>
 					<p>SASS é uma linguagem de extensão ao CSS que dá um controle mais profissional e dinâmico.</p>
 				</div>
   		</div>
@@ -259,7 +284,7 @@
 					<hr data-aos="fade-down">
 					<p data-aos="fade-left">Clique na imagem para saber mais sobre o respectivo projeto</p>
 					<hr data-aos="fade-up">
-					<img data-aos="flip-down" class="programmer" src="../assets/img/programmer.webp" alt="Programador">
+					<img data-aos="fade-up" class="programmer" src="../assets/img/programmer.webp" alt="Programador">
 				</h1>
 			</div>
 			<div class="all-projects" data-aos="zoom-in">
@@ -422,7 +447,11 @@
 			<div class="my-form" data-aos="zoom-in-up">
 		    <div class="row">
 		      <div class="col-12 text-center my-5">
-		        <h1 class="display-4"><i class="fa fa-paper-plane"></i> Formulário de Contato</h1>
+		        <h1 class="display-4">
+							<i class="fa fa-paper-plane"><span class="iconify" data-icon="si-glyph:paper-plane" data-inline="false"></span>
+							</i>
+							Formulário de Contato
+						</h1>
 		      </div>
 		    </div>
 
@@ -489,27 +518,36 @@
 				<div class="contact-icon">
 					<div class="contact-item text" data-toggle="tooltip" title="Sumaré - São Paulo">
 						<div data-aos="fade-left" data-aos-offset="0">
-							<i class="fa fa-globe-americas"></i>
+							<span class="iconify globe-americas" data-icon="gis:earth-america" data-inline="false"></span>
 						</div>
 					</div>
 
 					<div class="contact-item" data-toggle="tooltip" title="Me contate por e-mail">
 						<div data-aos="fade-in" data-aos-offset="0">
-							<a href="mailto:silasrodrigues.ti@hotmail.com?subject=Contato%20Site"><i class="fa fa-envelope"></i></a>
+							<a href="mailto:silasrodrigues.ti@hotmail.com?subject=Contato%20Site">
+								<span class="iconify envelope" data-icon="emojione-monotone:closed-mailbox-with-lowered-flag" data-inline="false"></span>
+							</a>
 						</div>
 					</div>
 
 					<div class="contact-item" data-toggle="tooltip" title="Veja meu curriculo">
 						<div data-aos="fade-right" data-aos-offset="0">
-							<a href="https://resume.io/r/IVkNM7feV" rel="noreferrer" target="_blank"><i class="fa fa-file-pdf"></i></a>
+							<a href="https://resume.io/r/IVkNM7feV" rel="noreferrer" target="_blank">
+								<span class="iconify file-pdf" data-icon="bi:file-earmark-pdf-fill" data-inline="false"></span>
+							</a>
 						</div>
 					</div>
-					<a id="smothScroll" href="#home" class="fa fa-arrow-up" data-toggle="tooltip" title="Voltar para o topo" data-aos="fade-down" data-aos-offset="0"></a>
+					<a id="smothScroll" href="#home" data-toggle="tooltip" title=" &#8673;" data-aos="fade-down" data-aos-offset="0">
+						<span class="iconify arrow-up" data-icon="bytesize:chevron-top" data-inline="false"></span>
+					</a>
 				</div>
 				<p>Copyright &copy 2021 Silas Rodrigues. Todos os direitos reservados.</p>
 			</div>
 		</footer>
 	<!-- End footer -->
+
+	<!-- Icons Script -->
+	<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 
 	<!-- Smooth Scroll Function -->
 	<script src="../assets/js/smoth-scroll.js"></script>

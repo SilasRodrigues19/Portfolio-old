@@ -87,6 +87,7 @@ Technologies used in the project.
 * [jQuery](https://jquery.com)
 * [LightBox](https://lokeshdhakar.com/projects/lightbox2/) or cdn [LightBox CDN](https://cdnjs.com/libraries/lightbox2)
 * [Sweet Alert](https://sweetalert2.github.io)
+* [Iconify](https://iconify.design)
 
 ### PHP Libraries
 * [PHPMailer](https://github.com/PHPMailer/PHPMailer) this repo contains everything you need to set up and use
@@ -146,4 +147,3 @@ Project Link: [https://github.com/SilasRodrigues19/silasdev.epizy.com](https://g
 
 <br><hr>
 [🔼 Back to top](#Portfólio)
-

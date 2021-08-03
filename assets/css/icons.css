@@ -26,16 +26,8 @@
 	transition: all ease 1.2s;
 }
 
-.whatsapp:hover {
-	color: #4FCE5D;
-}
-
-.twitter:hover {
-	color: #1DA1F2;
-}
-
-.github:hover {
-	filter: invert(1);
+.whatsapp:hover, .twitter:hover, .github:hover {
+	color: #470ba9;
 }
 
 .envelope:hover, .fa-phone:hover, .file-pdf:hover, .globe-americas:hover, .fa-arrow-up:hover {

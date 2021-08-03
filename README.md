@@ -71,7 +71,7 @@ The website is divided into:
 * **Home**: presentation about me with name and professional focus.
 * **Services**: it shows my main skills and technologies that I use in my projects.
 * **Projects**: it has some projects that I developed.
-* **Certificates**: As the name suggests is a part that show my certificates.
+* **Certificates**: as the name suggests is a part that's show my certificates.
 * **Contact**: area with a form to get in touch with me.
 
 ### Built With

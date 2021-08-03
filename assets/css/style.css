@@ -4,6 +4,7 @@
 @font-face {
 	font-family: 'Salvation Typeface Font';
 	src: url("../fonts/Salvation Typeface Font.otf") format("opentype");
+	font-display: swap;
 }
 
 :root {

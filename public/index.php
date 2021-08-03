@@ -152,7 +152,7 @@
 					</li>
 					<li>
 						<a href="https://github.com/SilasRodrigues19" target="_blank" rel="noreferrer">
-							<span class="iconify" data-icon="la:github-alt" data-inline="false"></span>
+							<span class="iconify github" data-icon="la:github-alt" data-inline="false"></span>
 							<span>GitHub</span>
 						</a>
 					</li>
@@ -284,7 +284,7 @@
 					<hr data-aos="fade-down">
 					<p data-aos="fade-left">Clique na imagem para saber mais sobre o respectivo projeto</p>
 					<hr data-aos="fade-up">
-					<img data-aos="fade-up" class="programmer" src="../assets/img/programmer.webp" alt="Programador">
+					<img data-aos="fade-up" class="programmer" src="../assets/img/programmer.webp" width="500px" height="350px" alt="Programador">
 				</h1>
 			</div>
 			<div class="all-projects" data-aos="zoom-in">
@@ -389,44 +389,38 @@
 		<div class="certificates container">
 			<div class="certificate-header">
 				<h1 class="section-title" data-aos="fade-down">Certificados</h1>
-				<hr data-aos="fade-up">
+				<hr data-aos="fade-down">
 			</div>
-			<div class="certificate" data-aos="fade-left" data-aos-duration="1200">
+			<div class="certificate" data-aos="fade-up" data-aos-duration="1200">
 				<a href="../assets/img/certificados/bootstrap.webp" data-lightbox="mygallery" data-title="Bootstrap">
-					<img src="../assets/img/certificados/bootstrap.webp" width="200" height="150" alt="Certificado Bootstrap" data-aos="fade-left" data-aos-duration="1200" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/bootstrap.webp" width="200" height="150" alt="Certificado Bootstrap" data-aos="fade-up" data-aos-easing="ease-in-sine">
 				</a>
 				<a href="../assets/img/certificados/git.webp" data-lightbox="mygallery" data-title="Git">
-					<img src="../assets/img/certificados/git.webp" width="200" height="150" alt="Certificado Git" data-aos="fade-left" data-aos-duration="1250" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/git.webp" width="200" height="150" alt="Certificado Git" data-aos="fade-up" data-aos-easing="ease-in-sine">
 				</a>
 				<a href="../assets/img/certificados/HTML-CSS.webp" data-lightbox="mygallery" data-title="HTML e CSS">
-					<img src="../assets/img/certificados/HTML-CSS.webp" width="200" height="150" alt="Certificado HTML e CSS" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
-				</a>
-				<a href="../assets/img/certificados/HTML-CSS2.webp" data-lightbox="mygallery" data-title="HTML e CSS 2">
-					<img src="../assets/img/certificados/HTML-CSS2.webp" width="200" height="150" alt="Certificado HTML e CSS 2" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
-				</a>
-				<a href="../assets/img/certificados/html-basico.webp" data-lightbox="mygallery" data-title="HTML básico">
-					<img src="../assets/img/certificados/html-basico.webp" width="200" height="150" alt="Certificado HTML básico" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/HTML-CSS.webp" width="200" height="150" alt="Certificado HTML e CSS" data-aos="fade-up" data-aos-easing="ease-in-sine">
 				</a>
 				<a href="../assets/img/certificados/jquery.webp" data-lightbox="mygallery" data-title="jQuery">
-					<img src="../assets/img/certificados/jquery.webp" width="200" height="150" alt="Certificado jQuery" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/jquery.webp" width="200" height="150" alt="Certificado jQuery" data-aos="fade-up" data-aos-easing="ease-in-sine">
 				</a>
 				<a href="../assets/img/certificados/logica.webp" data-lightbox="mygallery" data-title="Lógica">
-					<img src="../assets/img/certificados/logica.webp" width="200" height="150" alt="Certificado Lógica" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/logica.webp" width="200" height="150" alt="Certificado Lógica" data-aos="fade-up" data-aos-easing="ease-in-sine">
 				</a>
 				<a href="../assets/img/certificados/MySQL.webp" data-lightbox="mygallery" data-title="MySQL">
-					<img src="../assets/img/certificados/MySQL.webp" width="200" height="150" alt="Certificado MySQL" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/MySQL.webp" width="200" height="150" alt="Certificado MySQL" data-aos="fade-up" data-aos-easing="ease-in-sine">
 				</a>
 				<a href="../assets/img/certificados/php.webp" data-lightbox="mygallery" data-title="PHP">
-					<img src="../assets/img/certificados/php.webp" width="200" height="150" alt="Certificado PHP" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/php.webp" width="200" height="150" alt="Certificado PHP" data-aos="fade-up" data-aos-easing="ease-in-sine">
 				</a>
 				<a href="../assets/img/certificados/WebDesign.webp" data-lightbox="mygallery" data-title="Web Design">
-					<img src="../assets/img/certificados/WebDesign.webp" width="200" height="150" alt="Certificado Web Design" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/WebDesign.webp" width="200" height="150" alt="Certificado Web Design" data-aos="fade-up" data-aos-easing="ease-in-sine">
 				</a>
 				<a href="../assets/img/certificados/html-full.webp" data-lightbox="mygallery" data-title="HTML Full Course">
-					<img src="../assets/img/certificados/html-full.webp" width="200" height="150" alt="Certificado HTML Completo" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/html-full.webp" width="200" height="150" alt="Certificado HTML Completo" data-aos="fade-up" data-aos-easing="ease-in-sine">
 				</a>
 				<a href="../assets/img/certificados/css-full.webp" data-lightbox="mygallery" data-title="CSS Full Course">
-					<img src="../assets/img/certificados/css-full.webp" width="200" height="150" alt="Certificado CSS Completo" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/css-full.webp" width="200" height="150" alt="Certificado CSS Completo" data-aos="fade-up" data-aos-easing="ease-in-sine">
 				</a>
 			</div>
 		</div>

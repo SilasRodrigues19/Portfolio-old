@@ -7,7 +7,7 @@
 <br />
 <p align="center">
   <a href="http://silasdev.epizy.com">
-    <img src="https://www.pngkit.com/png/full/143-1436083_computer-remix-big-image-png-clip-art-computer.png" alt="Logo" width="80" height="80">
+    <img src="https://cdn.icon-icons.com/icons2/1451/PNG/512/codefolder_99364.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Portfólio</h3>

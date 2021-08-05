@@ -1,3 +1,33 @@
+@media only screen and (min-width: 980px) {
+
+	.knowledge-header p {
+		font-size: 1.1rem;
+		margin: 0;
+	}
+	.knowledge-icons {
+		margin-right: 10px;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+
+	.knowledges {
+		font-family: 'Open Sans', sans-serif;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+
+	.knowledge {
+		margin: 10px 0;
+	}
+
+	.knowledge-header img {
+		transform: scale(.7) !important;
+    	margin: 0 35px 0 55px !important;
+	}
+}
+
 @media only screen and (max-width: 768px) {
 	html {
 		font-family: 'Open Sans', sans-serif;
@@ -5,6 +35,10 @@
 
 	.cta {
 		font-size: 1.5rem;
+	}
+
+	.section-title p, #services .section-title p {
+		text-transform: initial;
 	}
 
 	h1.section-title, #services .section-title {
@@ -26,18 +60,7 @@
 		font-size: 2rem;
 	}
 
-	.knowledges {
-		font-family: 'Open Sans', sans-serif;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		flex-direction: column;
-	}
-
-	.knowledge-header img {
-		transform: scale(.7) !important;
-    margin: 0 35px 0 55px !important;
-	}
+	
 
 	/* End Home section */
 
@@ -95,7 +118,7 @@
 
 	#header .nav-list ul a::before {
 		position: absolute;
-    left: 80px;
+    	left: 80px;
 	}
 
 	#header .nav-list ul a:hover::before {
@@ -175,12 +198,12 @@
 		word-break: break-all;
 		letter-spacing: .4rem;
 	}
-	.contact-icon #smothScroll {
-    display: none;
+	.contact-icon #smoothScroll {
+    	display: none;
 	}
 	.programmer {
 		width: 230px;
-    height: 160px;
+    	height: 160px;
 	}
 }
 

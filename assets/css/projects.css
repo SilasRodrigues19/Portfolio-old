@@ -67,11 +67,18 @@
 #projects .carousel-item img {
 	flex-basis: 50%;
 	height: 100%;
-	filter: grayscale(1);
 }
 
-.carousel-item img:hover {
-	filter: grayscale(0) !important;
-	transform: scale(.94);
+.hover-rotate {
+  overflow: hidden;
+}
+
+.hover-rotate img {
+  transition: all 0.3s;
+  box-sizing: border-box;
+}
+
+.hover-rotate:hover img {
+  transform: scale(.9) rotate(2deg);
 }
 /* End Projects Section */

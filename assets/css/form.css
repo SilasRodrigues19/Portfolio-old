@@ -1,5 +1,5 @@
 ::placeholder {
-  letter-spacing: 1.5px;
+    letter-spacing: 1.5px;
 }
 
 #form {
@@ -7,40 +7,40 @@
 }
 
 .form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .error {
-  margin-top: 3px;
-  color: rgba(255, 0, 0, .5);
-  animation: bounce;
-  animation-duration: 1s;
+    margin-top: 3px;
+    color: rgba(255, 0, 0, .5);
+    animation: bounce;
+    animation-duration: 1s;
 
 }
 
 #form .form {
-  flex-direction: column;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 0;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
 }
 
 .my-form {
-  font-family: Bradley Hand, cursive, 'Open Sans', sans-serif;
-  user-select: none;
-  width: 100%;
+    font-family: Bradley Hand, cursive, 'Open Sans', sans-serif;
+    user-select: none;
+    width: 100%;
 }
 
 .my-form h1 {
-  font-family: 'Salvation Typeface Font', 'Open Sans', sans-serif;
+    font-family: 'Salvation Typeface Font', 'Open Sans', sans-serif;
 }
 
 .form-control {
-  font-size: 1.5rem;
-  height: calc(2.5em + .75rem + 2px);
+    font-size: 1.5rem;
+    height: calc(2.5em + .75rem + 2px);
 }
 
 label {
@@ -48,7 +48,7 @@ label {
 }
 
 .btn-secondary, label {
-  font-size: 15.5px;
+    font-size: 15.5px;
 }
 
 .form-control, .form-control:active {
@@ -57,28 +57,26 @@ label {
 }
 
 .form-control:focus {
-  background-color: transparent;
-  color: #000;
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.7);
+    background-color: transparent;
+    color: #000;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.7);
 }
 
 .form-control.error, .form-control.error:focus, .form-control.error:active, textarea.error,
 textarea.error:focus,
 textarea.error:active {
-  color: #000;
-  background-color: rgba(255, 0, 0, .1);
+    color: #000;
+    background-color: rgba(255, 0, 0, .1);
 }
 
 textarea {
-  height: 15em !important;
-	resize: none;
+    min-height: 15em;
+    resize: none;
 }
 
 textarea[name='mensagem']::-webkit-scrollbar {
-    width: 10px;
-    height: 20px;
-    cursor: pointer;
+    width: 0;
 }
 
 /* Remove default bg from browser */
@@ -105,6 +103,6 @@ input:-webkit-autofill {
 }
 
 .btn-secondary:focus {
-  color: #000 !important;
-  background-color: transparent !important;
+    color: #000 !important;
+    background-color: transparent !important;
 }

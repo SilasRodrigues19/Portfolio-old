@@ -1,84 +1,84 @@
 @import url('https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css');
 
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: 'Open Sans', sans-serif;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Open Sant', sans-serif;
 }
 
 body {
-	user-select: none;
-	width: 100%;
-	height: 100vh;
-	background-image: url(../img/404-bg.webp), linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: bottom center;
+   user-select: none;
+   width: 100%;
+   height: 100vh;
+   background-image: url(../img/404-bg.webp), linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: bottom center;
 }
 
 .hr {
-	position: absolute;
-  width: 100%;
-  height: 5px;
-  bottom: 187px;
-	background-color: rgba(50, 50, 50, 0.7);
-	opacity: 0.7;
-	box-shadow: 0px 5px 20px #706c61;
+   position: absolute;
+   width: 100%;
+   height: 5px;
+   bottom: 187px;
+   background-color: rgba(50, 50, 50, 0.7);
+   opacity: 0.7;
+   box-shadow: 0px 5px 20px #706c61;
 }
 
 header {
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	width: 100%;
-	height: 70px;
-	background-color: rgba(50, 50, 50, 0.7);
-	box-shadow: 0px 5px 20px #706c61;
-	padding: 10px;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   width: 100%;
+   height: 70px;
+   background-color: rgba(50, 50, 50, 0.7);
+   box-shadow: 0px 5px 20px #706c61;
+   padding: 10px;
 }
 
 .menu {
-	list-style: none;
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	justify-content: flex-end;
+   list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   justify-content: flex-end;
 }
 
 .menu li a {
-	background-color: transparent;
-	border: 1px solid #ccd;
-	color: #fff;
-	display: block;
-	text-decoration: none;
-	letter-spacing: 4.5px;
-	padding:10px 20px 10px 20px;
-	border-radius: 25px;
+   background-color: transparent;
+   border: 1px solid #ccd;
+   color: #fff;
+   display: block;
+   text-decoration: none;
+   letter-spacing: 4.5px;
+   padding:10px 20px 10px 20px;
+   border-radius: 25px;
 }
 
 .menu li a:hover {
-	background-color: #ccd;
-	color: #000;
+   background-color: #ccd;
+   color: #000;
 }
 
 .intro {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
 }
 
 .intro h1, p {
-	letter-spacing: 5.5px;
-	color: #434343;
-	text-shadow: 1.2px 1px 0px #ddd;
-	margin-top: 55px;
+   letter-spacing: 5.5px;
+   color: #434343;
+   text-shadow: 1.2px 1px 0px #ddd;
+   margin-top: 55px;
 }
 
 img {
-	width: 100%;
-	border-radius: 10px;
+   width: 100%;
+   border-radius: 10px;
 }
 
 
@@ -104,9 +104,9 @@ img {
 	}
 
 	.menu {
-    justify-content: center;
-    position: absolute;
-    top: 40%;
+		justify-content: center;
+		position: absolute;
+		top: 40%;
 	}
 
 	.menu li a {
@@ -118,5 +118,4 @@ img {
 		background-color: #111111;
 		color: #fff;
 	}
-
 }

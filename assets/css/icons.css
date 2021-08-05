@@ -44,6 +44,10 @@
 	transform: translateY(-50%);
 }
 
+.social ul {
+	opacity: 0;
+}
+
 .social ul li {
 	margin: 15px 0;
 }
@@ -69,8 +73,8 @@
 	height: 50px;
 	color: #FFF;
 	border-radius: 10px;
-  background: rgba(1, 1, 1, .1);
-  font-size: 15px;
+	background: rgba(1, 1, 1, .1);
+	font-size: 15px;
 	z-index: -1;
 	opacity: 0;
 	backface-visibility: hidden;
@@ -84,6 +88,6 @@
 }
 /* End Social Links */
 
-.knowledge-icons, .programmer, #home .cta, #smothScroll{
+.knowledge-icons, .programmer, #home .cta, #smoothScroll{
 	filter: drop-shadow(2px 4px 8px #470BA9);
 }

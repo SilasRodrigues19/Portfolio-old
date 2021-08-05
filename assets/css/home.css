@@ -34,11 +34,11 @@
 	width: fit-content;
 	font-size: 5rem;
 	position: relative;
-  text-shadow: 6px 3px 0 rgba(0, 0, 0, .2);
+  	text-shadow: 6px 3px 0 rgba(0, 0, 0, .2);
 }
 
 .infoAnimation {
-	animation: moveInfo 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	animation: moveInfo 3s cubic-bezier(0.175, 0.885, 0.32, 1);
 	color: #cacaca;
 }
 
@@ -65,7 +65,7 @@
 	border-color: var(--primary-color);;
 	border-radius: 15px;
 	font-size: 2rem;
-  font-weight: 500;
+  	font-weight: 500;
 	letter-spacing: .2rem;
 	margin-top: 30px;
 	transition: 1s ease;
@@ -79,23 +79,23 @@
 }
 
 .cta:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    120deg,
-    transparent,
-    var(--portfolio-hover),
-    transparent
-  );
-  transition: all 999ms;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		120deg,
+		transparent,
+		var(--portfolio-hover),
+		transparent
+	);
+	transition: all 999ms;
 }
 
 .cta:hover:before {
-  left: 100%;
+  	left: 100%;
 }
 
 .portfolioIcon {

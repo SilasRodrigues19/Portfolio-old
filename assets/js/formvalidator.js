@@ -28,7 +28,7 @@ jQuery(function ($) {
        },
        mensagem: {
         required: true,
-        maxlength: 450
+        maxlength: 1500
        }
     },
     messages:{

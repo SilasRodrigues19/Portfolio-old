@@ -10,7 +10,6 @@ let charIndex = 0;
 
 
 /* Data Words */
-
 function type() {
   if (charIndex < textArray[textArrayIndex].length) {
     if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
@@ -44,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
 });
 
 
-/* Alert */
+/* Tooltip alert */
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
 });
@@ -53,10 +52,9 @@ $(document).ready(function(){
 /* Loader */
 window.onload = displayContent;
 
+let loader;
 
-var loader;
-
-
+// Add animation after the page loaded
 function displayContent() {
     loader.style.display = 'none';
     $('.infoText').addClass('infoAnimation');
@@ -64,11 +62,11 @@ function displayContent() {
     $('.arrayText').addClass('infoAnimation');
 }
 
-/* Adicionando mensagem de alerta ao acessar mail.php via URL */
+/* Add warning when the user tries to access mail.php by URL */
 let buttonMailAlert = document.getElementById('btnsection');
 let mailAlert = document.getElementById('psection');
 
-if (mailAlert != null) { /* Evitar que de erro de variavel vazia quando não tentarem acessar via URL */
+if (mailAlert != null) { /* Avoid null variable error when the user doesn't try to access by URL */
 buttonMailAlert.addEventListener('click', function() {
   mailAlert.style.display = 'none';
 });
@@ -83,21 +81,35 @@ const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
 const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
 const header = document.querySelector('.header.container');
 
-let scrollToTop = document.querySelector('#smothScroll');
+
+
+
+const scrollToTop = document.querySelector('#smoothScroll');
+const social = document.querySelector('.social ul');
+
 
 menu.addEventListener('click', () => {
   menu.classList.toggle('active');
   mobile_menu.classList.toggle('active');
-
+  
+  // Improving accessibility for visually impaired people
+  if (mobile_menu.classList.contains('active')) {
+  menu.setAttribute('aria-expanded', 'true');
+  menu.setAttribute('aria-label', 'Fechar Menu');
+} else {
+  menu.setAttribute('aria-expanded', 'false');
+  menu.setAttribute('aria-label', 'Abrir Menu');
+}
 });
 
 document.addEventListener('scroll', () => {
-  var scroll_position = window.scrollY;
+  let scroll_position = window.scrollY;
   if (scroll_position > 100) {
     $(header).css('backgroundColor', '#111');
-
+    $(social).css('opacity', '1');
   } else {
     $(header).css('backgroundColor', 'transparent');
+    $(social).css('opacity', '0');
   }
 
   if(scroll_position < 600) {
@@ -105,6 +117,7 @@ document.addEventListener('scroll', () => {
   } else {
     $(scrollToTop).css('opacity', '1');
   }
+
 });
 
 menu_item.forEach((item) => {
@@ -119,3 +132,29 @@ menu_item.forEach((item) => {
     }
   });
 });
+
+
+
+const textArea = document.querySelector('#mensagem');
+const count = document.querySelector('.count');
+
+textArea.addEventListener("keyup", e => {
+    textArea.style.height = "auto";
+
+    let scrollHeight = e.target.scrollHeight;
+
+    textArea.style.height = `${ scrollHeight }px`;
+});
+
+
+function countLetters() {
+  const text = textArea.value;
+  const textLength = textArea.value.length;
+  count.innerText = `${ textLength }`;
+
+  if (textLength >= 1500) {
+     $('.count').addClass('error');
+  } else {
+    $('.count').removeClass('error');
+  }
+}

@@ -1,6 +1,6 @@
-/* Smoth scroll */
+/* Smooth scroll */
  jQuery(document).ready(function($) {
-   $("#smothScroll").click(function(event){
+   $("#smoothScroll").click(function(event){
     event.preventDefault();
     $('html, body').animate(
       {

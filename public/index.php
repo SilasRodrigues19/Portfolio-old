@@ -16,9 +16,9 @@
 	<title>Portfólio | Silas Rodrigues</title>
 	<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
-  <link rel="manifest" href="../site.webmanifest">
+	<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
+	<link rel="manifest" href="../site.webmanifest">
 	<link rel="shortcut icon" type="image/png" href="../public/favicon.ico">
 
 	<!-- Bootstrap 4.0.0 -->
@@ -61,7 +61,7 @@
 	<link rel="stylesheet" href="../assets/css/icons.css">
 
 	<!-- Animate CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
 
 	<!-- Lightbox -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
@@ -78,7 +78,7 @@
 	<!-- Form Validator -->
 	<script defer src="../assets/js/formvalidator.js"></script>
 
-  <!-- Validator Messages -->
+  	<!-- Validator Messages -->
 	<script defer src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_ptbr.js"></script>
 	<!-- Scripts need to be imported before </head> to resolve validation messages error -->
 </head>
@@ -94,11 +94,11 @@
 						<!-- Mobile Menu -->
 						<input id="hamburger" type="checkbox">
 						<label for="hamburger">
-							<div class="menu">
+							<div class="menu" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="mobileExpanded" aria-expanded="false">
 								<div class="bar"></div>
 							</div>
 						</label>
-						<ul>
+						<ul id="mobileExpanded" role="menu">
 							<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="450"><a class="scroll" href="#services" data-after="Services">Serviços</a></li>
 							<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="650"><a class="scroll" href="#projects" data-after="Projects">Projetos</a></li>
 							<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="850"><a class="scroll" href="#certificates" data-after="Courses">Cursos</a>
@@ -139,7 +139,7 @@
 			<aside class="social">
 				<ul>
 					<li>
-						<a href="https://whats.link/silasrodrigues21" target="_blank" rel="noreferrer">
+						<a href="https://api.whatsapp.com/send?phone=5519986024827" target="_blank" rel="noreferrer">
 							<span class="iconify whatsapp" data-icon="whh:whatsapp" data-inline="false"></span>
 							<span>WhatsApp</span>
 						</a>
@@ -158,83 +158,81 @@
 					</li>
 				</ul>
 			</aside>
-
 		</div>
-
 	</section>
 	<!-- End Home Section -->
 
   <!-- Service Section -->
-  <section id="services">
-  	<div class="section-title">
-  		<h1 data-aos="fade-down">Conhecimentos</h1>
-			<p data-aos="fade-up">Abaixo estão as principais ferramentas e tecnologias que eu utilizo <br> para realizar os serviços prestados.</p>
+  	<section id="services">
+  		<div class="section-title">
+  			<h1 data-aos="fade-down">Conhecimentos</h1>
+			<p data-aos="fade-up">Abaixo estão as principais ferramentas e tecnologias que eu utilizo nos meus projetos.</p>
 			<hr data-aos="fade-down">
 		</div>
 		<div class="knowledges">
-  		<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
-  			<div class="knowledge-header">
+			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
+				<div class="knowledge-header">
 					<div class="knowledge-icons" data-toggle="tooltip" title="HTML 5">
 						<span class="iconify" data-icon="bx:bxs-file-html" data-inline="false"></span>
 					</div>
 					<p>Linguagem de marcação de texto para estruturar e apresentar páginas web.</p>
-  			</div>
-  		</div>
-  		<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
-  			<div class="knowledge-header">
+				</div>
+			</div>
+			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
+				<div class="knowledge-header">
 					<div class="knowledge-icons" data-toggle="tooltip" title="CSS 3">
 						<span class="iconify" data-icon="fluent:document-css-24-regular" data-inline="false"></span>
 					</div>
 					<p>Utilizado para estilizar a aparência de uma página, animar, usar transições e afins.</p>
-  			</div>
-  		</div>
-  		<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
-  			<div class="knowledge-header">
+				</div>
+			</div>
+			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
+				<div class="knowledge-header">
 					<div class="knowledge-icons" data-toggle="tooltip" title="JavaScript">
 						<span class="iconify" data-icon="fluent:document-javascript-24-filled" data-inline="false"></span>
 					</div>
 					<p>Linguagem de programação que permite a criação de conteúdos dinâmicos e deixá-lo mais interativo.</p>
-  			</div>
-  		</div>
-  		<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
-  			<div class="knowledge-header">
+				</div>
+			</div>
+			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
+				<div class="knowledge-header">
 					<div class="knowledge-icons" data-toggle="tooltip" title="React JS">
 						<span class="iconify" data-inline="false" data-icon="cib:react"></span>
 					</div>
 					<p>React JS é uma biblioteca JavaScript para a criação de interfaces de usuário ou UI (user interface).</p>
-  			</div>
-  		</div>
-  		<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
-  			<div class="knowledge-header">
+				</div>
+			</div>
+			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
+				<div class="knowledge-header">
 					<div class="knowledge-icons" data-toggle="tooltip" title="MySQL">
 						<span class="iconify" data-inline="false" data-icon="whh:mysqltwo"></span>
 					</div>
 					<p>O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL.</p>
-  			</div>
-  		</div>
-  		<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
-  			<div class="knowledge-header">
+				</div>
+			</div>
+			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
+				<div class="knowledge-header">
 					<div class="knowledge-icons" data-toggle="tooltip" title="JQuery">
 						<span class="iconify" data-inline="false" data-icon="cib:jquery"></span>
 					</div>
 					<p>jQuery é uma biblioteca JavaScript que facilita a manipulação de eventos, animações, HTML e utilização de AJAX</p>
-  			</div>
-  		</div>
+				</div>
+			</div>
 			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
-  			<div class="knowledge-header">
+				<div class="knowledge-header">
 					<div class="knowledge-icons" data-toggle="tooltip" title="Figma">
 						<span class="iconify" data-icon="akar-icons:figma-fill" data-inline="false"></span>
 					</div>
 					<p>O Figma é uma ferramenta de design para interfaces, que oferece a possibilidade de trabalho colaborativo.</p>
-  			</div>
-  		</div>
+				</div>
+			</div>
 			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
-  			<div class="knowledge-header">
+				<div class="knowledge-header">
 					<div class="knowledge-icons" data-toggle="tooltip" title="Bulma">
 						<span class="iconify" data-inline="false" data-icon="mdi:bulma"></span>
 					</div>
 					<p>Bulma é um framework CSS totalmente gratuito, inspirado no Bootstrap e baseado em Flexbox, que já tem uma compatibilidade bem grande entre os navegadores.</p>
-  			</div>
+				</div>
 			</div>
 			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
 				<div class="knowledge-header">
@@ -242,7 +240,7 @@
 						<span class="iconify" data-inline="false" data-icon="file-icons:php"></span>
 					</div>
 					<p>PHP é uma linguagem de programação web que favorece a conexão entre os servidores e a interface do usuário.</p>
-  			</div>
+				</div>
 			</div>
 			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
 				<div class="knowledge-header">
@@ -259,7 +257,7 @@
 					</div>
 					<p>Bootstrap é um framework CSS moderno que organiza e gerencia o layout de um site.</p>
 				</div>
-  		</div>
+			</div>
 			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
 				<div class="knowledge-header">
 					<div class="knowledge-icons" data-toggle="tooltip" title="SASS">
@@ -267,10 +265,9 @@
 					</div>
 					<p>SASS é uma linguagem de extensão ao CSS que dá um controle mais profissional e dinâmico.</p>
 				</div>
-  		</div>
-    </div>
-
-  </section>
+			</div>
+    	</div>
+  	</section>
 	<!-- End Service Section -->
 
 	<!-- Projects Section -->
@@ -296,90 +293,95 @@
 							    <li data-target="#jobsCarousel" data-slide-to="0"></li>
 							    <li data-target="#jobsCarousel" data-slide-to="1"></li>
 							    <li data-target="#jobsCarousel" data-slide-to="2"></li>
-									<li data-target="#jobsCarousel" data-slide-to="3"></li>
-									<li data-target="#jobsCarousel" data-slide-to="4" class="active"></li>
-									<li data-target="#jobsCarousel" data-slide-to="5"></li>
-									<li data-target="#jobsCarousel" data-slide-to="6"></li>
-							 </ol>
-						  <div class="carousel-inner">
+								<li data-target="#jobsCarousel" data-slide-to="3"></li>
+								<li data-target="#jobsCarousel" data-slide-to="4" class="active"></li>
+								<li data-target="#jobsCarousel" data-slide-to="5"></li>
+								<li data-target="#jobsCarousel" data-slide-to="6"></li>
+							</ol>
+							<div class="carousel-inner">
 								<!-- Project 1 -->
-						    <div class="carousel-item" data-toggle="tooltip" title="Criado para o Streamer Luiz 'SimpSonsS' Guilherme, clique para visualizar!">
-						      <a href="https://siimpsonss.vercel.app" rel="noreferrer" target="_blank">
-						      	<img class="d-block w-100" src="../assets/img/project1.webp" alt="Stream do SimpSonsS">
-						      </a>
-						      <div class="carousel-caption">
-						        <h2>Stream do Luiz "SimpSonsS" Guilherme</h2>
-						      </div>
-						    </div>
-								<!-- Project 2 -->
-						    <div class="carousel-item" data-toggle="tooltip" title="Venda de serviço para jogo online">
-						      <a href="https://jobison-services.vercel.app" rel="noreferrer" target="_blank">
-						      	<img class="d-block w-100" src="../assets/img/project2.webp" alt="Jobison Services">
-						      </a>
-						      <div class="carousel-caption">
-						        <h2>Serviço de Elo Job League of Legends</h2>
-						      </div>
-						    </div>
-								<!-- Project 3 -->
-						    <div class="carousel-item" data-toggle="tooltip" title="Sistema de cadastro de aluno e gerenciamento de cursos, alunos e matriculas">
-						      <a href="https://github.com/SilasRodrigues19/PHP-MySQL-DogCursos" rel="noreferrer" target="_blank">
-						      	<img class="d-block w-100" src="../assets/img/project3.webp" alt="Sistema de cadastro de cursos">
-						      </a>
-						      <div class="carousel-caption">
-						        <h2>Dog Cursos - Matricule-se</h2>
-						      </div>
-						    </div>
-								<!-- Project 4 -->
-								<div class="carousel-item" data-toggle="tooltip" title="Jogo da cobrinha">
-						      <a href="https://snake-game-silasrodrigues19.vercel.app" rel="noreferrer" target="_blank">
-						      	<img class="d-block w-100" src="../assets/img/project4.webp" alt="Snake Game">
-						      </a>
-						      <div class="carousel-caption">
-						        <h2>Jogo da cobrinha feito em JavaScript</h2>
-						      </div>
-						    </div>
-								<!-- Project 5 -->
-								<div class="carousel-item active" data-toggle="tooltip" title="Custom Clone Instagram">
-						      <a href="https://clone-insta-homepage.vercel.app" rel="noreferrer" target="_blank">
-						      	<img class="d-block w-100" src="../assets/img/project5.webp" alt="Clone personalizado da home page do instagram">
-						      </a>
-						      <div class="carousel-caption">
-						        <h2>Clone da Home Page do Instagram</h2>
-						      </div>
-						    </div>
-								<!-- Project 6 -->
-								<div class="carousel-item" data-toggle="tooltip" title="Buscando perfils com API do GitHub">
-						      <a href="#" rel="noreferrer" target="_blank">
-						      	<img class="d-block w-100" src="../assets/img/project6.webp" alt="Pesquisando com API do GitHub">
-						      </a>
-						      <div class="carousel-caption">
-						        <h2>Pesquisando com API do GitHub</h2>
-						      </div>
-						    </div>
-								<!-- Project 7 -->
-								<div class="carousel-item" data-toggle="tooltip" title="Buscando dados com Weather App">
-						      <a href="https://weatherproject.vercel.app" rel="noreferrer" target="_blank">
-						      	<img class="d-block w-100" src="../assets/img/project7.webp" alt="Pesquisando com Weather App">
-						      </a>
-						      <div class="carousel-caption">
-						        <h2>Consultando previsão do tempo com Weather App</h2>
-						      </div>
-						    </div>
-						  </div>
-							<!-- Prev button -->
-						  <a class="carousel-control-prev" href="#jobsCarousel" role="button" data-slide="prev">
+								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Criado para o Streamer Luiz 'SimpSonsS' Guilherme, clique para visualizar!">
+									<a href="https://siimpsonss.vercel.app" rel="noreferrer" target="_blank">
+										<img class="d-block w-100" src="../assets/img/project1.webp" alt="Stream do SimpSonsS">
+									</a>
+									<div class="carousel-caption">
+										<h2>Stream do Luiz "SimpSonsS" Guilherme</h2>
+									</div>
+								</div>
 
-						    <span class="carousel-control-prev-icon"></span>
-						    <span class="sr-only">prev</span>
-						  </a>
+								<!-- Project 2 -->
+								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Venda de serviço para jogo online">
+									<a href="https://jobison-services.vercel.app" rel="noreferrer" target="_blank">
+										<img class="d-block w-100" src="../assets/img/project2.webp" alt="Jobison Services">
+									</a>
+									<div class="carousel-caption">
+										<h2>Serviço de Elo Job League of Legends</h2>
+									</div>
+								</div>
+
+								<!-- Project 3 -->
+								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Sistema de cadastro de aluno e gerenciamento de cursos, alunos e matriculas">
+									<a href="https://github.com/SilasRodrigues19/PHP-MySQL-DogCursos" rel="noreferrer" target="_blank">
+										<img class="d-block w-100" src="../assets/img/project3.webp" alt="Sistema de cadastro de cursos">
+									</a>
+									<div class="carousel-caption">
+										<h2>Dog Cursos - Matricule-se</h2>
+									</div>
+								</div>
+
+								<!-- Project 4 -->
+								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Jogo da cobrinha">
+									<a href="https://snake-game-silasrodrigues19.vercel.app" rel="noreferrer" target="_blank">
+										<img class="d-block w-100" src="../assets/img/project4.webp" alt="Snake Game">
+									</a>
+									<div class="carousel-caption">
+										<h2>Jogo da cobrinha feito em JavaScript</h2>
+									</div>
+								</div>
+
+								<!-- Project 5 -->
+								<div class="carousel-item hover-rotate active" data-toggle="tooltip" title="Custom Clone Instagram">
+									<a href="https://clone-insta-homepage.vercel.app" rel="noreferrer" target="_blank">
+										<img class="d-block w-100" src="../assets/img/project5.webp" alt="Clone personalizado da home page do instagram">
+									</a>
+									<div class="carousel-caption">
+										<h2>Clone da Home Page do Instagram</h2>
+									</div>
+								</div>
+
+								<!-- Project 6 -->
+								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Buscando perfils com API do GitHub">
+									<a href="#" rel="noreferrer" target="_blank">
+										<img class="d-block w-100" src="../assets/img/project6.webp" alt="Pesquisando com API do GitHub">
+									</a>
+									<div class="carousel-caption">
+										<h2>Pesquisando com API do GitHub</h2>
+									</div>
+								</div>
+								<!-- Project 7 -->
+								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Buscando dados com Weather App">
+									<a href="https://weatherproject.vercel.app" rel="noreferrer" target="_blank">
+										<img class="d-block w-100" src="../assets/img/project7.webp" alt="Pesquisando com Weather App">
+									</a>
+									<div class="carousel-caption">
+										<h2>Consultando previsão do tempo com Weather App</h2>
+									</div>
+								</div>
+							</div>
+							<!-- Prev button -->
+							<a class="carousel-control-prev" href="#jobsCarousel" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+								<span class="sr-only">prev</span>
+							</a>
 							<!-- Next button -->
-						  <a class="carousel-control-next" href="#jobsCarousel" role="button" data-slide="next">
-						    <span class="carousel-control-next-icon"></span>
-						    <span class="sr-only">next</span>
-						  </a>
+							<a class="carousel-control-next" href="#jobsCarousel" role="button" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+								<span class="sr-only">next</span>
+							</a>
 						</div>
 						<!-- End Caroussel-->
 					</div>
+				</div>
 			</div>
 	</section>
 	<!-- End Projects Section -->
@@ -427,7 +429,6 @@
 	</section>
 	<!-- End Certificate Section -->
 
-
 	<!-- Form Section -->
 	<section id="form">
 		<div class="form container">
@@ -439,68 +440,76 @@
 				</h1>
 			</div>
 			<div class="my-form" data-aos="zoom-in-up">
-		    <div class="row">
-		      <div class="col-12 text-center my-5">
-		        <h1 class="display-4">
-							<i class="fa fa-paper-plane"><span class="iconify" data-icon="si-glyph:paper-plane" data-inline="false"></span>
-							</i>
-							Formulário de Contato
-						</h1>
-		      </div>
-		    </div>
+				<div class="row">
+				<div class="col-12 text-center my-5">
+					<h1 class="display-4">
+						<i class="fa fa-paper-plane">
+							<span class="iconify" data-icon="si-glyph:paper-plane" data-inline="false"></span>
+						</i>
+						Formulário de Contato
+					</h1>
+				</div>
+				</div>
 
-		    <div class="row justify-content-center mb-5">
-		      <div class="col-sm-12 col-md-10 col-lg-8">
-		        <form action="../src/mail.php" method="POST" id="formContact">
-		          <div class="form-row">
-								<!-- Name -->
-		            <div class="form-group col-sm-6">
-			            <label for="nome">Seu nome</label>
-			            <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome">
-		            </div>
+				<div class="row justify-content-center mb-5">
+				<div class="col-sm-12 col-md-10 col-lg-8">
+					<form action="../src/mail.php" method="POST" id="formContact">
+					<div class="form-row">
+						<!-- Name -->
+						<div class="form-group col-sm-6">
+							<label for="nome">Seu nome</label>
+							<input type="text" class="form-control" name="nome" id="nome" placeholder="Nome">
+						</div>
 
-								<!-- Surname -->
-		          	<div class="form-group col-sm-6">
-		              <label for="sobrenome">Seu sobrenome</label>
-		              <input type="text" class="form-control" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
-		            </div>
-		          </div>
+						<!-- Surname -->
+						<div class="form-group col-sm-6">
+						<label for="sobrenome">Seu sobrenome</label>
+						<input type="text" class="form-control" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+						</div>
+					</div>
+					<!-- End Name and Surname rows -->
 
-		          <div class="form-row">
-								<!-- Email -->
-		            <div class="form-group col-sm-6">
-			            <label for="email">Seu email</label>
-			            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-		            </div>
+					<div class="form-row">
+						<!-- Email -->
+						<div class="form-group col-sm-6">
+							<label for="email">Seu email</label>
+							<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+						</div>
 
-		          	<div class="form-group col-sm-6">
-									<!-- Phone -->
-		              <label for="celular">Seu celular</label>
-		              <input type="text" class="form-control" name="celular" id="celular" placeholder="(00) 00000-0000">
-		            </div>
-		          </div>
+						<div class="form-group col-sm-6">
+						<!-- Phone -->
+						<label for="celular">Seu celular</label>
+						<input type="text" class="form-control" name="celular" id="celular" placeholder="(00) 00000-0000">
+						</div>
+					</div>
+					<!-- End Email and Phone rows -->
 
-		          <div class="form-row">
-		            <div class="form-group col-sm-12">
-									<!-- Message -->
-		              <label for="mensagem">Sua mensagem</label>
-		              <textarea class="form-control" name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Sinta-se a vontade"></textarea>
-		            </div>
-		          </div>
-
-		          <div class="form-row">
-		            <div class="col-sm-12">
-		              <input type="submit" class="btn btn-secondary form-control" name="btnSubmit" value="Enviar">
-		            </div>
-		          </div>
-		        </form>
-		      </div>
-		    </div>
-		  </div>
+					<div class="form-row">
+						<div class="form-group col-sm-12">
+						<!-- Message -->
+						<label for="mensagem">Sua mensagem</label>
+						<textarea class="form-control" name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Sinta-se a vontade" onkeyup="countLetters();"></textarea>
+						</div>
+					</div>
+					<!-- End Message row -->
+					<div class="form-row">
+						<div class="col-sm-12">
+						<input type="submit" class="btn btn-secondary form-control" name="btnSubmit" value="Enviar">
+						</div>
+						<div class="form-group col-sm-12">
+						<br>
+						<!-- Warning -->
+						<label>Total de digitos: <span class="count">0</span><p>Limite de 1500 caracteres</p></label>
+						</div>
+					</div>
+					<!-- End button and warning label row -->
+					</form>
+				</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<!-- End Form Section -->
-
 
 	<!-- Footer -->
 		<footer id="footer">
@@ -531,7 +540,7 @@
 							</a>
 						</div>
 					</div>
-					<a id="smothScroll" href="#home" data-toggle="tooltip" title=" &#8673;" data-aos="fade-down" data-aos-offset="0">
+					<a id="smoothScroll" href="#home" data-toggle="tooltip" title=" &#8673;" data-aos="fade-down" data-aos-offset="0">
 						<span class="iconify arrow-up" data-icon="bytesize:chevron-top" data-inline="false"></span>
 					</a>
 				</div>
@@ -544,7 +553,7 @@
 	<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 
 	<!-- Smooth Scroll Function -->
-	<script src="../assets/js/smoth-scroll.js"></script>
+	<script src="../assets/js/smooth-scroll.js"></script>
 
 	<!-- Lightbox -->
 	<script src="../assets/js/lightbox-plus-jquery.min.js"></script>

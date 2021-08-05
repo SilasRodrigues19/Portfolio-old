@@ -34,7 +34,7 @@ $mensagem = utf8_decode($_POST['mensagem']);
 
 $resultBtn = filter_input(INPUT_POST, 'btnSubmit', FILTER_SANITIZE_STRING);
 
-// Se o usuário clicou no botão para enviar o formulário
+// If the form button was clicked
 if ($resultBtn) {
 	$mail = new PHPMailer(true);
 

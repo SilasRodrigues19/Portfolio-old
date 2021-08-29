@@ -21,7 +21,7 @@
 
 }
 
-#form .form {
+.form {
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
@@ -67,7 +67,7 @@ label {
 textarea.error:focus,
 textarea.error:active {
     color: #000;
-    background-color: rgba(255, 0, 0, .1);
+    background-color: rgba(255, 0, 0, .05);
 }
 
 textarea {
@@ -75,14 +75,19 @@ textarea {
     resize: none;
 }
 
-textarea[name='mensagem']::-webkit-scrollbar {
-    width: 0;
-}
 
 /* Remove default bg from browser */
 input:-webkit-autofill {
     -webkit-background-clip: text;
     -webkit-text-fill-color: #545b62;
+}
+
+input[type="submit"], input[type="email"], input[type="text"] {
+    border-radius: 50px;
+}
+
+ #mensagem {
+    border-radius: 20px;
 }
 
 .btn-secondary {
@@ -106,3 +111,4 @@ input:-webkit-autofill {
     color: #000 !important;
     background-color: transparent !important;
 }
+

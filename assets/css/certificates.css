@@ -1,5 +1,5 @@
 #certificates {
-	background-image: linear-gradient(to right, #434343 0%, black 100%);
+	background-image: linear-gradient(to right, #243b55 0%, #141e30 100%);
 }
 
 .certificate-header h1 {
@@ -10,7 +10,7 @@
 	padding-bottom: 20px;
 }
 
-#certificates .certificates {
+.certificates {
 	flex-direction: column;
 	text-align: center;
 	max-width: 1300px;
@@ -29,14 +29,13 @@
 }
 
 .certificate img {
-	filter: none;
 	border-radius: 10px;
   	margin: 15px;
 	max-width: 200px;
-  	max-height: 150px;
-  	transition: all .5s !important;;
+	max-height: 150px;
+	transition: all .5s !important;
 }
 
 .certificate img:hover {
-  transform: scale(1.0) rotate(3deg) !important;
+  	transform: scale(1.0) rotate(3deg) !important;
 }

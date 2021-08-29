@@ -3,11 +3,6 @@
     background-image: linear-gradient(to bottom, #a663fc 56%, #515aec 70%);
 }
 
-.serviceSvg {
-    position: relative;
-    top: 50px;
-}
-
 .programmer {
     position: relative;
     bottom: 3vw;
@@ -15,10 +10,9 @@
     opacity: .5;
 }
 
-#services .services {
+#services {
     flex-direction: column;
     text-align: center;
-    max-width: 1500px;
     margin: 0 auto;
     padding: 100px 0;
 }
@@ -116,12 +110,18 @@
     grid-row: 6 / 8;
 }
 
+.knowledge:nth-child(13) {
+    grid-column: 8 / 12;
+    grid-row: 9 / 11;
+}
+
 .knowledge-header {
     display: flex;
     align-items: center;
 }
 
 .knowledge-header p {
+    text-align: initial;
     font-size: 1.2rem;
     font-family: Bradley Hand, cursive, 'Open Sans', sans-serif;
     margin: 10px;

@@ -60,25 +60,28 @@
 	<link rel="preload" href="../assets/css/icons.css" as="style">
 	<link rel="stylesheet" href="../assets/css/icons.css">
 
-	<!-- Animate CSS -->
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
-
 	<!-- Lightbox -->
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" as="style">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 
 	<!-- JQuery Compatible with JQuery Mask-->
+	<link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" as="script">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 	<!-- JQuery Validator -->
+	<link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" as="script">
 	<script defer src="../assets/js/jquery.validate.min.js"></script>
 
 	<!-- Mask Plugin JQuery -->
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" as="script">
 	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 
 	<!-- Form Validator -->
+	<link rel="preload" href="../assets/js/formvalidator.js" as="script">
 	<script defer src="../assets/js/formvalidator.js"></script>
 
   	<!-- Validator Messages -->
+  	<link rel="preload" href="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_ptbr.js" as="script">
 	<script defer src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_ptbr.js"></script>
 	<!-- Scripts need to be imported before </head> to resolve validation messages error -->
 </head>
@@ -152,8 +155,14 @@
 					</li>
 					<li>
 						<a href="https://github.com/SilasRodrigues19" target="_blank" rel="noreferrer">
-							<span class="iconify github" data-icon="la:github-alt" data-inline="false"></span>
+							<span class="iconify github" data-icon="eva:github-fill" data-inline="false"></span>
 							<span>GitHub</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://codepen.io/SilasRodrigues19" target="_blank" rel="noreferrer">
+							<span class="iconify github" data-icon="mdi:codepen" data-inline="false"></span>
+							<span>CodePen</span>
 						</a>
 					</li>
 				</ul>
@@ -188,7 +197,7 @@
 			</div>
 			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
 				<div class="knowledge-header">
-					<div class="knowledge-icons" data-toggle="tooltip" title="JavaScript">
+					<div class="knowledge-icons" data-toggle="tooltip" title="JavaScript ES6">
 						<span class="iconify" data-icon="fluent:document-javascript-24-filled" data-inline="false"></span>
 					</div>
 					<p>Linguagem de programação que permite a criação de conteúdos dinâmicos e deixá-lo mais interativo.</p>
@@ -236,7 +245,7 @@
 			</div>
 			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
 				<div class="knowledge-header">
-					<div class="knowledge-icons" data-toggle="tooltip" title="PHP">
+					<div class="knowledge-icons" data-toggle="tooltip" title="PHP 7">
 						<span class="iconify" data-inline="false" data-icon="file-icons:php"></span>
 					</div>
 					<p>PHP é uma linguagem de programação web que favorece a conexão entre os servidores e a interface do usuário.</p>
@@ -264,6 +273,14 @@
 						<span class="iconify" data-inline="false" data-icon="cib:sass-alt"></span>
 					</div>
 					<p>SASS é uma linguagem de extensão ao CSS que dá um controle mais profissional e dinâmico.</p>
+				</div>
+			</div>
+			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
+				<div class="knowledge-header">
+					<div class="knowledge-icons" data-toggle="tooltip" title="Styled Components">
+						<span class="iconify" data-inline="false" data-icon="file-icons:styledcomponents"></span>
+					</div>
+					<p>É uma biblioteca que permite utilizar CSS-in-JS e é muito comum de ser utilizada com ReactJS.</p>
 				</div>
 			</div>
     	</div>
@@ -302,70 +319,106 @@
 								<!-- Project 1 -->
 								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Criado para o Streamer Luiz 'SimpSonsS' Guilherme, clique para visualizar!">
 									<a href="https://siimpsonss.vercel.app" rel="noreferrer" target="_blank">
-										<img class="d-block w-100" src="../assets/img/project1.webp" alt="Stream do SimpSonsS">
+										<figure class="carousel-image">
+											<img class="d-block w-100" src="../assets/img/project1.webp" alt="Stream do SimpSonsS">
+											<i>
+												<ion-icon name="open-outline"></ion-icon>
+											</i>
+										</figure>
+										<figcaption class="carousel-info">
+											<h2>Stream do Luiz "SimpSonsS" Guilherme</h2>
+										</figcaption>
 									</a>
-									<div class="carousel-caption">
-										<h2>Stream do Luiz "SimpSonsS" Guilherme</h2>
-									</div>
 								</div>
 
 								<!-- Project 2 -->
-								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Venda de serviço para jogo online">
-									<a href="https://jobison-services.vercel.app" rel="noreferrer" target="_blank">
-										<img class="d-block w-100" src="../assets/img/project2.webp" alt="Jobison Services">
+								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Sistema de cadastro de itens com login">
+									<a href="https://raw.githubusercontent.com/SilasRodrigues19/Prize-draw-register/main/img/preview.gif" rel="noreferrer" target="_blank">
+										<figure class="carousel-image">
+											<img class="d-block w-100" src="../assets/img/project2.webp" alt="Sistema de Cadastro de Items">
+											<i>
+												<ion-icon name="open-outline"></ion-icon>
+											</i>
+										</figure>
+										<figcaption class="carousel-info">
+											<h2>Sistema de Cadastro de itens com Tela de Login</h2>
+										</figcaption>
 									</a>
-									<div class="carousel-caption">
-										<h2>Serviço de Elo Job League of Legends</h2>
-									</div>
 								</div>
 
 								<!-- Project 3 -->
 								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Sistema de cadastro de aluno e gerenciamento de cursos, alunos e matriculas">
-									<a href="https://github.com/SilasRodrigues19/PHP-MySQL-DogCursos" rel="noreferrer" target="_blank">
-										<img class="d-block w-100" src="../assets/img/project3.webp" alt="Sistema de cadastro de cursos">
+									<a href="http://dogcursos.epizy.com" rel="noreferrer" target="_blank">
+										<figure class="carousel-image">
+											<img class="d-block w-100" src="../assets/img/project3.webp" alt="Sistema de cadastro de cursos">
+											<i>
+												<ion-icon name="open-outline"></ion-icon>
+											</i>
+										</figure>
+										<figcaption class="carousel-info">
+											<h2>Dog Cursos - Matricule-se</h2>
+										</figcaption>
 									</a>
-									<div class="carousel-caption">
-										<h2>Dog Cursos - Matricule-se</h2>
-									</div>
 								</div>
 
 								<!-- Project 4 -->
 								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Jogo da cobrinha">
 									<a href="https://snake-game-silasrodrigues19.vercel.app" rel="noreferrer" target="_blank">
-										<img class="d-block w-100" src="../assets/img/project4.webp" alt="Snake Game">
+										<figure class="carousel-image">
+											<img class="d-block w-100" src="../assets/img/project4.webp" alt="Snake Game">
+											<i>
+												<ion-icon name="open-outline"></ion-icon>
+											</i>
+										</figure>
+										<figcaption class="carousel-info">
+											<h2>Jogo da cobrinha feito em JavaScript</h2>
+										</figcaption>
 									</a>
-									<div class="carousel-caption">
-										<h2>Jogo da cobrinha feito em JavaScript</h2>
-									</div>
 								</div>
 
 								<!-- Project 5 -->
 								<div class="carousel-item hover-rotate active" data-toggle="tooltip" title="Custom Clone Instagram">
 									<a href="https://clone-insta-homepage.vercel.app" rel="noreferrer" target="_blank">
-										<img class="d-block w-100" src="../assets/img/project5.webp" alt="Clone personalizado da home page do instagram">
+										<figure class="carousel-image">
+											<img class="d-block w-100" src="../assets/img/project5.webp" alt="Clone personalizado da home page do instagram">
+											<i>
+												<ion-icon name="open-outline"></ion-icon>
+											</i>
+										</figure>
+										<figcaption class="carousel-info">
+											<h2>Clone da Home Page do Instagram</h2>
+										</figcaption>
 									</a>
-									<div class="carousel-caption">
-										<h2>Clone da Home Page do Instagram</h2>
-									</div>
 								</div>
 
 								<!-- Project 6 -->
 								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Buscando perfils com API do GitHub">
 									<a href="#" rel="noreferrer" target="_blank">
-										<img class="d-block w-100" src="../assets/img/project6.webp" alt="Pesquisando com API do GitHub">
+										<figure class="carousel-image">
+											<img class="d-block w-100" src="../assets/img/project6.webp" alt="Pesquisando com API do GitHub">
+											<i>
+												<ion-icon name="open-outline"></ion-icon>
+											</i>
+										</figure>
+										<figcaption class="carousel-info">
+											<h2>Pesquisando com API do GitHub</h2>
+										</figcaption>
 									</a>
-									<div class="carousel-caption">
-										<h2>Pesquisando com API do GitHub</h2>
-									</div>
+									
 								</div>
 								<!-- Project 7 -->
 								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Buscando dados com Weather App">
 									<a href="https://weatherproject.vercel.app" rel="noreferrer" target="_blank">
-										<img class="d-block w-100" src="../assets/img/project7.webp" alt="Pesquisando com Weather App">
+										<figure class="carousel-image">
+											<img class="d-block w-100" src="../assets/img/project7.webp" alt="Pesquisando com Weather App">
+											<i>
+												<ion-icon name="open-outline"></ion-icon>
+											</i>
+										</figure>
+										<figcaption class="carousel-info">
+											<h2>Consultando previsão do tempo com Weather App</h2>
+										</figcaption>
 									</a>
-									<div class="carousel-caption">
-										<h2>Consultando previsão do tempo com Weather App</h2>
-									</div>
 								</div>
 							</div>
 							<!-- Prev button -->
@@ -393,36 +446,36 @@
 				<h1 class="section-title" data-aos="fade-down">Certificados</h1>
 				<hr data-aos="fade-down">
 			</div>
-			<div class="certificate" data-aos="fade-up" data-aos-duration="1200">
+			<div class="certificate" data-aos="fade-up">
 				<a href="../assets/img/certificados/bootstrap.webp" data-lightbox="mygallery" data-title="Bootstrap">
-					<img src="../assets/img/certificados/bootstrap.webp" width="200" height="150" alt="Certificado Bootstrap" data-aos="fade-up" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/bootstrap.webp" width="200" height="150" alt="Certificado Bootstrap" data-aos="fade-up">
 				</a>
 				<a href="../assets/img/certificados/git.webp" data-lightbox="mygallery" data-title="Git">
-					<img src="../assets/img/certificados/git.webp" width="200" height="150" alt="Certificado Git" data-aos="fade-up" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/git.webp" width="200" height="150" alt="Certificado Git" data-aos="fade-up">
 				</a>
 				<a href="../assets/img/certificados/HTML-CSS.webp" data-lightbox="mygallery" data-title="HTML e CSS">
-					<img src="../assets/img/certificados/HTML-CSS.webp" width="200" height="150" alt="Certificado HTML e CSS" data-aos="fade-up" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/HTML-CSS.webp" width="200" height="150" alt="Certificado HTML e CSS" data-aos="fade-up">
 				</a>
 				<a href="../assets/img/certificados/jquery.webp" data-lightbox="mygallery" data-title="jQuery">
-					<img src="../assets/img/certificados/jquery.webp" width="200" height="150" alt="Certificado jQuery" data-aos="fade-up" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/jquery.webp" width="200" height="150" alt="Certificado jQuery" data-aos="fade-up">
 				</a>
 				<a href="../assets/img/certificados/logica.webp" data-lightbox="mygallery" data-title="Lógica">
-					<img src="../assets/img/certificados/logica.webp" width="200" height="150" alt="Certificado Lógica" data-aos="fade-up" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/logica.webp" width="200" height="150" alt="Certificado Lógica" data-aos="fade-up">
 				</a>
 				<a href="../assets/img/certificados/MySQL.webp" data-lightbox="mygallery" data-title="MySQL">
-					<img src="../assets/img/certificados/MySQL.webp" width="200" height="150" alt="Certificado MySQL" data-aos="fade-up" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/MySQL.webp" width="200" height="150" alt="Certificado MySQL" data-aos="fade-up">
 				</a>
 				<a href="../assets/img/certificados/php.webp" data-lightbox="mygallery" data-title="PHP">
-					<img src="../assets/img/certificados/php.webp" width="200" height="150" alt="Certificado PHP" data-aos="fade-up" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/php.webp" width="200" height="150" alt="Certificado PHP" data-aos="fade-up">
 				</a>
 				<a href="../assets/img/certificados/WebDesign.webp" data-lightbox="mygallery" data-title="Web Design">
-					<img src="../assets/img/certificados/WebDesign.webp" width="200" height="150" alt="Certificado Web Design" data-aos="fade-up" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/WebDesign.webp" width="200" height="150" alt="Certificado Web Design" data-aos="fade-up">
 				</a>
 				<a href="../assets/img/certificados/html-full.webp" data-lightbox="mygallery" data-title="HTML Full Course">
-					<img src="../assets/img/certificados/html-full.webp" width="200" height="150" alt="Certificado HTML Completo" data-aos="fade-up" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/html-full.webp" width="200" height="150" alt="Certificado HTML Completo" data-aos="fade-up">
 				</a>
 				<a href="../assets/img/certificados/css-full.webp" data-lightbox="mygallery" data-title="CSS Full Course">
-					<img src="../assets/img/certificados/css-full.webp" width="200" height="150" alt="Certificado CSS Completo" data-aos="fade-up" data-aos-easing="ease-in-sine">
+					<img src="../assets/img/certificados/css-full.webp" width="200" height="150" alt="Certificado CSS Completo" data-aos="fade-up">
 				</a>
 			</div>
 		</div>
@@ -463,8 +516,8 @@
 
 						<!-- Surname -->
 						<div class="form-group col-sm-6">
-						<label for="sobrenome">Seu sobrenome</label>
-						<input type="text" class="form-control" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+							<label for="sobrenome">Seu sobrenome</label>
+							<input type="text" class="form-control" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
 						</div>
 					</div>
 					<!-- End Name and Surname rows -->
@@ -477,9 +530,9 @@
 						</div>
 
 						<div class="form-group col-sm-6">
-						<!-- Phone -->
-						<label for="celular">Seu celular</label>
-						<input type="text" class="form-control" name="celular" id="celular" placeholder="(00) 00000-0000">
+							<!-- Phone -->
+							<label for="celular">Seu celular</label>
+							<input type="text" class="form-control" name="celular" id="celular" placeholder="(00) 00000-0000">
 						</div>
 					</div>
 					<!-- End Email and Phone rows -->
@@ -487,19 +540,19 @@
 					<div class="form-row">
 						<div class="form-group col-sm-12">
 						<!-- Message -->
-						<label for="mensagem">Sua mensagem</label>
-						<textarea class="form-control" name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Sinta-se a vontade" onkeyup="countLetters();"></textarea>
+							<label for="mensagem">Sua mensagem</label>
+							<textarea class="form-control" name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Sinta-se a vontade" onkeyup="countLetters();"></textarea>
 						</div>
 					</div>
 					<!-- End Message row -->
 					<div class="form-row">
 						<div class="col-sm-12">
-						<input type="submit" class="btn btn-secondary form-control" name="btnSubmit" value="Enviar">
+							<input type="submit" class="btn btn-secondary form-control" name="btnSubmit" value="Enviar">
 						</div>
 						<div class="form-group col-sm-12">
 						<br>
-						<!-- Warning -->
-						<label>Total de digitos: <span class="count">0</span><p>Limite de 1500 caracteres</p></label>
+							<!-- Warning -->
+							<label>Total de digitos: <span class="count">0</span><p>Limite de 1500 caracteres</p></label>
 						</div>
 					</div>
 					<!-- End button and warning label row -->
@@ -526,7 +579,7 @@
 					</div>
 
 					<div class="contact-item" data-toggle="tooltip" title="Me contate por e-mail">
-						<div data-aos="fade-in" data-aos-offset="0">
+						<div data-aos="fade-up" data-aos-offset="0">
 							<a href="mailto:silasrodrigues.ti@hotmail.com?subject=Contato%20Site">
 								<span class="iconify envelope" data-icon="emojione-monotone:closed-mailbox-with-lowered-flag" data-inline="false"></span>
 							</a>
@@ -535,16 +588,16 @@
 
 					<div class="contact-item" data-toggle="tooltip" title="Veja meu curriculo">
 						<div data-aos="fade-right" data-aos-offset="0">
-							<a href="https://resume.io/r/IVkNM7feV" rel="noreferrer" target="_blank">
+							<a href="../curriculo.pdf" target="_blank">
 								<span class="iconify file-pdf" data-icon="bi:file-earmark-pdf-fill" data-inline="false"></span>
 							</a>
 						</div>
 					</div>
-					<a id="smoothScroll" href="#home" data-toggle="tooltip" title=" &#8673;" data-aos="fade-down" data-aos-offset="0">
+					<a id="smoothScroll" href="#home" data-aos="fade-down" data-aos-offset="0">
 						<span class="iconify arrow-up" data-icon="bytesize:chevron-top" data-inline="false"></span>
 					</a>
 				</div>
-				<p>Copyright &copy 2021 Silas Rodrigues. Todos os direitos reservados.</p>
+				<p>Copyright &copy 2020-2021 Silas Rodrigues. Todos os direitos reservados.</p>
 			</div>
 		</footer>
 	<!-- End footer -->
@@ -557,6 +610,9 @@
 
 	<!-- Lightbox -->
 	<script src="../assets/js/lightbox-plus-jquery.min.js"></script>
+
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 	<!-- Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

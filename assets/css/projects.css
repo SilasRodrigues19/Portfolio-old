@@ -3,21 +3,21 @@
 	background-image: linear-gradient(to top, #b1f4cf 0%, #9890e3 50%);
 }
 
-#projects .projects {
+.projects {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 100px 0;
 }
 
-#projects .all-projects {
+.all-projects {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 }
 
-#projects .project-item {
+.project-item {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -28,7 +28,7 @@
 	border-radius: 10px;
 }
 
-#projects .project-info {
+.project-info {
 	padding: 70px;
 	flex-basis: 50px;
 	height: 100%;
@@ -40,31 +40,37 @@
 	color: #FFF;
 }
 
-#projects .project-info h1 {
+.project-info h1 {
 	font-size: 4rem;
 	font-weight: 500;
 }
 
-#projects .project-info h2 {
+.project-info h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
 	margin-top: 10px;
 }
 
-#projects .project-info p {
+.project-info p {
 	color: #cacaca;
 }
 
-#projects .project-info a {
+.project-info a {
 	text-align: center;
 	font-size: 3rem;
 	color: var(--primary-color);
 }
-#projects .project-info a:hover {
+
+.project-info a:hover {
 	color: #f30c0c;
 }
 
-#projects .carousel-item img {
+.project-info figure:hover + figcaption h2 {
+	opacity: 0;
+	transition: ease 1s;
+}
+
+.carousel-item img {
 	flex-basis: 50%;
 	height: 100%;
 }
@@ -81,4 +87,5 @@
 .hover-rotate:hover img {
   transform: scale(.9) rotate(2deg);
 }
+
 /* End Projects Section */

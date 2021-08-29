@@ -33,8 +33,14 @@
 .envelope:hover, .fa-phone:hover, .file-pdf:hover, .globe-americas:hover, .fa-arrow-up:hover {
 	color: #000;
 }
-/* Fim Font Awesome Icons */
+/* End Font Awesome Icons */
 
+/* Ionic Icons */
+ion-icon {
+    width: 25px;
+    height: 47px;
+}
+/* End Ionic Icons */
 
 /* Social Links */
 .social {
@@ -70,7 +76,7 @@
 	top: 0;
 	left: -120px;
 	width: 120px;
-	height: 50px;
+	height: 55px;
 	color: #FFF;
 	border-radius: 10px;
 	background: rgba(1, 1, 1, .1);

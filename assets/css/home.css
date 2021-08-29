@@ -22,19 +22,19 @@
 	z-index: -1;
 }
 
-#home .home {
+.home {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 50px;
 	justify-content: flex-start;
 }
 
-#home h1 {
+.home h1 {
 	display: block;
 	width: fit-content;
 	font-size: 5rem;
 	position: relative;
-  	text-shadow: 6px 3px 0 rgba(0, 0, 0, .2);
+  text-shadow: 6px 3px 0 rgba(0, 0, 0, .2);
 }
 
 .infoAnimation {
@@ -42,18 +42,18 @@
 	color: #cacaca;
 }
 
-#home h1:nth-child(3) {
+.home h1:nth-child(3) {
 	color: var(--primary-color);
 }
 
-#home h2 {
+.home h2 {
 	margin-top: 5px;
 	font-size: 4rem;
 	font-weight: bold;
 	letter-spacing: 0.2rem;
 }
 
-#home .cta {
+.home .cta {
 	position: relative;
 	overflow: hidden;
 	display: inline-block;
@@ -65,7 +65,7 @@
 	border-color: var(--primary-color);;
 	border-radius: 15px;
 	font-size: 2rem;
-  	font-weight: 500;
+  font-weight: 500;
 	letter-spacing: .2rem;
 	margin-top: 30px;
 	transition: 1s ease;
@@ -73,7 +73,7 @@
 
 }
 
-#home .cta:hover {
+.home .cta:hover {
 	box-shadow: 1px 1px 25px 10px var(--portfolio-hover);
 	background-color: var(--primary-color);
 }

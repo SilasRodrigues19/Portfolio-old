@@ -3,20 +3,20 @@
 	position: fixed;
 	font-family: Bradley Hand, cursive, 'Open Sans', sans-serif;
 	user-select: none;
-	z-index: 1000;
+	z-index: 10;
 	left: 0;
 	top: 0;
 	width: 100vw;
 	height: auto;
 }
 
-#header .header {
+.header {
 	min-height: 8vh;
 	background-color: rgba(31, 30, 30, 0.24);
 	transition: .5s ease background-color;
 }
 
-#header .nav-bar {
+.nav-bar {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -26,7 +26,7 @@
 	padding: 0 10px;
 }
 
-#header .nav-list ul {
+.nav-list ul {
 	list-style: none;
 	position: absolute;
 	background-color: rgba(0, 0, 0, .75);
@@ -43,11 +43,11 @@
 	transition: .5s ease left;
 }
 
-#header .nav-list ul.active {
+.nav-list ul.active {
 	left: 0%;
 }
 
-#header .nav-list ul a {
+.nav-list ul a {
 	font-size: 2.5rem;
 	font-weight: 500;
 	letter-spacing: .2rem;
@@ -58,7 +58,7 @@
 	display: block;
 }
 
-#header .nav-list ul a::after {
+.nav-list ul a::after {
 	content: attr(data-after);
 	position: absolute;
 	top: 50%;
@@ -71,19 +71,19 @@
 	transition: .3s ease letter-spacing;
 }
 
-#header .nav-list ul li:hover a::after {
+.nav-list ul li:hover a::after {
 	transform: translate(-50%, -50%) scale(1);
 	letter-spacing: 10px;
 	transition: 1s ease letter-spacing;
 }
 
-#header .nav-list ul li:hover a {
+.nav-list ul li:hover a {
 	color: var(--primary-color);
 	transform: scale(.9);
 	transition: ease .4s;
 }
 
-#header .menu {
+.menu {
 	height: 60px;
 	width: 60px;
 	display: inline-block;
@@ -93,13 +93,13 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	z-index: 100;
+	z-index: 10;
 	cursor: pointer;
 	transform: scale(.8);
 	margin-right: 20px;
 }
 
-#header .menu:after {
+.menu:after {
 	position: absolute;
 	content: '';
 	height: 100%;
@@ -109,19 +109,19 @@
 	animation: 1s ease infinite;
 }
 
-#header .menu:hover:after {
+.menu:hover:after {
 	animation: none;
 }
 
-#header .menu .bar {
-	height: 2.5px;
+.menu .bar {
+	height: 3.5px;
 	width: 30px;
 	position: relative;
 	background-color: transparent;
 	z-index: -1;
 }
 
-#header .menu .bar::after {
+.menu .bar::after {
 	content: '';
 	position: absolute;
 	height: 100%;
@@ -131,7 +131,7 @@
 	transition: 1s ease;
 }
 
-#header .menu .bar::before {
+.menu .bar::before {
 	top: -8px;
 	left: 5px;
 	content: '';
@@ -148,33 +148,33 @@
 }
 
 #hamburger:checked ~ label .menu .bar:after {
-	transform: rotate(225deg) !important;
+	transform: rotate(225deg);
 	top: 0;
 	left: 0;
 }
 
 #hamburger:checked ~ label .menu .bar:before {
-	transform: rotate(-405deg) !important;
+	transform: rotate(-405deg);
 	top: 0;
 	left: 0;
 	width: 100%;
 }
 
 
-#header .menu .bar::after {
+.menu .bar::after {
 	border-radius: 20px;
 	top: 8px;
 }
 
-#header .menu .bar::before {
+.menu .bar::before {
 	bottom: 8px;
 }
 
-#header .menu.active .bar::before {
+.menu.active .bar::before {
 	bottom: 0;
 }
 
-#header .menu.active .bar::after {
+.menu.active .bar::after {
 	top: 8px;
 }
 
@@ -184,11 +184,11 @@
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
 	/* header */
-	#header .menu {
+	.menu {
 		display: none;
 	}
 
-	#header .nav-list ul {
+	.nav-list ul {
 		position: initial;
 		display: block;
 		height: auto;
@@ -196,15 +196,15 @@
 		background-color: transparent;
 	}
 
-	#header .nav-list ul li {
+	.nav-list ul li {
 		display: inline-block;
 	}
 
-	#header .nav-list ul li a {
+	.nav-list ul li a {
 		font-size: 1.8rem;
 	}
 
-	#header .nav-list ul a:after {
+	.nav-list ul a:after {
 		display: none;
 	}
 }

@@ -2,6 +2,9 @@ jQuery(function ($) {
     $.validator.addMethod("alphabetsnspace", function(value, element) {
           return this.optional(element) || /^[a-zA-ZÀ-ú' ]*$/.test(value);
       });
+    $.validator.addMethod("alphabetsnspace2", function(value, element) {
+          return this.optional(element) || /^[a-zA-ZÀ-ú-?0-9.' ]*$/.test(value);
+      });
 
   $("#formContact").validate({
     rules: {
@@ -27,6 +30,7 @@ jQuery(function ($) {
         minlength: 15
        },
        mensagem: {
+        alphabetsnspace2: true,
         required: true,
         maxlength: 1500
        }
@@ -46,8 +50,20 @@ jQuery(function ($) {
        celular: {
         required:"Por favor, informe seu número de celular",
         minlength:"Por favor, insira 11 dígitos (somente números)"
+       },
+       mensagem: {
+        alphabetsnspace2: "Por favor, utilize apenas letras e números"
        }
       }
   })
 });
 $("#celular").mask("(00) 00000-0000");
+
+// Apostrophe replaced by nothing
+$('#mensagem').keypress(function(e){
+   let str = $(this).val();
+   if(String.fromCharCode(e.which) == "'"){
+       e.preventDefault()
+       $(this).val(str + ''); 
+   }
+});

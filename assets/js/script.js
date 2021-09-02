@@ -103,9 +103,11 @@ document.addEventListener('scroll', () => {
   let scroll_position = window.scrollY;
   if (scroll_position > 100) {
     $(header).css('backgroundColor', '#111');
+    $(social).css('visibility', 'visible');
     $(social).css('opacity', '1');
   } else {
     $(header).css('backgroundColor', 'transparent');
+    $(social).css('visibility', 'hidden');
     $(social).css('opacity', '0');
   }
 

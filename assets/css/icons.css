@@ -47,6 +47,7 @@ ion-icon {
 	position: fixed;
 	top: 50%;
 	left: 25px;
+	visibility: hidden;
 	transform: translateY(-50%);
 }
 

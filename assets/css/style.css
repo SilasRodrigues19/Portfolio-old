@@ -1,5 +1,6 @@
 @import url('https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@300&display=swap');
 
 @font-face {
 	font-family: 'Salvation Typeface Font';
@@ -49,7 +50,8 @@ html {
 
 p {
 	text-align: center;
-	font-family: Bradley Hand, cursive, 'Open Sans', sans-serif;
+	text-transform: initial;
+	font-family: 'Kodchasan', sans-serif, 'Open Sans', sans-serif;
 	color: #0d1b1b;
 	font-size: 1.4rem;
 	margin-top: 5px;

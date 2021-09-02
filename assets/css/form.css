@@ -29,7 +29,7 @@
 }
 
 .my-form {
-    font-family: Bradley Hand, cursive, 'Open Sans', sans-serif;
+    font-family: 'Kodchasan', sans-serif, 'Open Sans', sans-serif;
     user-select: none;
     width: 100%;
 }
@@ -79,6 +79,7 @@ textarea {
 /* Remove default bg from browser */
 input:-webkit-autofill {
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: #545b62;
 }
 
@@ -93,7 +94,7 @@ input[type="submit"], input[type="email"], input[type="text"] {
 .btn-secondary {
     color: #000;
     letter-spacing: 5px;
-    text-transform: uppercase;
+    text-transform: initial;
     transition:letter-spacing .5s;
     background-color: transparent;
     border-color: #000

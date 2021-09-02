@@ -33,10 +33,6 @@
 		font-size: 1.5rem;
 	}
 
-	.section-title p, #services .section-title p {
-		text-transform: initial;
-	}
-
 	h1.section-title, #services .section-title {
 		font-size: 3rem;
 	}
@@ -207,6 +203,10 @@
 	.programmer {
 		width: 230px;
     	height: 160px;
+	}
+
+	.my-form h1 {
+		font-size: 28px;
 	}
 }
 

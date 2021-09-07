@@ -32,9 +32,10 @@
 .home h1 {
 	display: block;
 	width: fit-content;
+	padding: 2px;
 	font-size: 5rem;
 	position: relative;
-  text-shadow: 6px 3px 0 rgba(0, 0, 0, .2);
+ 	text-shadow: 6px 3px 0 rgba(0, 0, 0, .2);
 }
 
 .infoAnimation {

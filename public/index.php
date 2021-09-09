@@ -447,8 +447,8 @@
 				<hr data-aos="fade-down">
 			</div>
 			<div class="certificate" data-aos="fade-up">
-				<a href="../assets/img/certificados/bootstrap.webp" data-lightbox="mygallery" data-title="Bootstrap">
-					<img src="../assets/img/certificados/bootstrap.webp" width="200" height="150" alt="Certificado Bootstrap" data-aos="fade-up">
+				<a href="../assets/img/certificados/responsive-web-design.webp" data-lightbox="mygallery" data-title="FreeCodeCamp Responsive Web Design">
+					<img src="../assets/img/certificados/responsive-web-design.webp" width="200" height="150" alt="FreeCodeCamp Responsive Web Design" data-aos="fade-up">
 				</a>
 				<a href="../assets/img/certificados/git.webp" data-lightbox="mygallery" data-title="Git">
 					<img src="../assets/img/certificados/git.webp" width="200" height="150" alt="Certificado Git" data-aos="fade-up">

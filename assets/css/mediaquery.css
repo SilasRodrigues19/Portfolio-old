@@ -2,6 +2,8 @@
 
 	.knowledge-header p {
 		font-size: 1.1rem;
+		font-weight: 600;
+		opacity: .8;
 		margin: 0;
 	}
 	.knowledge-icons {
@@ -29,8 +31,8 @@
 		font-family: 'Open Sans', sans-serif;
 	}
 
-	.cta {
-		font-size: 1.5rem;
+	.portfolioIcon {
+		font-size: 20px;
 	}
 
 	h1.section-title, #services .section-title {
@@ -49,7 +51,7 @@
 
 	.home .cta {
 		padding: 10px 20px;
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 
 	
@@ -74,6 +76,10 @@
   		width: 80%;
 	}
 
+	.my-form h1 {
+		font-size: 3rem;
+	}
+
 	/* End Form Section */
 
 
@@ -94,7 +100,7 @@
 	}
 
 	.nav-list ul {
-		clip-path: ellipse(335px 370px at right);
+		clip-path: ellipse(360px 370px at right);
 	}
 
 
@@ -203,10 +209,6 @@
 	.programmer {
 		width: 230px;
     	height: 160px;
-	}
-
-	.my-form h1 {
-		font-size: 28px;
 	}
 }
 

@@ -298,7 +298,7 @@
 					<hr data-aos="fade-down">
 					<p data-aos="fade-left">Clique na imagem para saber mais sobre o respectivo projeto</p>
 					<hr data-aos="fade-up">
-					<img data-aos="fade-up" class="programmer" src="../assets/img/programmer.webp" width="500px" height="350px" alt="Programador">
+					<img data-aos="fade-up" class="programmer" src="../assets/img/programmer.webp" width="500px" height="350px" loading="lazy" alt="Programador">
 				</h1>
 			</div>
 			<div class="all-projects" data-aos="zoom-in">
@@ -320,7 +320,7 @@
 								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Criado para o Streamer Luiz 'SimpSonsS' Guilherme, clique para visualizar!">
 									<a href="https://siimpsonss.vercel.app" rel="noreferrer" target="_blank">
 										<figure class="carousel-image">
-											<img class="d-block w-100" src="../assets/img/project1.webp" alt="Stream do SimpSonsS">
+											<img class="d-block w-100" src="../assets/img/project1.webp" loading="lazy" alt="Stream do SimpSonsS">
 											<i>
 												<ion-icon name="open-outline"></ion-icon>
 											</i>
@@ -335,7 +335,7 @@
 								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Sistema de cadastro de itens com login">
 									<a href="https://raw.githubusercontent.com/SilasRodrigues19/Prize-draw-register/main/img/preview.gif" rel="noreferrer" target="_blank">
 										<figure class="carousel-image">
-											<img class="d-block w-100" src="../assets/img/project2.webp" alt="Sistema de Cadastro de Items">
+											<img class="d-block w-100" src="../assets/img/project2.webp" loading="lazy" alt="Sistema de Cadastro de Items">
 											<i>
 												<ion-icon name="open-outline"></ion-icon>
 											</i>
@@ -350,7 +350,7 @@
 								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Sistema de cadastro de aluno e gerenciamento de cursos, alunos e matriculas">
 									<a href="http://dogcursos.epizy.com" rel="noreferrer" target="_blank">
 										<figure class="carousel-image">
-											<img class="d-block w-100" src="../assets/img/project3.webp" alt="Sistema de cadastro de cursos">
+											<img class="d-block w-100" src="../assets/img/project3.webp" loading="lazy" alt="Sistema de cadastro de cursos">
 											<i>
 												<ion-icon name="open-outline"></ion-icon>
 											</i>
@@ -365,7 +365,7 @@
 								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Jogo da cobrinha">
 									<a href="https://snake-game-silasrodrigues19.vercel.app" rel="noreferrer" target="_blank">
 										<figure class="carousel-image">
-											<img class="d-block w-100" src="../assets/img/project4.webp" alt="Snake Game">
+											<img class="d-block w-100" src="../assets/img/project4.webp" loading="lazy" alt="Snake Game">
 											<i>
 												<ion-icon name="open-outline"></ion-icon>
 											</i>
@@ -380,7 +380,7 @@
 								<div class="carousel-item hover-rotate active" data-toggle="tooltip" title="Custom Clone Instagram">
 									<a href="https://clone-insta-homepage.vercel.app" rel="noreferrer" target="_blank">
 										<figure class="carousel-image">
-											<img class="d-block w-100" src="../assets/img/project5.webp" alt="Clone personalizado da home page do instagram">
+											<img class="d-block w-100" src="../assets/img/project5.webp" loading="lazy" alt="Clone personalizado da home page do instagram">
 											<i>
 												<ion-icon name="open-outline"></ion-icon>
 											</i>
@@ -395,7 +395,7 @@
 								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Buscando perfils com API do GitHub">
 									<a href="#" rel="noreferrer" target="_blank">
 										<figure class="carousel-image">
-											<img class="d-block w-100" src="../assets/img/project6.webp" alt="Pesquisando com API do GitHub">
+											<img class="d-block w-100" src="../assets/img/project6.webp" loading="lazy" alt="Pesquisando com API do GitHub">
 											<i>
 												<ion-icon name="open-outline"></ion-icon>
 											</i>
@@ -410,7 +410,7 @@
 								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Buscando dados com Weather App">
 									<a href="https://weatherproject.vercel.app" rel="noreferrer" target="_blank">
 										<figure class="carousel-image">
-											<img class="d-block w-100" src="../assets/img/project7.webp" alt="Pesquisando com Weather App">
+											<img class="d-block w-100" src="../assets/img/project7.webp" loading="lazy" alt="Pesquisando com Weather App">
 											<i>
 												<ion-icon name="open-outline"></ion-icon>
 											</i>
@@ -448,34 +448,34 @@
 			</div>
 			<div class="certificate" data-aos="fade-up">
 				<a href="../assets/img/certificados/responsive-web-design.webp" data-lightbox="mygallery" data-title="FreeCodeCamp Responsive Web Design">
-					<img src="../assets/img/certificados/responsive-web-design.webp" width="200" height="150" alt="FreeCodeCamp Responsive Web Design" data-aos="fade-up">
+					<img src="../assets/img/certificados/responsive-web-design.webp" width="200" height="150" loading="lazy" alt="FreeCodeCamp Responsive Web Design" data-aos="fade-up">
 				</a>
 				<a href="../assets/img/certificados/git.webp" data-lightbox="mygallery" data-title="Git">
-					<img src="../assets/img/certificados/git.webp" width="200" height="150" alt="Certificado Git" data-aos="fade-up">
+					<img src="../assets/img/certificados/git.webp" width="200" height="150" loading="lazy" alt="Certificado Git" data-aos="fade-up">
 				</a>
 				<a href="../assets/img/certificados/HTML-CSS.webp" data-lightbox="mygallery" data-title="HTML e CSS">
-					<img src="../assets/img/certificados/HTML-CSS.webp" width="200" height="150" alt="Certificado HTML e CSS" data-aos="fade-up">
+					<img src="../assets/img/certificados/HTML-CSS.webp" width="200" height="150" loading="lazy" alt="Certificado HTML e CSS" data-aos="fade-up">
 				</a>
 				<a href="../assets/img/certificados/jquery.webp" data-lightbox="mygallery" data-title="jQuery">
-					<img src="../assets/img/certificados/jquery.webp" width="200" height="150" alt="Certificado jQuery" data-aos="fade-up">
+					<img src="../assets/img/certificados/jquery.webp" width="200" height="150" loading="lazy" alt="Certificado jQuery" data-aos="fade-up">
 				</a>
 				<a href="../assets/img/certificados/logica.webp" data-lightbox="mygallery" data-title="Lógica">
-					<img src="../assets/img/certificados/logica.webp" width="200" height="150" alt="Certificado Lógica" data-aos="fade-up">
+					<img src="../assets/img/certificados/logica.webp" width="200" height="150" loading="lazy" alt="Certificado Lógica" data-aos="fade-up">
 				</a>
 				<a href="../assets/img/certificados/MySQL.webp" data-lightbox="mygallery" data-title="MySQL">
-					<img src="../assets/img/certificados/MySQL.webp" width="200" height="150" alt="Certificado MySQL" data-aos="fade-up">
+					<img src="../assets/img/certificados/MySQL.webp" width="200" height="150" loading="lazy" alt="Certificado MySQL" data-aos="fade-up">
 				</a>
 				<a href="../assets/img/certificados/php.webp" data-lightbox="mygallery" data-title="PHP">
-					<img src="../assets/img/certificados/php.webp" width="200" height="150" alt="Certificado PHP" data-aos="fade-up">
+					<img src="../assets/img/certificados/php.webp" width="200" height="150" loading="lazy" alt="Certificado PHP" data-aos="fade-up">
 				</a>
 				<a href="../assets/img/certificados/WebDesign.webp" data-lightbox="mygallery" data-title="Web Design">
-					<img src="../assets/img/certificados/WebDesign.webp" width="200" height="150" alt="Certificado Web Design" data-aos="fade-up">
+					<img src="../assets/img/certificados/WebDesign.webp" width="200" height="150" loading="lazy" alt="Certificado Web Design" data-aos="fade-up">
 				</a>
 				<a href="../assets/img/certificados/html-full.webp" data-lightbox="mygallery" data-title="HTML Full Course">
-					<img src="../assets/img/certificados/html-full.webp" width="200" height="150" alt="Certificado HTML Completo" data-aos="fade-up">
+					<img src="../assets/img/certificados/html-full.webp" width="200" height="150" loading="lazy" alt="Certificado HTML Completo" data-aos="fade-up">
 				</a>
 				<a href="../assets/img/certificados/css-full.webp" data-lightbox="mygallery" data-title="CSS Full Course">
-					<img src="../assets/img/certificados/css-full.webp" width="200" height="150" alt="Certificado CSS Completo" data-aos="fade-up">
+					<img src="../assets/img/certificados/css-full.webp" width="200" height="150" loading="lazy" alt="Certificado CSS Completo" data-aos="fade-up">
 				</a>
 			</div>
 		</div>

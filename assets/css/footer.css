@@ -1,69 +1,78 @@
 /* Footer */
 
 footer {
-	font-family: 'Kodchasan', sans-serif, 'Open Sans', sans-serif;
-	user-select: none;
-  	background-color: #111;
+    font-family: 'Kodchasan', sans-serif, 'Open Sans', sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #111;
 }
 
 .footer {
-	min-height: 200px;
-	flex-direction: column;
-	padding:  50px 0 10px 0;
+    min-height: 200px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 50px 0 10px 0;
 }
 
 #footer h2 {
-	color: #cacaca;
-	font-weight: 500;
-	font-size: 1.8rem;
-	letter-spacing: .7rem;
-	margin: 10px 0;
+    color: #cacaca;
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: .7rem;
+    margin: 10px 0;
 }
 
 .contact-icon {
-	overflow: hidden;
-	display: flex;
-	margin: 20px 0px 20px 20px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px 0px 20px 20px;
 }
 
 #smoothScroll {
-	position: fixed;
-	background-color: rgba(71, 11, 169, .1);
-	border: solid 1px;
-	border-color: #470ba9;
-	padding: 15px;
-	border-radius: 10px;
-	bottom: 50px;
-	right: 25px;
-	font-size: 3rem;
-	text-align: center;
-	line-height: 10px;
+    position: fixed;
+    background-color: rgba(71, 11, 169, 0.1);
+    border: solid 1px;
+    border-color: #470ba9;
+    padding: 15px;
+    border-radius: 10px;
+    bottom: 50px;
+    right: 25px;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 10px;
 }
 
 #smoothScroll:hover {
-	background-color: rgba(71, 11, 169, .3)
+    background-color: rgba(71, 11, 169, 0.3);
 }
 
 .contact-item {
-	height: 50px;
-	overflow: hidden;
-	width: 75px;
-	margin: 0 10px;
+    height: 50px;
+    overflow: hidden;
+    width: 75px;
+    margin: 0 10px;
 }
 
 #footer p {
-	color: #cacaca;
-	font-size: 1.3rem;
+    color: #cacaca;
+    font-size: 1.3rem;
 }
 
 .brand h1 {
-	font-size: 3rem;
-	text-transform: uppercase;
-	color: #cacaca;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #cacaca;
 }
 
 .brand h1 span {
-	color: var(--primary-color);
+    color: var(--primary-color);
 }
+
 
 /* End Footer */

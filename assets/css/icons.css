@@ -1,100 +1,151 @@
 /* Font Awesome Icons */
-.fa-tools, .fa-code, .fa-laptop-code, .envelope, .fa-phone, .file-pdf, .globe-americas, .fa-file-word {
-	font-size: 50px;
-	transition: all ease .7s;
+
+.fa-tools,
+.fa-code,
+.fa-laptop-code,
+.envelope,
+.fa-phone,
+.file-pdf,
+.globe-americas,
+.fa-file-word {
+    font-size: 50px;
+    -webkit-transition: all ease .7s;
+    transition: all ease .7s;
 }
 
-.fa-tools:hover, .fa-code:hover, .fa-laptop-code:hover, .fa-file-word:hover, .envelope, .fa-phone, .file-pdf, .globe-americas, .arrow-up {
-	color: var(--primary-color);
+.fa-tools:hover,
+.fa-code:hover,
+.fa-laptop-code:hover,
+.fa-file-word:hover,
+.envelope,
+.fa-phone,
+.file-pdf,
+.globe-americas,
+.arrow-up {
+    color: var(--primary-color);
 }
 
-.fa-tools:hover, .fa-code:hover, .fa-laptop-code:hover, .fa-file-word:hover {
-	transform: scale(1.1);
+.fa-tools:hover,
+.fa-code:hover,
+.fa-laptop-code:hover,
+.fa-file-word:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
-.twitter, .github {
-	width: 25px;
-	transition: all ease 4s;
+.twitter,
+.github {
+    width: 25px;
+    -webkit-transition: all ease 4s;
+    transition: all ease 4s;
 }
 
 .whatsapp {
-	width: 20px;
-	transition: all ease 4s;
+    width: 20px;
+    -webkit-transition: all ease 4s;
+    transition: all ease 4s;
 }
 
-.whatsapp:hover, .twitter:hover, .github:hover {
-	transition: all ease 1.2s;
+.whatsapp:hover,
+.twitter:hover,
+.github:hover {
+    -webkit-transition: all ease 1.2s;
+    transition: all ease 1.2s;
 }
 
-.whatsapp:hover, .twitter:hover, .github:hover {
-	color: #470ba9;
+.whatsapp:hover,
+.twitter:hover,
+.github:hover {
+    color: #470ba9;
 }
 
-.envelope:hover, .fa-phone:hover, .file-pdf:hover, .globe-americas:hover, .fa-arrow-up:hover {
-	color: #000;
+.envelope:hover,
+.fa-phone:hover,
+.file-pdf:hover,
+.globe-americas:hover,
+.fa-arrow-up:hover {
+    color: #000;
 }
+
+
 /* End Font Awesome Icons */
 
+
 /* Ionic Icons */
+
 ion-icon {
     width: 25px;
     height: 47px;
 }
+
+
 /* End Ionic Icons */
 
+
 /* Social Links */
+
 .social {
-	position: fixed;
-	top: 50%;
-	left: 25px;
-	visibility: hidden;
-	transform: translateY(-50%);
+    position: fixed;
+    top: 50%;
+    left: 25px;
+    visibility: hidden;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .social ul {
-	opacity: 0;
+    opacity: 0;
 }
 
 .social ul li {
-	margin: 15px 0;
+    margin: 15px 0;
 }
 
 .social ul li a {
-	position: relative;
-	width: 50px;
-	height: 50px;
-	line-height: 55px;
-	font-size: 25px;
-	color: #FFF;
-	background: rgba(0, 0, 0, .1);
-	border-radius: 50%;
-	display: block;
-	text-align: center;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    line-height: 55px;
+    font-size: 25px;
+    color: #FFF;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: block;
+    text-align: center;
 }
 
 .social ul li a span {
-	position: absolute;
-	top: 0;
-	left: -120px;
-	width: 120px;
-	height: 55px;
-	color: #FFF;
-	border-radius: 10px;
-	background: rgba(1, 1, 1, .1);
-	font-size: 15px;
-	z-index: -1;
-	opacity: 0;
-	backface-visibility: hidden;
-	transition: 1s;
+    position: absolute;
+    top: 0;
+    left: -120px;
+    width: 120px;
+    height: 55px;
+    color: #FFF;
+    border-radius: 10px;
+    background: rgba(1, 1, 1, 0.1);
+    font-size: 15px;
+    z-index: -1;
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    transition: 1s;
 }
 
 .social ul li:hover span {
-	opacity: 1;
-	backface-visibility: hidden;
-	left: 60px;
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    left: 60px;
 }
+
+
 /* End Social Links */
 
-.knowledge-icons, .programmer, #home .cta, #smoothScroll{
-	filter: drop-shadow(2px 4px 8px #470BA9);
+.knowledge-icons,
+.programmer,
+#home .cta,
+#smoothScroll {
+    -webkit-filter: drop-shadow(2px 4px 8px #470BA9);
+    filter: drop-shadow(2px 4px 8px #470BA9);
 }

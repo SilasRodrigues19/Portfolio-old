@@ -1,27 +1,53 @@
-::placeholder {
+::-webkit-input-placeholder {
+    letter-spacing: 1.5px;
+}
+
+ :-ms-input-placeholder {
+    letter-spacing: 1.5px;
+}
+
+ ::-ms-input-placeholder {
+    letter-spacing: 1.5px;
+}
+
+ ::placeholder {
     letter-spacing: 1.5px;
 }
 
 #form {
-	background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#fbc2eb), to(#a6c1ee));
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
 
 .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .error {
     margin-top: 3px;
-    color: rgba(255, 0, 0, .5);
+    color: rgba(255, 0, 0, 0.5);
+    -webkit-animation: bounce;
     animation: bounce;
+    -webkit-animation-duration: 1s;
     animation-duration: 1s;
-
 }
 
 .form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
@@ -30,6 +56,9 @@
 
 .my-form {
     font-family: 'Kodchasan', sans-serif, 'Open Sans', sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     width: 100%;
 }
@@ -47,11 +76,13 @@ label {
     margin-bottom: .5rem;
 }
 
-.btn-secondary, label {
+.btn-secondary,
+label {
     font-size: 15.5px;
 }
 
-.form-control, .form-control:active {
+.form-control,
+.form-control:active {
     background-color: transparent;
     border: 1px solid #000;
 }
@@ -60,14 +91,18 @@ label {
     background-color: transparent;
     color: #000;
     outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.7);
     box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.7);
 }
 
-.form-control.error, .form-control.error:focus, .form-control.error:active, textarea.error,
+.form-control.error,
+.form-control.error:focus,
+.form-control.error:active,
+textarea.error,
 textarea.error:focus,
 textarea.error:active {
     color: #000;
-    background-color: rgba(255, 0, 0, .05);
+    background-color: rgba(255, 0, 0, 0.05);
 }
 
 textarea {
@@ -77,17 +112,20 @@ textarea {
 
 
 /* Remove default bg from browser */
+
 input:-webkit-autofill {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: #545b62;
 }
 
-input[type="submit"], input[type="email"], input[type="text"] {
+input[type="submit"],
+input[type="email"],
+input[type="text"] {
     border-radius: 50px;
 }
 
- #mensagem {
+#mensagem {
     border-radius: 20px;
 }
 
@@ -95,9 +133,10 @@ input[type="submit"], input[type="email"], input[type="text"] {
     color: #000;
     letter-spacing: 5px;
     text-transform: initial;
-    transition:letter-spacing .5s;
+    -webkit-transition: letter-spacing .5s;
+    transition: letter-spacing .5s;
     background-color: transparent;
-    border-color: #000
+    border-color: #000;
 }
 
 .btn-secondary:hover {
@@ -105,11 +144,11 @@ input[type="submit"], input[type="email"], input[type="text"] {
     border-color: #545b62;
     color: #000;
     letter-spacing: 15px;
-    transition:letter-spacing .5s;
+    -webkit-transition: letter-spacing .5s;
+    transition: letter-spacing .5s;
 }
 
 .btn-secondary:focus {
     color: #000 !important;
     background-color: transparent !important;
 }
-

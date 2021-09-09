@@ -1,232 +1,203 @@
 @media only screen and (min-width: 980px) {
-
-	.knowledge-header p {
-		font-size: 1.1rem;
-		font-weight: 600;
-		opacity: .8;
-		margin: 0;
-	}
-	.knowledge-icons {
-		margin-right: 10px;
-	}
+    .knowledge-header p {
+        font-weight: 600;
+        opacity: .9;
+        margin: 0;
+    }
+    .knowledge-icons {
+        margin-right: 10px;
+    }
 }
 
 @media only screen and (max-width: 960px) {
-
-	.knowledges {
-		font-family: 'Open Sans', sans-serif;
-		display: flex;
-		justify-content: space-between;
-		flex-direction: column;
-	}
-
-	.knowledge {
-		margin: 10px 0;
-	}
-
+    .knowledges {
+        font-family: 'Open Sans', sans-serif;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .knowledge {
+        margin: 10px 0;
+    }
 }
 
 @media only screen and (max-width: 768px) {
-	html {
-		font-family: 'Open Sans', sans-serif;
-	}
-
-	.portfolioIcon {
-		font-size: 20px;
-	}
-
-	h1.section-title, #services .section-title {
-		font-size: 3rem;
-	}
-
-	/* Home section */
-
-	.home h1 {
-		font-size: 3.4rem;
-	}
-
-	.home h2 {
-		font-size: 2.4rem;
-	}
-
-	.home .cta {
-		padding: 10px 20px;
-		font-size: 1.5rem;
-	}
-
-	
-
-	/* End Home section */
-
-	/* Services section */
-
-	#services .service-item {
-		text-align: center;
-		flex-basis: 45%;
-		align-items: center;
-		margin: 2.5%;
-	}
-
-	/* End Services section */
-
-
-	/* Form Section */
-
-	.my-form {
-  		width: 80%;
-	}
-
-	.my-form h1 {
-		font-size: 3rem;
-	}
-
-	/* End Form Section */
-
-
-	/* Icons */
-
-	.social {
-		left: 0 !important;
-	}
-
-	/* End Icons */
+    html {
+        font-family: 'Open Sans', sans-serif;
+    }
+    .portfolioIcon {
+        font-size: 20px;
+    }
+    h1.section-title,
+    #services .section-title {
+        font-size: 3rem;
+    }
+    /* Home section */
+    .home h1 {
+        font-size: 3.4rem;
+    }
+    .home h2 {
+        font-size: 2.4rem;
+    }
+    .home .cta {
+        padding: 10px 20px;
+        font-size: 1.5rem;
+    }
+    /* End Home section */
+    /* Services section */
+    #services .service-item {
+        text-align: center;
+        -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: 2.5%;
+    }
+    /* End Services section */
+    /* Form Section */
+    .my-form {
+        width: 80%;
+    }
+    .my-form h1 {
+        font-size: 3rem;
+    }
+    /* End Form Section */
+    /* Icons */
+    .social {
+        left: 0 !important;
+    }
+    /* End Icons */
 }
 
-
 @media only screen and (max-width: 500px) {
-	/* Header Section, Icons and Footer Section */
-	.brand h1 {
-		font-size: 2rem;
-	}
-
-	.nav-list ul {
-		clip-path: ellipse(360px 370px at right);
-	}
-
-
-	.nav-list ul a::before {
-		position: absolute;
-    	left: 80px;
-	}
-
-	/* Menu icons removed when clicked */
-	.nav-list ul a:hover::before {
-		opacity: 0;
-	}
-
-	.nav-list ul li a::before {
-		content: '';
-		filter: invert(1);
-		background-size: cover;
-		width: 25px;
-		height: 25px;
-	}
-
-	.nav-list ul li:nth-child(1) a::before {
-		background: url('https://api.iconify.design/fluent:window-dev-tools-24-regular.svg') no-repeat center center / contain;
-	}
-
-	.nav-list ul li:nth-child(2) a::before {
-		background: url('https://api.iconify.design/entypo:code.svg') no-repeat center center / contain;
-	}
-
-	.nav-list ul li:nth-child(3) a::before {
-		background: url('https://api.iconify.design/clarity:certificate-solid.svg') no-repeat center center / contain;
-	}
-
-	.nav-list ul li:nth-child(4) a::before {
-		background: url('https://api.iconify.design/ri:mail-send-line.svg') no-repeat center center / contain;
-	}
-
-	.home h1 {
-    	font-size: 2.4rem;
-	}
-
-	.home h2 {
-		font-size: 1.6rem;
-		margin-top: 35px;
-	}
-
-	#services .service-bottom {
-		display: initial;
-	}
-
-	#services .service-item {
-		width: 245px;
-		padding: 25px;
-		margin: 2.5% 0 10% 0;
-	}
-
-	/* End Header Section and Footer Section */
-
-
-	/* Service Section */
-
-	.service-top p {
-		width: 35rem;
-	}
-
-	.carousel-info h2, .carousel-indicators {
-		display: none;
-	}
-
-	.carousel-control-next-icon, .carousel-control-prev-icon {
-		margin: 0 5px;
-		width: 20px;
-		height: 20px;
-	}
-
-	/* End Service Section */
-
-
-	/* Certificate Section */
-
-	.certificate {
-		height: 200px;
-	}
-
-	/* End Certificate Section */
-
-	/* Home and Footer*/
-	#footer h2, #footer p, .brand h1, .home h1, .home h2, .home .cta, #form, .lb-details,
-	.nav-list ul a, .social ul li a span {
-		font-family: 'Open Sans', sans-serif;
-	}
-
-	.social ul li a span {
-		display: none;
-	}
-
-	#footer h2 {
-		word-break: break-all;
-		letter-spacing: .4rem;
-	}
-
-	.contact-icon #smoothScroll {
-    	display: none;
-	}
-
-	.programmer {
-		width: 230px;
-    	height: 160px;
-	}
+    /* Header Section, Icons and Footer Section */
+    .brand h1 {
+        font-size: 2rem;
+    }
+    .nav-list ul {
+        -webkit-clip-path: ellipse(360px 370px at right);
+        clip-path: ellipse(360px 370px at right);
+    }
+    .nav-list ul a::before {
+        position: absolute;
+        left: 80px;
+    }
+    /* Menu icons removed when clicked */
+    .nav-list ul a:hover::before {
+        opacity: 0;
+    }
+    .nav-list ul li a::before {
+        content: '';
+        -webkit-filter: invert(1);
+        filter: invert(1);
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+    }
+    .nav-list ul li:nth-child(1) a::before {
+        background: url('https://api.iconify.design/fluent:window-dev-tools-24-regular.svg') no-repeat center center / contain;
+    }
+    .nav-list ul li:nth-child(2) a::before {
+        background: url('https://api.iconify.design/entypo:code.svg') no-repeat center center / contain;
+    }
+    .nav-list ul li:nth-child(3) a::before {
+        background: url('https://api.iconify.design/clarity:certificate-solid.svg') no-repeat center center / contain;
+    }
+    .nav-list ul li:nth-child(4) a::before {
+        background: url('https://api.iconify.design/ri:mail-send-line.svg') no-repeat center center / contain;
+    }
+    .home h1 {
+        font-size: 2.4rem;
+    }
+    .home h2 {
+        font-size: 1.6rem;
+        margin-top: 35px;
+    }
+    #services .service-bottom {
+        display: initial;
+    }
+    #services .service-item {
+        width: 245px;
+        padding: 25px;
+        margin: 2.5% 0 10% 0;
+    }
+    /* End Header Section and Footer Section */
+    /* Service Section */
+    .service-top p {
+        width: 35rem;
+    }
+    .carousel-info h2,
+    .carousel-indicators {
+        display: none;
+    }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        margin: 0 5px;
+        width: 20px;
+        height: 20px;
+    }
+    /* End Service Section */
+    /* Certificate Section */
+    .certificate {
+        height: 200px;
+    }
+    /* End Certificate Section */
+    /* Home and Footer*/
+    #footer h2,
+    #footer p,
+    .brand h1,
+    .home h1,
+    .home h2,
+    .home .cta,
+    #form,
+    .lb-details,
+    .nav-list ul a,
+    .social ul li a span {
+        font-family: 'Open Sans', sans-serif;
+    }
+    .social ul li a span {
+        display: none;
+    }
+    #footer h2 {
+        word-break: break-all;
+        letter-spacing: .4rem;
+    }
+    .contact-icon #smoothScroll {
+        display: none;
+    }
+    .programmer {
+        width: 230px;
+        height: 160px;
+    }
 }
 
 @media only screen and (max-width: 386px) {
-
-	/* Header Section and Footer Section */
-	.brand h1, #footer h2 {
-		font-size: 1.6rem;
-		text-align: center;
-	}
-
-	/* End Header Section and Footer Section */
-
-	/* Icons */
-
-	.fa-paint-brush, .fa-code, .fa-laptop-house, .fa-envelope, .fa-phone, .fa-file-pdf, .fa-globe-americas, .fa-file-word, .fa-arrow-up {
-		font-size: 30px;
-	}
-
-	/* End Icons */
+    /* Header Section and Footer Section */
+    .brand h1,
+    #footer h2 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    /* End Header Section and Footer Section */
+    /* Icons */
+    .fa-paint-brush,
+    .fa-code,
+    .fa-laptop-house,
+    .fa-envelope,
+    .fa-phone,
+    .fa-file-pdf,
+    .fa-globe-americas,
+    .fa-file-word,
+    .fa-arrow-up {
+        font-size: 30px;
+    }
+    /* End Icons */
 }

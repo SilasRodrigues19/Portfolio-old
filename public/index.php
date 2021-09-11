@@ -1,8 +1,9 @@
 <?php
-	session_start();
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -80,35 +81,38 @@
 	<link rel="preload" href="../assets/js/formvalidator.js" as="script">
 	<script defer src="../assets/js/formvalidator.js"></script>
 
-  	<!-- Validator Messages -->
-  	<link rel="preload" href="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_ptbr.js" as="script">
+	<!-- Validator Messages -->
+	<link rel="preload" href="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_ptbr.js" as="script">
 	<script defer src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_ptbr.js"></script>
 	<!-- Scripts need to be imported before </head> to resolve validation messages error -->
 </head>
+
 <body ondragstart="false">
 	<!-- Header -->
 	<header id="header">
 		<div class="header container">
 			<div class="nav-bar">
 				<div class="brand">
-					<a href="#home" class="scroll margin"><h1>Silas <span>Rodrigues</span></h1></a>
+					<a href="#home" class="scroll margin">
+						<h1>Silas <span>Rodrigues</span></h1>
+					</a>
 				</div>
 				<div class="nav-list">
-						<!-- Mobile Menu -->
-						<input id="hamburger" type="checkbox">
-						<label for="hamburger">
-							<div class="menu" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="mobileExpanded" aria-expanded="false">
-								<div class="bar"></div>
-							</div>
-						</label>
-						<ul id="mobileExpanded" role="menu">
-							<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="450"><a class="scroll" href="#services" data-after="Services">Serviços</a></li>
-							<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="650"><a class="scroll" href="#projects" data-after="Projects">Projetos</a></li>
-							<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="850"><a class="scroll" href="#certificates" data-after="Courses">Cursos</a>
-							</li>
-							<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1050"><a class="scroll" href="#form" data-after="Contact">Contato</a>
-							</li>
-						</ul>
+					<!-- Mobile Menu -->
+					<input id="hamburger" type="checkbox">
+					<label for="hamburger">
+						<div class="menu" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="mobileExpanded" aria-expanded="false">
+							<div class="bar"></div>
+						</div>
+					</label>
+					<ul id="mobileExpanded" role="menu">
+						<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="450"><a class="scroll" href="#services" data-after="Services">Serviços</a></li>
+						<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="650"><a class="scroll" href="#projects" data-after="Projects">Projetos</a></li>
+						<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="850"><a class="scroll" href="#certificates" data-after="Courses">Cursos</a>
+						</li>
+						<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1050"><a class="scroll" href="#form" data-after="Contact">Contato</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -125,7 +129,7 @@
 		<div class="home container">
 			<div class="info container">
 				<?php
-					if(isset($_SESSION['msg'])){
+				if (isset($_SESSION['msg'])) {
 					echo $_SESSION['msg'];
 					unset($_SESSION['msg']);
 				}
@@ -139,42 +143,43 @@
 				<h2 class="arrayText">Eu sou <span class="typed-text"></span><span class="cursor typing">&nbsp;</span></h2>
 			</div>
 
+			<div class="teste">
+				<span class="iconify" data-icon="flat-color-icons:down-right"></span>
+
+			</div>
 			<aside class="social">
-				<ul>
-					<li>
+				<span class="socialBtn">Socials</span>
+				<div class="iconsBox">
+					<i>
 						<a href="https://api.whatsapp.com/send?phone=5519986024827" target="_blank" rel="noreferrer">
 							<span class="iconify whatsapp" data-icon="whh:whatsapp" data-inline="false"></span>
-							<span>WhatsApp</span>
 						</a>
-					</li>
-					<li>
+					</i>
+					<i>
 						<a href="https://twitter.com/Jinuye1" target="_blank" rel="noreferrer">
 							<span class="iconify twitter" data-icon="websymbol:twitter-bird" data-inline="false"></span>
-							<span>Twitter</span>
 						</a>
-					</li>
-					<li>
+					</i>
+					<i>
+						<a href="https://github.com/SilasRodrigues19" target="_blank" rel="noreferrer">
+							<span class="iconify github" data-icon="mdi:codepen" data-inline="false"></span>
+						</a>
+					</i>
+					<i>
 						<a href="https://github.com/SilasRodrigues19" target="_blank" rel="noreferrer">
 							<span class="iconify github" data-icon="eva:github-fill" data-inline="false"></span>
-							<span>GitHub</span>
 						</a>
-					</li>
-					<li>
-						<a href="https://codepen.io/SilasRodrigues19" target="_blank" rel="noreferrer">
-							<span class="iconify github" data-icon="mdi:codepen" data-inline="false"></span>
-							<span>CodePen</span>
-						</a>
-					</li>
-				</ul>
+					</i>
+				</div>
 			</aside>
 		</div>
 	</section>
 	<!-- End Home Section -->
 
-  <!-- Service Section -->
-  	<section id="services">
-  		<div class="section-title">
-  			<h1 data-aos="fade-down">Conhecimentos</h1>
+	<!-- Service Section -->
+	<section id="services">
+		<div class="section-title">
+			<h1 data-aos="fade-down">Conhecimentos</h1>
 			<p data-aos="fade-up">Abaixo estão as principais ferramentas e tecnologias que eu utilizo nos meus projetos.</p>
 			<hr data-aos="fade-down">
 		</div>
@@ -283,8 +288,8 @@
 					<p>É uma biblioteca que permite utilizar CSS-in-JS e é muito comum de ser utilizada com ReactJS.</p>
 				</div>
 			</div>
-    	</div>
-  	</section>
+		</div>
+	</section>
 	<!-- End Service Section -->
 
 	<!-- Projects Section -->
@@ -307,9 +312,9 @@
 						<!-- Caroussel -->
 						<div id="jobsCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 							<ol class="carousel-indicators">
-							    <li data-target="#jobsCarousel" data-slide-to="0"></li>
-							    <li data-target="#jobsCarousel" data-slide-to="1"></li>
-							    <li data-target="#jobsCarousel" data-slide-to="2"></li>
+								<li data-target="#jobsCarousel" data-slide-to="0"></li>
+								<li data-target="#jobsCarousel" data-slide-to="1"></li>
+								<li data-target="#jobsCarousel" data-slide-to="2"></li>
 								<li data-target="#jobsCarousel" data-slide-to="3"></li>
 								<li data-target="#jobsCarousel" data-slide-to="4" class="active"></li>
 								<li data-target="#jobsCarousel" data-slide-to="5"></li>
@@ -404,7 +409,7 @@
 											<h2>Pesquisando com API do GitHub</h2>
 										</figcaption>
 									</a>
-									
+
 								</div>
 								<!-- Project 7 -->
 								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Buscando dados com Weather App">
@@ -494,70 +499,72 @@
 			</div>
 			<div class="my-form" data-aos="zoom-in-up">
 				<div class="row">
-				<div class="col-12 text-center my-5">
-					<h1 class="display-4">
-						<i class="fa fa-paper-plane">
-							<span class="iconify" data-icon="si-glyph:paper-plane" data-inline="false"></span>
-						</i>
-						Formulário de Contato
-					</h1>
-				</div>
+					<div class="col-12 text-center my-5">
+						<h1 class="display-4">
+							<i class="fa fa-paper-plane">
+								<span class="iconify" data-icon="si-glyph:paper-plane" data-inline="false"></span>
+							</i>
+							Formulário de Contato
+						</h1>
+					</div>
 				</div>
 
 				<div class="row justify-content-center mb-5">
-				<div class="col-sm-12 col-md-10 col-lg-8">
-					<form action="../src/mail.php" method="POST" id="formContact">
-					<div class="form-row">
-						<!-- Name -->
-						<div class="form-group col-sm-6">
-							<label for="nome">Seu nome</label>
-							<input type="text" class="form-control" name="nome" id="nome" placeholder="Nome">
-						</div>
+					<div class="col-sm-12 col-md-10 col-lg-8">
+						<form action="../src/mail.php" method="POST" id="formContact">
+							<div class="form-row">
+								<!-- Name -->
+								<div class="form-group col-sm-6">
+									<label for="nome">Seu nome</label>
+									<input type="text" class="form-control" name="nome" id="nome" placeholder="Nome">
+								</div>
 
-						<!-- Surname -->
-						<div class="form-group col-sm-6">
-							<label for="sobrenome">Seu sobrenome</label>
-							<input type="text" class="form-control" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
-						</div>
-					</div>
-					<!-- End Name and Surname rows -->
+								<!-- Surname -->
+								<div class="form-group col-sm-6">
+									<label for="sobrenome">Seu sobrenome</label>
+									<input type="text" class="form-control" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+								</div>
+							</div>
+							<!-- End Name and Surname rows -->
 
-					<div class="form-row">
-						<!-- Email -->
-						<div class="form-group col-sm-6">
-							<label for="email">Seu email</label>
-							<input type="email" class="form-control" name="email" id="email" placeholder="Email">
-						</div>
+							<div class="form-row">
+								<!-- Email -->
+								<div class="form-group col-sm-6">
+									<label for="email">Seu email</label>
+									<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+								</div>
 
-						<div class="form-group col-sm-6">
-							<!-- Phone -->
-							<label for="celular">Seu celular</label>
-							<input type="text" class="form-control" name="celular" id="celular" placeholder="(00) 00000-0000">
-						</div>
-					</div>
-					<!-- End Email and Phone rows -->
+								<div class="form-group col-sm-6">
+									<!-- Phone -->
+									<label for="celular">Seu celular</label>
+									<input type="text" class="form-control" name="celular" id="celular" placeholder="(00) 00000-0000">
+								</div>
+							</div>
+							<!-- End Email and Phone rows -->
 
-					<div class="form-row">
-						<div class="form-group col-sm-12">
-						<!-- Message -->
-							<label for="mensagem">Sua mensagem</label>
-							<textarea class="form-control" name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Sinta-se a vontade" onkeyup="countLetters();"></textarea>
-						</div>
+							<div class="form-row">
+								<div class="form-group col-sm-12">
+									<!-- Message -->
+									<label for="mensagem">Sua mensagem</label>
+									<textarea class="form-control" name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Sinta-se a vontade" onkeyup="countLetters();"></textarea>
+								</div>
+							</div>
+							<!-- End Message row -->
+							<div class="form-row">
+								<div class="col-sm-12">
+									<input type="submit" class="btn btn-secondary form-control" name="btnSubmit" value="Enviar">
+								</div>
+								<div class="form-group col-sm-12">
+									<br>
+									<!-- Warning -->
+									<label>Total de digitos: <span class="count">0</span>
+										<p>Limite de 1500 caracteres</p>
+									</label>
+								</div>
+							</div>
+							<!-- End button and warning label row -->
+						</form>
 					</div>
-					<!-- End Message row -->
-					<div class="form-row">
-						<div class="col-sm-12">
-							<input type="submit" class="btn btn-secondary form-control" name="btnSubmit" value="Enviar">
-						</div>
-						<div class="form-group col-sm-12">
-						<br>
-							<!-- Warning -->
-							<label>Total de digitos: <span class="count">0</span><p>Limite de 1500 caracteres</p></label>
-						</div>
-					</div>
-					<!-- End button and warning label row -->
-					</form>
-				</div>
 				</div>
 			</div>
 		</div>
@@ -565,41 +572,41 @@
 	<!-- End Form Section -->
 
 	<!-- Footer -->
-		<footer id="footer">
-			<div class="footer container">
-				<div class="brand" data-aos="fade-down">
-					<h1>Silas <span>Rodrigues</span></h1>
-				</div>
-				<h2 data-aos="fade-up" data-aos-duration="2500" data-aos-offset="0">Desenvolvimento de sites</h2>
-				<div class="contact-icon">
-					<div class="contact-item text" data-toggle="tooltip" title="Sumaré - São Paulo">
-						<div data-aos="fade-left" data-aos-offset="0">
-							<span class="iconify globe-americas" data-icon="gis:earth-america" data-inline="false"></span>
-						</div>
-					</div>
-
-					<div class="contact-item" data-toggle="tooltip" title="Me contate por e-mail">
-						<div data-aos="fade-up" data-aos-offset="0">
-							<a href="mailto:silasrodrigues.ti@hotmail.com?subject=Contato%20Site">
-								<span class="iconify envelope" data-icon="emojione-monotone:closed-mailbox-with-lowered-flag" data-inline="false"></span>
-							</a>
-						</div>
-					</div>
-
-					<div class="contact-item" data-toggle="tooltip" title="Veja meu curriculo">
-						<div data-aos="fade-right" data-aos-offset="0">
-							<a href="../curriculo.pdf" target="_blank">
-								<span class="iconify file-pdf" data-icon="bi:file-earmark-pdf-fill" data-inline="false"></span>
-							</a>
-						</div>
-					</div>
-					<a id="smoothScroll" href="#home" data-aos="fade-down" data-aos-offset="0">
-						<span class="iconify arrow-up" data-icon="bytesize:chevron-top" data-inline="false"></span>
-					</a>
-				</div>
-				<p>Copyright &copy 2020-2021 Silas Rodrigues. Todos os direitos reservados.</p>
+	<footer id="footer">
+		<div class="footer container">
+			<div class="brand" data-aos="fade-down">
+				<h1>Silas <span>Rodrigues</span></h1>
 			</div>
-		</footer>
+			<h2 data-aos="fade-up" data-aos-duration="2500" data-aos-offset="0">Desenvolvimento de sites</h2>
+			<div class="contact-icon">
+				<div class="contact-item text" data-toggle="tooltip" title="Sumaré - São Paulo">
+					<div data-aos="fade-left" data-aos-offset="0">
+						<span class="iconify globe-americas" data-icon="gis:earth-america" data-inline="false"></span>
+					</div>
+				</div>
+
+				<div class="contact-item" data-toggle="tooltip" title="Me contate por e-mail">
+					<div data-aos="fade-up" data-aos-offset="0">
+						<a href="mailto:silasrodrigues.ti@hotmail.com?subject=Contato%20Site">
+							<span class="iconify envelope" data-icon="emojione-monotone:closed-mailbox-with-lowered-flag" data-inline="false"></span>
+						</a>
+					</div>
+				</div>
+
+				<div class="contact-item" data-toggle="tooltip" title="Veja meu curriculo">
+					<div data-aos="fade-right" data-aos-offset="0">
+						<a href="../curriculo.pdf" target="_blank">
+							<span class="iconify file-pdf" data-icon="bi:file-earmark-pdf-fill" data-inline="false"></span>
+						</a>
+					</div>
+				</div>
+				<a id="smoothScroll" href="#home" data-aos="fade-down" data-aos-offset="0">
+					<span class="iconify arrow-up" data-icon="bytesize:chevron-top" data-inline="false"></span>
+				</a>
+			</div>
+			<p>Copyright &copy 2020-2021 Silas Rodrigues. Todos os direitos reservados.</p>
+		</div>
+	</footer>
 	<!-- End footer -->
 
 	<!-- Icons Script -->
@@ -624,12 +631,13 @@
 	<script src="../assets/js/script.js"></script>
 
 
-  <script>
-  	AOS.init({
-  				duration: 1200,
-  			});
-  </script>
+	<script>
+		AOS.init({
+			duration: 1200,
+		});
+	</script>
 
 
 </body>
+
 </html>

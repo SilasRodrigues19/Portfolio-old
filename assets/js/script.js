@@ -11,41 +11,39 @@ let charIndex = 0;
 
 /* Data Words */
 function type() {
-  if (charIndex < textArray[textArrayIndex].length) {
-    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-    charIndex++;
-    setTimeout(type, typingDelay);
-  }
-  else {
-    cursorSpan.classList.remove("typing");
-  	setTimeout(erase, newTextDelay);
-  }
+    if (charIndex < textArray[textArrayIndex].length) {
+        if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+        typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, typingDelay);
+    } else {
+        cursorSpan.classList.remove("typing");
+        setTimeout(erase, newTextDelay);
+    }
 }
 
 function erase() {
-	if (charIndex > 0) {
-    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
-    charIndex--;
-    setTimeout(erase, erasingDelay);
-  }
-  else {
-    cursorSpan.classList.remove("typing");
-    textArrayIndex++;
-    if(textArrayIndex>=textArray.length) textArrayIndex=0;
-    setTimeout(type, typingDelay + 1100);
-  }
+    if (charIndex > 0) {
+        if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, erasingDelay);
+    } else {
+        cursorSpan.classList.remove("typing");
+        textArrayIndex++;
+        if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+        setTimeout(type, typingDelay + 1100);
+    }
 }
 
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
-  if(textArray.length) setTimeout(type, newTextDelay + 250);
+    if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
 
 /* Tooltip alert */
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();
+$(document).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip();
 });
 
 
@@ -67,9 +65,9 @@ let buttonMailAlert = document.getElementById('btnsection');
 let mailAlert = document.getElementById('psection');
 
 if (mailAlert != null) { /* Avoid null variable error when the user doesn't try to access by URL */
-buttonMailAlert.addEventListener('click', function() {
-  mailAlert.style.display = 'none';
-});
+    buttonMailAlert.addEventListener('click', function() {
+        mailAlert.style.display = 'none';
+    });
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -82,54 +80,52 @@ const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a'
 const header = document.querySelector('.header.container');
 
 const scrollToTop = document.querySelector('#smoothScroll');
-const social = document.querySelector('.social ul');
+const social = document.querySelector('.social');
 
 
 menu.addEventListener('click', () => {
-  menu.classList.toggle('active');
-  mobile_menu.classList.toggle('active');
-  
-  // Improving accessibility for visually impaired people
-  if (mobile_menu.classList.contains('active')) {
-  menu.setAttribute('aria-expanded', 'true');
-  menu.setAttribute('aria-label', 'Fechar Menu');
-} else {
-  menu.setAttribute('aria-expanded', 'false');
-  menu.setAttribute('aria-label', 'Abrir Menu');
-}
+    menu.classList.toggle('active');
+    mobile_menu.classList.toggle('active');
+
+    // Improving accessibility for visually impaired people
+    if (mobile_menu.classList.contains('active')) {
+        menu.setAttribute('aria-expanded', 'true');
+        menu.setAttribute('aria-label', 'Fechar Menu');
+    } else {
+        menu.setAttribute('aria-expanded', 'false');
+        menu.setAttribute('aria-label', 'Abrir Menu');
+    }
 });
 
 document.addEventListener('scroll', () => {
-  let scroll_position = window.scrollY;
-  if (scroll_position > 100) {
-    $(header).css('backgroundColor', '#111');
-    $(social).css('visibility', 'visible');
-    $(social).css('opacity', '1');
-  } else {
-    $(header).css('backgroundColor', 'transparent');
-    $(social).css('visibility', 'hidden');
-    $(social).css('opacity', '0');
-  }
+    let scroll_position = window.scrollY;
+    if (scroll_position > 100) {
+        $(header).css('backgroundColor', '#111');
+    } else {
+        $(header).css('backgroundColor', 'transparent');
+    }
 
-  if(scroll_position < 600) {
-    $(scrollToTop).css('opacity', '0');
-  } else {
-    $(scrollToTop).css('opacity', '1');
-  }
+    if (scroll_position < 600) {
+        $(scrollToTop).css('opacity', '0');
+        $(social).css({ 'visibility': 'hidden', 'opacity': '0', 'pointer-events': 'none' });
+    } else {
+        $(scrollToTop).css('opacity', '1');
+        $(social).css({ 'visibility': 'visible', 'opacity': '1', 'pointer-events': 'auto' });
+    }
 
 });
 
 menu_item.forEach((item) => {
-  item.addEventListener('click', () => {
-    menu.classList.toggle('active');
-    mobile_menu.classList.toggle('active');
-    // Fix Menu Error
-    if (!mobile_menu.classList.contains('active')) {
-      $('#hamburger').prop("checked", false);
-    } else {
-      $('#hamburger').prop("checked", true);
-    }
-  });
+    item.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        mobile_menu.classList.toggle('active');
+        // Fix Menu Error
+        if (!mobile_menu.classList.contains('active')) {
+            $('#hamburger').prop("checked", false);
+        } else {
+            $('#hamburger').prop("checked", true);
+        }
+    });
 });
 
 
@@ -147,13 +143,13 @@ textArea.addEventListener("keyup", e => {
 
 
 function countLetters() {
-  const text = textArea.value;
-  const textLength = textArea.value.length;
-  count.innerText = `${ textLength }`;
+    const text = textArea.value;
+    const textLength = textArea.value.length;
+    count.innerText = `${ textLength }`;
 
-  if (textLength >= 1500) {
-     $('.count').addClass('error');
-  } else {
-    $('.count').removeClass('error');
-  }
+    if (textLength >= 1500) {
+        $('.count').addClass('error');
+    } else {
+        $('.count').removeClass('error');
+    }
 }

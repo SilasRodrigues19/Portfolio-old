@@ -1,5 +1,6 @@
 /* Font Awesome Icons */
 
+@import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
 .fa-tools,
 .fa-code,
 .fa-laptop-code,
@@ -35,13 +36,13 @@
 
 .twitter,
 .github {
-    width: 25px;
+    font-size: 25px;
     -webkit-transition: all ease 4s;
     transition: all ease 4s;
 }
 
 .whatsapp {
-    width: 20px;
+    font-size: 20px;
     -webkit-transition: all ease 4s;
     transition: all ease 4s;
 }
@@ -85,58 +86,113 @@ ion-icon {
 /* Social Links */
 
 .social {
+    visibility: hidden;
     position: fixed;
     top: 50%;
-    left: 25px;
-    visibility: hidden;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    left: -65px;
+    transform: rotate(-90deg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    width: 240px;
+    height: 72px;
+    background-color: rgba(1, 1, 1, .4);
+    border-radius: 80px;
+    padding: 0 18px;
+    will-change: transform;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
-.social ul {
-    opacity: 0;
+.social:hover {
+    /* transition-delay: .4s; */
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1) rotate(90deg);
 }
 
-.social ul li {
-    margin: 15px 0;
-}
-
-.social ul li a {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    line-height: 55px;
-    font-size: 25px;
-    color: #FFF;
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    display: block;
-    text-align: center;
-}
-
-.social ul li a span {
+.socialBtn {
     position: absolute;
-    top: 0;
-    left: -120px;
-    width: 120px;
-    height: 55px;
-    color: #FFF;
-    border-radius: 10px;
-    background: rgba(1, 1, 1, 0.1);
-    font-size: 15px;
-    z-index: -1;
-    opacity: 0;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transition: 1s;
-    transition: 1s;
+    -webkit-text-stroke: thin;
+    z-index: 20;
+    width: 240px;
+    height: 72px;
+    border-radius: 80px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 68px;
+    letter-spacing: 10px;
+    color: #EEEEED;
+    background-color: var(--portfolio-hover);
+    padding: 0 18px;
+    -webkit-transition: all 1.2s ease;
+    transition: all 1.2s ease;
 }
 
-.social ul li:hover span {
+.socialBtn+.iconsBox i {
+    opacity: 0;
+}
+
+.iconsBox {
+    transform: rotate(-90deg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
+    border-radius: 80px;
+}
+
+.iconsBox i {
     opacity: 1;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    left: 60px;
+    margin: 12px 0;
+}
+
+.iconsBox i:nth-of-type(1) {
+    -webkit-transition-delay: 1.1s;
+    transition-delay: 1.1s;
+}
+
+.iconsBox i:nth-of-type(2) {
+    -webkit-transition-delay: .9s;
+    transition-delay: .9s;
+}
+
+.iconsBox i:nth-of-type(3) {
+    -webkit-transition-delay: .7s;
+    transition-delay: .7s;
+}
+
+.iconsBox i:nth-of-type(4) {
+    -webkit-transition-delay: .4s;
+    transition-delay: .4s;
+}
+
+.social:hover span {
+    -webkit-transition-delay: .25s;
+    transition-delay: .25s;
+    -webkit-transform: translateX(-280px);
+    transform: translateX(-280px)
+}
+
+.social:hover i {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 

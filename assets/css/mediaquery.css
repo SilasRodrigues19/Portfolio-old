@@ -72,7 +72,25 @@
     /* End Form Section */
     /* Icons */
     .social {
-        left: 0 !important;
+        -webkit-transform: rotate(90deg) translateY(150%) !important;
+        transform: rotate(90deg) translateY(150%) !important;
+    }
+    .teste {
+        position: fixed;
+        left: 5px;
+        top: 50%;
+        font-size: 30px;
+    }
+    .teste:hover+.social {
+        -webkit-transform: rotate(90deg) translateY(0%) !important;
+        transform: rotate(90deg) translateY(0%) !important;
+    }
+    .teste:hover+.social span {
+        -webkit-transform: translateX(-280px);
+        transform: translateX(-280px);
+    }
+    .teste:hover+.social .socialBtn+.iconsBox i {
+        opacity: 1;
     }
     /* End Icons */
 }

@@ -55,9 +55,8 @@ let loader;
 // Add animation after the page loaded
 function displayContent() {
     loader.style.display = 'none';
-    $('.infoText').addClass('infoAnimation');
-    $('.cta').addClass('infoAnimation');
-    $('.arrayText').addClass('infoAnimation');
+    //$(".infoText, .cta, .arrayText").addClass('infoAnimation')
+    $('.home .container').addClass('infoAnimation');
 }
 
 /* Add warning when the user tries to access mail.php by URL */

@@ -104,8 +104,8 @@
 
 .nav-list ul li:hover a {
     color: var(--primary-color);
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
     -webkit-transition: ease .4s;
     transition: ease .4s;
 }
@@ -217,9 +217,7 @@
     top: 8px;
 }
 
-
 /* End Header section */
-
 
 /* Media Query For Desktop */
 
@@ -247,6 +245,5 @@
         display: none;
     }
 }
-
 
 /* End header */

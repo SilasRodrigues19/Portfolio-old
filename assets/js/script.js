@@ -81,6 +81,7 @@ const header = document.querySelector('.header.container');
 
 const scrollToTop = document.querySelector('#smoothScroll');
 const social = document.querySelector('.social');
+const rightButton = document.querySelector('.rightButton')
 
 
 menu.addEventListener('click', () => {
@@ -108,9 +109,11 @@ document.addEventListener('scroll', () => {
     if (scroll_position < 600) {
         $(scrollToTop).css('opacity', '0');
         $(social).css({ 'visibility': 'hidden', 'opacity': '0', 'pointer-events': 'none' });
+        $(rightButton).css({ 'hidden:': 'visible', 'opacity': '0' });
     } else {
         $(scrollToTop).css('opacity', '1');
         $(social).css({ 'visibility': 'visible', 'opacity': '1', 'pointer-events': 'auto' });
+        $(rightButton).css({ 'visibility:': 'visible', 'opacity': '1' });
     }
 
 });

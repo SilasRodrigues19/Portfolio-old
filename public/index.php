@@ -162,8 +162,8 @@ session_start();
 						</a>
 					</i>
 					<i>
-						<a href="https://github.com/SilasRodrigues19" target="_blank" rel="noreferrer">
-							<span class="iconify github" data-icon="mdi:codepen" data-inline="false"></span>
+						<a href="https://codepen.io/SilasRodrigues19" target="_blank" rel="noreferrer">
+							<span class="iconify codepen" data-icon="mdi:codepen" data-inline="false"></span>
 						</a>
 					</i>
 					<i>

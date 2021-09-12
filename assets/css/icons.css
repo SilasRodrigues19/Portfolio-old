@@ -1,22 +1,42 @@
 /* Font Awesome Icons */
 
 @import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
-.fa-tools, .fa-code, .fa-laptop-code, .envelope, .fa-phone, .file-pdf, .globe-americas, .fa-file-word {
+.fa-tools,
+.fa-code,
+.fa-laptop-code,
+.envelope,
+.fa-phone,
+.file-pdf,
+.globe-americas,
+.fa-file-word {
     font-size: 50px;
     -webkit-transition: all ease .7s;
     transition: all ease .7s;
 }
 
-.fa-tools:hover, .fa-code:hover, .fa-laptop-code:hover, .fa-file-word:hover, .envelope, .fa-phone, .file-pdf, .globe-americas, .arrow-up {
+.fa-tools:hover,
+.fa-code:hover,
+.fa-laptop-code:hover,
+.fa-file-word:hover,
+.envelope,
+.fa-phone,
+.file-pdf,
+.globe-americas,
+.arrow-up {
     color: var(--primary-color);
 }
 
-.fa-tools:hover, .fa-code:hover, .fa-laptop-code:hover, .fa-file-word:hover {
+.fa-tools:hover,
+.fa-code:hover,
+.fa-laptop-code:hover,
+.fa-file-word:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
-.twitter, .github {
+.twitter,
+.github,
+.codepen {
     font-size: 25px;
     -webkit-transition: all ease 4s;
     transition: all ease 4s;
@@ -28,20 +48,26 @@
     transition: all ease 4s;
 }
 
-.whatsapp:hover, .twitter:hover, .github:hover {
+.whatsapp:hover,
+.twitter:hover,
+.github:hover,
+.codepen:hover {
     -webkit-transition: all ease 1.2s;
     transition: all ease 1.2s;
-}
-
-.whatsapp:hover, .twitter:hover, .github:hover {
     color: #470ba9;
 }
 
-.envelope:hover, .fa-phone:hover, .file-pdf:hover, .globe-americas:hover, .fa-arrow-up:hover {
+.envelope:hover,
+.fa-phone:hover,
+.file-pdf:hover,
+.globe-americas:hover,
+.fa-arrow-up:hover {
     color: #000;
 }
 
+
 /* End Font Awesome Icons */
+
 
 /* Ionic Icons */
 
@@ -50,7 +76,9 @@ ion-icon {
     height: 47px;
 }
 
+
 /* End Ionic Icons */
+
 
 /* Social Links */
 
@@ -173,9 +201,13 @@ ion-icon {
     transform: scale(1);
 }
 
+
 /* End Social Links */
 
-.knowledge-icons, .programmer, #home .cta, #smoothScroll {
+.knowledge-icons,
+.programmer,
+#home .cta,
+#smoothScroll {
     -webkit-filter: drop-shadow(2px 4px 8px #470BA9);
     filter: drop-shadow(2px 4px 8px #470BA9);
 }

@@ -35,8 +35,7 @@
     .portfolioIcon {
         font-size: 20px;
     }
-    h1.section-title,
-    #services .section-title {
+    h1.section-title, #services .section-title {
         font-size: 3rem;
     }
     /* Home section */
@@ -75,21 +74,21 @@
         -webkit-transform: rotate(90deg) translateY(150%) !important;
         transform: rotate(90deg) translateY(150%) !important;
     }
-    .teste {
+    .rightButton {
         position: fixed;
         left: 5px;
         top: 50%;
         font-size: 30px;
     }
-    .teste:hover+.social {
+    .rightButton:hover+.social {
         -webkit-transform: rotate(90deg) translateY(0%) !important;
         transform: rotate(90deg) translateY(0%) !important;
     }
-    .teste:hover+.social span {
+    .rightButton:hover+.social span {
         -webkit-transform: translateX(-280px);
         transform: translateX(-280px);
     }
-    .teste:hover+.social .socialBtn+.iconsBox i {
+    .rightButton:hover+.social .socialBtn+.iconsBox i {
         opacity: 1;
     }
     /* End Icons */
@@ -152,12 +151,10 @@
     .service-top p {
         width: 35rem;
     }
-    .carousel-info h2,
-    .carousel-indicators {
+    .carousel-info h2, .carousel-indicators {
         display: none;
     }
-    .carousel-control-next-icon,
-    .carousel-control-prev-icon {
+    .carousel-control-next-icon, .carousel-control-prev-icon {
         margin: 0 5px;
         width: 20px;
         height: 20px;
@@ -169,16 +166,7 @@
     }
     /* End Certificate Section */
     /* Home and Footer*/
-    #footer h2,
-    #footer p,
-    .brand h1,
-    .home h1,
-    .home h2,
-    .home .cta,
-    #form,
-    .lb-details,
-    .nav-list ul a,
-    .social ul li a span {
+    #footer h2, #footer p, .brand h1, .home h1, .home h2, .home .cta, #form, .lb-details, .nav-list ul a, .social ul li a span {
         font-family: 'Open Sans', sans-serif;
     }
     .social ul li a span {
@@ -199,22 +187,13 @@
 
 @media only screen and (max-width: 386px) {
     /* Header Section and Footer Section */
-    .brand h1,
-    #footer h2 {
+    .brand h1, #footer h2 {
         font-size: 1.6rem;
         text-align: center;
     }
     /* End Header Section and Footer Section */
     /* Icons */
-    .fa-paint-brush,
-    .fa-code,
-    .fa-laptop-house,
-    .fa-envelope,
-    .fa-phone,
-    .fa-file-pdf,
-    .fa-globe-americas,
-    .fa-file-word,
-    .fa-arrow-up {
+    .fa-paint-brush, .fa-code, .fa-laptop-house, .fa-envelope, .fa-phone, .fa-file-pdf, .fa-globe-americas, .fa-file-word, .fa-arrow-up {
         font-size: 30px;
     }
     /* End Icons */

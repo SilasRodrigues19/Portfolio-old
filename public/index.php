@@ -143,12 +143,13 @@ session_start();
 				<h2 class="arrayText">Eu sou <span class="typed-text"></span><span class="cursor typing">&nbsp;</span></h2>
 			</div>
 
-			<div class="teste">
+			<div class="rightButton">
 				<span class="iconify" data-icon="flat-color-icons:down-right"></span>
-
 			</div>
 			<aside class="social">
-				<span class="socialBtn">Socials</span>
+				<span class="socialBtn">
+					<span class="socialText">Socials</span>
+				</span>
 				<div class="iconsBox">
 					<i>
 						<a href="https://api.whatsapp.com/send?phone=5519986024827" target="_blank" rel="noreferrer">

@@ -1,23 +1,16 @@
 /* Font Awesome Icons */
 
-.envelope,
-.file-pdf,
-.globe-americas {
+.envelope, .file-pdf, .globe-americas {
     font-size: 50px;
     -webkit-transition: all ease .7s;
     transition: all ease .7s;
 }
 
-.envelope,
-.file-pdf,
-.globe-americas,
-.arrow-up {
+.envelope, .file-pdf, .globe-americas, .arrow-up {
     color: var(--primary-color);
 }
 
-.twitter,
-.github,
-.codepen {
+.twitter, .github, .codepen {
     font-size: 25px;
     -webkit-transition: all ease 4s;
     transition: all ease 4s;
@@ -29,25 +22,17 @@
     transition: all ease 4s;
 }
 
-.whatsapp:hover,
-.twitter:hover,
-.github:hover,
-.codepen:hover {
+.whatsapp:hover, .twitter:hover, .github:hover, .codepen:hover {
     -webkit-transition: all ease 1.2s;
     transition: all ease 1.2s;
     color: #470ba9;
 }
 
-.envelope:hover,
-.file-pdf:hover,
-.globe-americas:hover,
-.fa-arrow-up:hover {
+.envelope:hover, .file-pdf:hover, .globe-americas:hover, .fa-arrow-up:hover {
     color: #000;
 }
 
-
 /* End Font Awesome Icons */
-
 
 /* Ionic Icons */
 
@@ -56,9 +41,7 @@ ion-icon {
     height: 47px;
 }
 
-
 /* End Ionic Icons */
-
 
 /* Social Links */
 
@@ -149,23 +132,23 @@ ion-icon {
 }
 
 .iconsBox i:nth-of-type(1) {
-    -webkit-transition-delay: 1.1s;
-    transition-delay: 1.1s;
+    -webkit-transition-delay: 1.8s;
+    transition-delay: 1.8s;
 }
 
 .iconsBox i:nth-of-type(2) {
-    -webkit-transition-delay: .9s;
-    transition-delay: .9s;
+    -webkit-transition-delay: 1.5s;
+    transition-delay: 1.5s;
 }
 
 .iconsBox i:nth-of-type(3) {
-    -webkit-transition-delay: .7s;
-    transition-delay: .7s;
+    -webkit-transition-delay: 1.2s;
+    transition-delay: 1.2s;
 }
 
 .iconsBox i:nth-of-type(4) {
-    -webkit-transition-delay: .4s;
-    transition-delay: .4s;
+    -webkit-transition-delay: .9s;
+    transition-delay: .9s;
 }
 
 .social:hover span {
@@ -181,13 +164,9 @@ ion-icon {
     transform: scale(1);
 }
 
-
 /* End Social Links */
 
-.knowledge-icons,
-.programmer,
-#home .cta,
-#smoothScroll {
+.knowledge-icons, .programmer, #home .cta, #smoothScroll {
     -webkit-filter: drop-shadow(2px 4px 8px #470BA9);
     filter: drop-shadow(2px 4px 8px #470BA9);
 }

@@ -210,14 +210,9 @@
     }
     /* End Header Section and Footer Section */
     /* Icons */
-    .fa-paint-brush,
-    .fa-code,
-    .fa-laptop-house,
     .fa-envelope,
-    .fa-phone,
     .fa-file-pdf,
     .fa-globe-americas,
-    .fa-file-word,
     .fa-arrow-up {
         font-size: 30px;
     }

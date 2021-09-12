@@ -109,7 +109,7 @@ document.addEventListener('scroll', () => {
     if (scroll_position < 600) {
         $(scrollToTop).css('opacity', '0');
         $(social).css({ 'visibility': 'hidden', 'opacity': '0', 'pointer-events': 'none' });
-        $(rightButton).css({ 'hidden:': 'visible', 'opacity': '0' });
+        $(rightButton).css({ 'visibility:': 'hidden', 'opacity': '0' });
     } else {
         $(scrollToTop).css('opacity', '1');
         $(social).css({ 'visibility': 'visible', 'opacity': '1', 'pointer-events': 'auto' });

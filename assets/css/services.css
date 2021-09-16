@@ -38,8 +38,7 @@
 .programmer {
     position: relative;
     bottom: 3vw;
-    height: 350px;
-    opacity: .5;
+    height: 450px;
 }
 
 .knowledges {
@@ -199,6 +198,5 @@
     -webkit-transform: rotate(0deg) scale(1.1);
     transform: rotate(0deg) scale(1.1);
 }
-
 
 /* End Service Section */

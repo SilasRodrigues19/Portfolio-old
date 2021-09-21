@@ -10,19 +10,19 @@
     color: var(--primary-color);
 }
 
-.twitter, .github, .codepen {
-    font-size: 25px;
-    -webkit-transition: all ease 4s;
-    transition: all ease 4s;
-}
-
-.whatsapp {
+.twitter, .github, .codepen, .linkedin {
     font-size: 20px;
     -webkit-transition: all ease 4s;
     transition: all ease 4s;
 }
 
-.whatsapp:hover, .twitter:hover, .github:hover, .codepen:hover {
+.whatsapp {
+    font-size: 15px;
+    -webkit-transition: all ease 4s;
+    transition: all ease 4s;
+}
+
+.whatsapp:hover, .twitter:hover, .github:hover, .codepen:hover, .linkedin:hover {
     -webkit-transition: all ease 1.2s;
     transition: all ease 1.2s;
     color: #470ba9;

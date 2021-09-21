@@ -148,7 +148,7 @@ session_start();
 			</div>
 			<aside class="social">
 				<span class="socialBtn">
-					<span class="socialText">Socials</span>
+					<span class="socialText">Sociais</span>
 				</span>
 				<div class="iconsBox">
 					<i>
@@ -159,6 +159,11 @@ session_start();
 					<i>
 						<a href="https://twitter.com/Jinuye1" target="_blank" rel="noreferrer">
 							<span class="iconify twitter" data-icon="websymbol:twitter-bird" data-inline="false"></span>
+						</a>
+					</i>
+					<i>
+						<a href="https://www.linkedin.com/in/silasrodrigues19" target="_blank" rel="noreferrer">
+							<span class="iconify linkedin" data-icon="line-md:linkedin"></span>
 						</a>
 					</i>
 					<i>
@@ -184,8 +189,8 @@ session_start();
 			<p data-aos="fade-up">Abaixo estão as principais ferramentas e tecnologias que eu utilizo nos meus projetos.</p>
 			<hr data-aos="fade-down">
 		</div>
-		<div class="knowledges">
-			<div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-offset="150">
+		<div class="knowledge-wrapper">
+			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
 				<div class="knowledge-header">
 					<div class="knowledge-icons" data-toggle="tooltip" title="HTML 5">
 						<span class="iconify" data-icon="bx:bxs-file-html" data-inline="false"></span>
@@ -193,7 +198,7 @@ session_start();
 					<p>Linguagem de marcação de texto para estruturar e apresentar páginas web.</p>
 				</div>
 			</div>
-			<div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-offset="150">
+			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
 				<div class="knowledge-header">
 					<div class="knowledge-icons" data-toggle="tooltip" title="CSS 3">
 						<span class="iconify" data-icon="fluent:document-css-24-regular" data-inline="false"></span>
@@ -201,7 +206,7 @@ session_start();
 					<p>Utilizado para estilizar a aparência de uma página, animar, usar transições e afins.</p>
 				</div>
 			</div>
-			<div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-offset="150">
+			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
 				<div class="knowledge-header">
 					<div class="knowledge-icons" data-toggle="tooltip" title="JavaScript ES6">
 						<span class="iconify" data-icon="fluent:document-javascript-24-filled" data-inline="false"></span>
@@ -209,7 +214,7 @@ session_start();
 					<p>Linguagem de programação que permite a criação de conteúdos dinâmicos e deixá-lo mais interativo.</p>
 				</div>
 			</div>
-			<div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-offset="250">
+			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
 				<div class="knowledge-header">
 					<div class="knowledge-icons" data-toggle="tooltip" title="React JS">
 						<span class="iconify" data-inline="false" data-icon="cib:react"></span>
@@ -217,7 +222,7 @@ session_start();
 					<p>React JS é uma biblioteca JavaScript para a criação de interfaces de usuário ou UI (user interface).</p>
 				</div>
 			</div>
-			<div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-offset="200">
+			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
 				<div class="knowledge-header">
 					<div class="knowledge-icons" data-toggle="tooltip" title="MySQL">
 						<span class="iconify" data-inline="false" data-icon="whh:mysqltwo"></span>
@@ -225,7 +230,7 @@ session_start();
 					<p>O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL.</p>
 				</div>
 			</div>
-			<div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-offset="250">
+			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
 				<div class="knowledge-header">
 					<div class="knowledge-icons" data-toggle="tooltip" title="JQuery">
 						<span class="iconify" data-inline="false" data-icon="cib:jquery"></span>
@@ -233,7 +238,7 @@ session_start();
 					<p>jQuery é uma biblioteca JavaScript que facilita a manipulação de eventos, animações, HTML e utilização de AJAX</p>
 				</div>
 			</div>
-			<div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-offset="200">
+			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
 				<div class="knowledge-header">
 					<div class="knowledge-icons" data-toggle="tooltip" title="Figma">
 						<span class="iconify" data-icon="akar-icons:figma-fill" data-inline="false"></span>
@@ -241,7 +246,7 @@ session_start();
 					<p>O Figma é uma ferramenta de design para interfaces, que oferece a possibilidade de trabalho colaborativo.</p>
 				</div>
 			</div>
-			<div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-offset="155">
+			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
 				<div class="knowledge-header">
 					<div class="knowledge-icons" data-toggle="tooltip" title="Bulma">
 						<span class="iconify" data-inline="false" data-icon="mdi:bulma"></span>
@@ -249,7 +254,7 @@ session_start();
 					<p>Bulma é um framework CSS totalmente gratuito, inspirado no Bootstrap e baseado em Flexbox, que já tem uma compatibilidade bem grande entre os navegadores.</p>
 				</div>
 			</div>
-			<div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-offset="150">
+			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
 				<div class="knowledge-header">
 					<div class="knowledge-icons" data-toggle="tooltip" title="PHP 7">
 						<span class="iconify" data-inline="false" data-icon="file-icons:php"></span>
@@ -257,7 +262,7 @@ session_start();
 					<p>PHP é uma linguagem de programação web que favorece a conexão entre os servidores e a interface do usuário.</p>
 				</div>
 			</div>
-			<div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-offset="200">
+			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
 				<div class="knowledge-header">
 					<div class="knowledge-icons" data-toggle="tooltip" title="Git">
 						<span class="iconify" data-inline="false" data-icon="cib:git"></span>
@@ -281,7 +286,7 @@ session_start();
 					<p>SASS é uma linguagem de extensão ao CSS que dá um controle mais profissional e dinâmico.</p>
 				</div>
 			</div>
-			<div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-offset="150">
+			<div class="knowledge" data-aos="fade-left" data-aos-duration="900">
 				<div class="knowledge-header">
 					<div class="knowledge-icons" data-toggle="tooltip" title="Styled Components">
 						<span class="iconify" data-inline="false" data-icon="file-icons:styledcomponents"></span>

@@ -75,6 +75,7 @@
         transform: rotate(90deg) translateY(150%) !important;
     }
     .rightButton {
+        opacity: 0;
         position: fixed;
         left: 5px;
         top: 50%;

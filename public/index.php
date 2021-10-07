@@ -610,7 +610,7 @@ session_start();
 					<span class="iconify arrow-up" data-icon="bytesize:chevron-top" data-inline="false"></span>
 				</a>
 			</div>
-			<p>Copyright &copy 2020-2021 Silas Rodrigues. Todos os direitos reservados.</p>
+			<p>Copyright &copy 2020-Present Silas Rodrigues. Todos os direitos reservados.</p>
 		</div>
 	</footer>
 	<!-- End footer -->

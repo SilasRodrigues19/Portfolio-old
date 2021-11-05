@@ -30,6 +30,12 @@ session_start();
 	<link rel="preload" href="../assets/css/reset.css" as="style">
 	<link rel="stylesheet" href="../assets/css/reset.css">
 
+	<!-- Sweet Alert CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css">
+
+	<!-- Aos Animare CSS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 	<!-- My styles -->
 	<link rel="preload" href="../assets/css/style.css" as="style">
 	<link rel="preload" href="../assets/css/header.css" as="style">
@@ -60,6 +66,12 @@ session_start();
 	<!-- Fonte Awesome and Icons CSS -->
 	<link rel="preload" href="../assets/css/icons.css" as="style">
 	<link rel="stylesheet" href="../assets/css/icons.css">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@200;300&display=swap" rel="stylesheet">
 
 	<!-- Lightbox -->
 	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" as="style">
@@ -325,6 +337,7 @@ session_start();
 								<li data-target="#jobsCarousel" data-slide-to="4" class="active"></li>
 								<li data-target="#jobsCarousel" data-slide-to="5"></li>
 								<li data-target="#jobsCarousel" data-slide-to="6"></li>
+								<li data-target="#jobsCarousel" data-slide-to="7"></li>
 							</ol>
 							<div class="carousel-inner">
 								<!-- Project 1 -->
@@ -428,6 +441,21 @@ session_start();
 										</figure>
 										<figcaption class="carousel-info">
 											<h2>Consultando previsão do tempo com Weather App</h2>
+										</figcaption>
+									</a>
+								</div>
+
+									<!-- Project 8 -->
+									<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Axie Infinity Landing Page">
+									<a href="https://axie-infinity-lp.vercel.app" rel="noreferrer" target="_blank">
+										<figure class="carousel-image">
+											<img class="d-block w-100" src="../assets/img/project8.webp" loading="lazy" alt="Axie Infinity Landing Page">
+											<i>
+												<ion-icon name="open-outline"></ion-icon>
+											</i>
+										</figure>
+										<figcaption class="carousel-info">
+											<h2>Axie Infinity Landing Page Fictícia</h2>
 										</figcaption>
 									</a>
 								</div>
@@ -632,9 +660,13 @@ session_start();
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+	<!-- Scroll Reveal -->
+	<script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+
 	<!-- Aos Animate -->
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script src="../assets/js/script.js"></script>
+	
 
 
 	<script>

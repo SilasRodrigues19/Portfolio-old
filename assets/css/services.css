@@ -37,7 +37,7 @@
 
 .programmer {
     position: relative;
-    bottom: 3vw;
+    bottom: 0;
     height: 450px;
 }
 
@@ -198,5 +198,6 @@
     -webkit-transform: rotate(0deg) scale(1.1);
     transform: rotate(0deg) scale(1.1);
 }
+
 
 /* End Service Section */

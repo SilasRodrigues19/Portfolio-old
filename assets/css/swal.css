@@ -1,23 +1,33 @@
-.swal-modal {
-	background-color: rgba(0, 0, 0, 0.45);
+/* Rewrite Swal */
+
+.swal2-popup {
+	background: rgba(17, 17, 17, 0.8);
+	-webkit-box-shadow: 0.1rem 0.1rem 1rem 0.01rem #5c94cd;
+	box-shadow: 0.1rem 0.1rem 1rem 0.01rem #5c94cd;
 }
 
-.swal-title, .swal-text {
-	color: #fff
+.swal2-html-container, .swal2-title {
+	color: #fff;
 }
 
-.swal-button {
-	background-color: #000;
-}
-
-.swal-button:hover {
-	background-color: #111111;
-}
-
-.swal-button:active, .swal-button:not([disabled]):hover {
-	background-color: #1e1e1e;
-}
-
-.swal-icon--success:after, .swal-icon--success:before, .swal-icon--success__hide-corners {
+.swal2-styled.swal2-confirm {
+	border: 2px solid #5c94cd;
+	width: 25rem;
+	height: 3rem;
+	border-radius: 2rem;
+	-webkit-transition: background-color ease 2s;
+	transition: background-color ease 2s;
 	background-color: transparent;
+	color: #fff;
+}
+
+.swal2-styled.swal2-confirm:hover {
+	-webkit-transition: background-color ease 2s;
+	transition: background-color ease 2s;
+	background-color: #5c94cd;
+}
+
+.swal2-styled.swal2-confirm:focus {
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }

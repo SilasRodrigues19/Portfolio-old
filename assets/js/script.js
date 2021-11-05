@@ -1,5 +1,5 @@
-const typedTextSpan = document.querySelector(".typed-text");
-const cursorSpan = document.querySelector(".cursor");
+const typedTextSpan = document.querySelector(".typed-text"),
+    cursorSpan = document.querySelector(".cursor");
 
 const textArray = ["Web Developer", "Programador", "Free Lancer"];
 const typingDelay = 50;
@@ -10,7 +10,7 @@ let charIndex = 0;
 
 
 /* Data Words */
-function type() {
+type = () => {
     if (charIndex < textArray[textArrayIndex].length) {
         if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
         typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
@@ -22,7 +22,7 @@ function type() {
     }
 }
 
-function erase() {
+erase = () => {
     if (charIndex > 0) {
         if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
         typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
@@ -36,7 +36,7 @@ function erase() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+document.addEventListener("DOMContentLoaded", () => {
     if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
@@ -64,23 +64,23 @@ let buttonMailAlert = document.getElementById('btnsection');
 let mailAlert = document.getElementById('psection');
 
 if (mailAlert != null) { /* Avoid null variable error when the user doesn't try to access by URL */
-    buttonMailAlert.addEventListener('click', function() {
+    buttonMailAlert.addEventListener('click', () => {
         mailAlert.style.display = 'none';
     });
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
     loader = document.getElementById('loader');
 });
 
-const menu = document.querySelector('.header .nav-bar .nav-list .menu');
-const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
-const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
-const header = document.querySelector('.header.container');
+const menu = document.querySelector('.header .nav-bar .nav-list .menu'),
+    mobile_menu = document.querySelector('.header .nav-bar .nav-list ul'),
+    menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a'),
+    header = document.querySelector('.header.container');
 
-const scrollToTop = document.querySelector('#smoothScroll');
-const social = document.querySelector('.social');
-const rightButton = document.querySelector('.rightButton')
+const scrollToTop = document.querySelector('#smoothScroll'),
+    social = document.querySelector('.social'),
+    rightButton = document.querySelector('.rightButton');
 
 
 menu.addEventListener('click', () => {
@@ -144,8 +144,7 @@ textArea.addEventListener("keyup", e => {
 });
 
 
-function countLetters() {
-    const text = textArea.value;
+countLetters = () => {
     const textLength = textArea.value.length;
     count.innerText = `${ textLength }`;
 

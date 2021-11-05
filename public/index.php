@@ -31,10 +31,15 @@ session_start();
 	<link rel="stylesheet" href="../assets/css/reset.css">
 
 	<!-- Sweet Alert CSS -->
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" as=" style">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css">
 
 	<!-- Aos Animare CSS -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<!-- Swipper CSS -->
+	<link rel="preload" href="https://unpkg.com/swiper/swiper-bundle.min.css" as="style">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
 	<!-- My styles -->
 	<link rel="preload" href="../assets/css/style.css" as="style">
@@ -324,157 +329,82 @@ session_start();
 					<img data-aos="fade-up" class="programmer" src="../assets/img/programmer.webp" width="500px" height="350px" loading="lazy" alt="Programador">
 				</h1>
 			</div>
-			<div class="all-projects" data-aos="zoom-in">
+
+			<!-- Swiper -->
+			<div class="all-projects">
 				<div class="project-item">
 					<div class="project-info">
-						<!-- Caroussel -->
-						<div id="jobsCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-							<ol class="carousel-indicators">
-								<li data-target="#jobsCarousel" data-slide-to="0"></li>
-								<li data-target="#jobsCarousel" data-slide-to="1"></li>
-								<li data-target="#jobsCarousel" data-slide-to="2"></li>
-								<li data-target="#jobsCarousel" data-slide-to="3"></li>
-								<li data-target="#jobsCarousel" data-slide-to="4" class="active"></li>
-								<li data-target="#jobsCarousel" data-slide-to="5"></li>
-								<li data-target="#jobsCarousel" data-slide-to="6"></li>
-								<li data-target="#jobsCarousel" data-slide-to="7"></li>
-							</ol>
-							<div class="carousel-inner">
-								<!-- Project 1 -->
-								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Criado para o Streamer Luiz 'SimpSonsS' Guilherme, clique para visualizar!">
-									<a href="https://siimpsonss.vercel.app" rel="noreferrer" target="_blank">
-										<figure class="carousel-image">
-											<img class="d-block w-100" src="../assets/img/project1.webp" loading="lazy" alt="Stream do SimpSonsS">
-											<i>
-												<ion-icon name="open-outline"></ion-icon>
-											</i>
-										</figure>
-										<figcaption class="carousel-info">
-											<h2>Stream do Luiz "SimpSonsS" Guilherme</h2>
-										</figcaption>
-									</a>
+						<div class="swiper mySwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="wrapper">
+										<a href="https://axie-infinity-lp.vercel.app" target="_blank">
+											<div class="carousel">
+												<figure data-toggle="tooltip" title="Axie Infinity Landing Page" style="background: url('https://i.ibb.co/VL80Cj8/axiefullpage.png'); background-size: cover; background-position: top center; --speed: 3.5s;">
+													<i>
+														<ion-icon name="open-outline"></ion-icon>
+													</i>
+												</figure>
+												<figcaption class="carousel-info">
+													<h2>Axie Infinity Landing Page Fictícia</h2>
+												</figcaption>
+											</div>
+										</a>
+									</div>
 								</div>
-
-								<!-- Project 2 -->
-								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Sistema de cadastro de itens com login">
-									<a href="https://raw.githubusercontent.com/SilasRodrigues19/Prize-draw-register/main/img/preview.gif" rel="noreferrer" target="_blank">
-										<figure class="carousel-image">
-											<img class="d-block w-100" src="../assets/img/project2.webp" loading="lazy" alt="Sistema de Cadastro de Items">
-											<i>
-												<ion-icon name="open-outline"></ion-icon>
-											</i>
-										</figure>
-										<figcaption class="carousel-info">
-											<h2>Sistema de Cadastro de itens com Tela de Login</h2>
-										</figcaption>
-									</a>
+								<div class="swiper-slide">
+									<div class="wrapper">
+										<a href="http://siimpsonss.vercel.app" target="_blank">
+											<div class="carousel">
+												<figure data-toggle="tooltip" title="Stream do SimpSonsS" style="background: url('https://i.ibb.co/YB7KWxQ/simpfullpage.png'); background-size: cover; background-position: top center; --speed: 3.5s;">
+													<i>
+														<ion-icon name="open-outline"></ion-icon>
+													</i>
+												</figure>
+												<figcaption class="carousel-info">
+													<h2>Stream do Luiz "SimpSonsS" Guilherme</h2>
+												</figcaption>
+											</div>
+									</div>
 								</div>
-
-								<!-- Project 3 -->
-								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Sistema de cadastro de aluno e gerenciamento de cursos, alunos e matriculas">
-									<a href="http://dogcursos.epizy.com" rel="noreferrer" target="_blank">
-										<figure class="carousel-image">
-											<img class="d-block w-100" src="../assets/img/project3.webp" loading="lazy" alt="Sistema de cadastro de cursos">
-											<i>
-												<ion-icon name="open-outline"></ion-icon>
-											</i>
-										</figure>
-										<figcaption class="carousel-info">
-											<h2>Dog Cursos - Matricule-se</h2>
-										</figcaption>
-									</a>
+								<div class="swiper-slide">
+									<div class="wrapper">
+										<a href="https://weatherproject.vercel.app" target="_blank">
+											<div class="carousel">
+												<figure data-toggle="tooltip" title="Weather App" style="background: url('https://i.ibb.co/T2Y4yMd/image.png'); background-size: cover; background-position: top center; --speed: 3.5s;">
+													<i>
+														<ion-icon name="open-outline"></ion-icon>
+													</i>
+												</figure>
+												<figcaption class="carousel-info">
+													<h2>Consutando previsão do tempo Weather App</h2>
+												</figcaption>
+											</div>
+									</div>
 								</div>
-
-								<!-- Project 4 -->
-								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Jogo da cobrinha">
-									<a href="https://snake-game-silasrodrigues19.vercel.app" rel="noreferrer" target="_blank">
-										<figure class="carousel-image">
-											<img class="d-block w-100" src="../assets/img/project4.webp" loading="lazy" alt="Snake Game">
-											<i>
-												<ion-icon name="open-outline"></ion-icon>
-											</i>
-										</figure>
-										<figcaption class="carousel-info">
-											<h2>Jogo da cobrinha feito em JavaScript</h2>
-										</figcaption>
-									</a>
-								</div>
-
-								<!-- Project 5 -->
-								<div class="carousel-item hover-rotate active" data-toggle="tooltip" title="Custom Clone Instagram">
-									<a href="https://clone-insta-homepage.vercel.app" rel="noreferrer" target="_blank">
-										<figure class="carousel-image">
-											<img class="d-block w-100" src="../assets/img/project5.webp" loading="lazy" alt="Clone personalizado da home page do instagram">
-											<i>
-												<ion-icon name="open-outline"></ion-icon>
-											</i>
-										</figure>
-										<figcaption class="carousel-info">
-											<h2>Clone da Home Page do Instagram</h2>
-										</figcaption>
-									</a>
-								</div>
-
-								<!-- Project 6 -->
-								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Buscando perfils com API do GitHub">
-									<a href="#" rel="noreferrer" target="_blank">
-										<figure class="carousel-image">
-											<img class="d-block w-100" src="../assets/img/project6.webp" loading="lazy" alt="Pesquisando com API do GitHub">
-											<i>
-												<ion-icon name="open-outline"></ion-icon>
-											</i>
-										</figure>
-										<figcaption class="carousel-info">
-											<h2>Pesquisando com API do GitHub</h2>
-										</figcaption>
-									</a>
-
-								</div>
-								<!-- Project 7 -->
-								<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Buscando dados com Weather App">
-									<a href="https://weatherproject.vercel.app" rel="noreferrer" target="_blank">
-										<figure class="carousel-image">
-											<img class="d-block w-100" src="../assets/img/project7.webp" loading="lazy" alt="Pesquisando com Weather App">
-											<i>
-												<ion-icon name="open-outline"></ion-icon>
-											</i>
-										</figure>
-										<figcaption class="carousel-info">
-											<h2>Consultando previsão do tempo com Weather App</h2>
-										</figcaption>
-									</a>
-								</div>
-
-									<!-- Project 8 -->
-									<div class="carousel-item hover-rotate" data-toggle="tooltip" title="Axie Infinity Landing Page">
-									<a href="https://axie-infinity-lp.vercel.app" rel="noreferrer" target="_blank">
-										<figure class="carousel-image">
-											<img class="d-block w-100" src="../assets/img/project8.webp" loading="lazy" alt="Axie Infinity Landing Page">
-											<i>
-												<ion-icon name="open-outline"></ion-icon>
-											</i>
-										</figure>
-										<figcaption class="carousel-info">
-											<h2>Axie Infinity Landing Page Fictícia</h2>
-										</figcaption>
-									</a>
+								<div class="swiper-slide">
+									<div class="wrapper">
+										<a href="http://dogcursos.epizy.com/" target="_blank">
+											<div class="carousel">
+												<figure data-toggle="tooltip" title="Dog Cursos" style="background: url('https://i.ibb.co/P4RJdqP/image.png'); background-size: cover; background-position: top center; --speed: 3.5s;">
+													<i>
+														<ion-icon name="open-outline"></ion-icon>
+													</i>
+												</figure>
+												<figcaption class="carousel-info">
+													<h2>Sistema de cadastro de alunos e gerenciamento de matrículas</h2>
+												</figcaption>
+											</div>
+									</div>
 								</div>
 							</div>
-							<!-- Prev button -->
-							<a class="carousel-control-prev" href="#jobsCarousel" role="button" data-slide="prev">
-								<span class="carousel-control-prev-icon"></span>
-								<span class="sr-only">prev</span>
-							</a>
-							<!-- Next button -->
-							<a class="carousel-control-next" href="#jobsCarousel" role="button" data-slide="next">
-								<span class="carousel-control-next-icon"></span>
-								<span class="sr-only">next</span>
-							</a>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
 						</div>
-						<!-- End Caroussel-->
 					</div>
 				</div>
 			</div>
+
 	</section>
 	<!-- End Projects Section -->
 
@@ -666,8 +596,19 @@ session_start();
 	<!-- Aos Animate -->
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script src="../assets/js/script.js"></script>
-	
 
+	<!-- Swiper JS -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		});
+	</script>
 
 	<script>
 		AOS.init({

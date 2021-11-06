@@ -125,11 +125,11 @@
 }
 
 .swiper-button-next {
-    right: 25%;
+    right: 10%;
 }
 
 .swiper-button-prev {
-    left: 25%;
+    left: 10%;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets,
@@ -156,7 +156,7 @@
 figure {
     filter: drop-shadow(15px 8px 2px rgb(0 0 0 / .5));
     height: 500px;
-    width: 750px;
+    width: 100rem;
     --speed: 3.5s;
     transform: perspective(1000px) rotateY(-13deg) rotateX(5deg) rotate(1deg) scaleY(.9) scaleX(.95) translate(-3%) translateY(-3%);
     transition: all var(--speed) ease, transform .5s ease;

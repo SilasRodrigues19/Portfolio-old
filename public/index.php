@@ -34,7 +34,7 @@ session_start();
 	<link rel="preload" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" as=" style">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css">
 
-	<!-- Aos Animare CSS -->
+	<!-- Aos Animate CSS -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 	<!-- Swipper CSS -->
@@ -658,14 +658,12 @@ session_start();
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-	<!-- Scroll Reveal -->
-	<script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
-
 	<!-- Aos Animate -->
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script src="../assets/js/script.js"></script>
 
 	<!-- Swiper JS -->
+	<link rel="preload" href="https://unpkg.com/swiper/swiper-bundle.min.js" as="script">
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 	<!-- Initialize Swiper -->
@@ -681,9 +679,7 @@ session_start();
 				clickable: true,
 			},
 		});
-	</script>
 
-	<script>
 		AOS.init({
 			duration: 1200,
 		});

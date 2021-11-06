@@ -8,14 +8,6 @@
     margin-top: 5px;
 }
 
-.carousel-image {
-    position: relative;
-    overflow: hidden;
-    width: 85vw;
-    margin: 10px;
-    text-align: center;
-}
-
 .carousel i {
     position: absolute;
     top: 50%;

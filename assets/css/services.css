@@ -38,6 +38,7 @@
 .programmer {
     position: relative;
     bottom: 0;
+    width: 500px;
     height: 450px;
 }
 

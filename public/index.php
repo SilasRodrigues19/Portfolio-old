@@ -326,12 +326,12 @@ session_start();
 					<hr data-aos="fade-down">
 					<p data-aos="fade-left">Clique na imagem para saber mais sobre o respectivo projeto</p>
 					<hr data-aos="fade-up">
-					<img data-aos="fade-up" class="programmer" src="../assets/img/programmer.webp" width="500px" height="350px" loading="lazy" alt="Programador">
+					<img data-aos="fade-up" class="programmer" src="../assets/img/programmer.webp" width="500px" height="450px" loading="lazy" alt="Programador">
 				</h1>
 			</div>
 
 			<!-- Swiper -->
-			<div class="all-projects">
+			<div class="all-projects" data-aos="zoom-out">
 				<div class="project-item">
 					<div class="project-info">
 						<div class="swiper mySwiper">
@@ -340,7 +340,7 @@ session_start();
 									<div class="wrapper">
 										<a href="https://axie-infinity-lp.vercel.app" target="_blank">
 											<div class="carousel">
-												<figure data-toggle="tooltip" title="Axie Infinity Landing Page" style="background: url('https://i.ibb.co/VL80Cj8/axiefullpage.png'); background-size: cover; background-position: top center; --speed: 3.5s;">
+												<figure data-toggle="tooltip" title="Axie Infinity Landing Page" style="background: url('https://i.ibb.co/x2DpCtV/axiefullpage.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
 													<i>
 														<ion-icon name="open-outline"></ion-icon>
 													</i>
@@ -356,7 +356,7 @@ session_start();
 									<div class="wrapper">
 										<a href="http://siimpsonss.vercel.app" target="_blank">
 											<div class="carousel">
-												<figure data-toggle="tooltip" title="Stream do SimpSonsS" style="background: url('https://i.ibb.co/YB7KWxQ/simpfullpage.png'); background-size: cover; background-position: top center; --speed: 3.5s;">
+												<figure data-toggle="tooltip" title="Stream do SimpSonsS" style="background: url('https://i.ibb.co/5rwpGBN/simpfullpage.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
 													<i>
 														<ion-icon name="open-outline"></ion-icon>
 													</i>
@@ -371,7 +371,7 @@ session_start();
 									<div class="wrapper">
 										<a href="https://weatherproject.vercel.app" target="_blank">
 											<div class="carousel">
-												<figure data-toggle="tooltip" title="Weather App" style="background: url('https://i.ibb.co/T2Y4yMd/image.png'); background-size: cover; background-position: top center; --speed: 3.5s;">
+												<figure data-toggle="tooltip" title="Weather App" style="background: url('https://i.ibb.co/ygnbXDf/weather.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
 													<i>
 														<ion-icon name="open-outline"></ion-icon>
 													</i>
@@ -386,7 +386,7 @@ session_start();
 									<div class="wrapper">
 										<a href="http://dogcursos.epizy.com/" target="_blank">
 											<div class="carousel">
-												<figure data-toggle="tooltip" title="Dog Cursos" style="background: url('https://i.ibb.co/P4RJdqP/image.png'); background-size: cover; background-position: top center; --speed: 3.5s;">
+												<figure data-toggle="tooltip" title="Dog Cursos" style="background: url('https://i.ibb.co/SxqGC31/dogcursos.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
 													<i>
 														<ion-icon name="open-outline"></ion-icon>
 													</i>
@@ -398,6 +398,7 @@ session_start();
 									</div>
 								</div>
 							</div>
+							<div class="swiper-pagination"></div>
 							<div class="swiper-button-next"></div>
 							<div class="swiper-button-prev"></div>
 						</div>
@@ -606,6 +607,11 @@ session_start();
 			navigation: {
 				nextEl: ".swiper-button-next",
 				prevEl: ".swiper-button-prev",
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
 			},
 		});
 	</script>

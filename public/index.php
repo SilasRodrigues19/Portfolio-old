@@ -31,7 +31,7 @@ session_start();
 	<link rel="stylesheet" href="../assets/css/reset.css">
 
 	<!-- Sweet Alert CSS -->
-	<link rel="preload" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" as=" style">
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" as="style">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css">
 
 	<!-- Aos Animate CSS -->
@@ -336,6 +336,24 @@ session_start();
 					<div class="project-info">
 						<div class="swiper mySwiper">
 							<div class="swiper-wrapper">
+								<!-- Project 1 -->
+								<div class="swiper-slide">
+									<div class="wrapper">
+										<a href="https://github.com/SilasRodrigues19/silasdev.epizy.com" target="_blank">
+											<div class="carousel">
+												<figure data-toggle="tooltip" title="Meu portfólio" style="background: url('https://i.ibb.co/WHsSZcs/portfoliofullpage.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
+													<i>
+														<ion-icon data-toggle="tooltip" title="Veja no GitHub" name="logo-octocat"></ion-icon>
+													</i>
+												</figure>
+												<figcaption class="carousel-info">
+													<h2>Portfólio</h2>
+												</figcaption>
+											</div>
+										</a>
+									</div>
+								</div>
+								<!-- Project 2 -->
 								<div class="swiper-slide">
 									<div class="wrapper">
 										<a href="https://axie-infinity-lp.vercel.app" target="_blank">
@@ -352,6 +370,7 @@ session_start();
 										</a>
 									</div>
 								</div>
+								<!-- Project 3 -->
 								<div class="swiper-slide">
 									<div class="wrapper">
 										<a href="http://siimpsonss.vercel.app" target="_blank">
@@ -365,9 +384,10 @@ session_start();
 													<h2>Stream do Luiz "SimpSonsS" Guilherme</h2>
 												</figcaption>
 											</div>
-										</a>	
+										</a>
 									</div>
 								</div>
+								<!-- Project 4 -->
 								<div class="swiper-slide">
 									<div class="wrapper">
 										<a href="https://weatherproject.vercel.app" target="_blank">
@@ -384,6 +404,7 @@ session_start();
 										</a>
 									</div>
 								</div>
+								<!-- Project 5 -->
 								<div class="swiper-slide">
 									<div class="wrapper">
 										<a href="http://dogcursos.epizy.com/" target="_blank">
@@ -400,22 +421,24 @@ session_start();
 										</a>
 									</div>
 								</div>
+								<!-- Project 6 -->
 								<div class="swiper-slide">
 									<div class="wrapper">
 										<a href="https://github.com/SilasRodrigues19/Google-News-API" target="_blank">
 											<div class="carousel">
 												<figure data-toggle="tooltip" title="Brazil Headlines" style="background: url('https://i.ibb.co/5s6Bg9B/googlefullpage.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
 													<i>
-														<ion-icon name="open-outline"></ion-icon>
+														<ion-icon data-toggle="tooltip" title="Veja no GitHub" name="logo-octocat"></ion-icon>
 													</i>
 												</figure>
 												<figcaption class="carousel-info">
 													<h2>Consultando notícias com a API do Google News</h2>
 												</figcaption>
 											</div>
-										</a>	
+										</a>
 									</div>
 								</div>
+								<!-- Project 7 -->
 								<div class="swiper-slide">
 									<div class="wrapper">
 										<a href="#" target="_blank">
@@ -429,39 +452,41 @@ session_start();
 													<h2>Consulte perfis do GitHub</h2>
 												</figcaption>
 											</div>
-										</a>	
+										</a>
 									</div>
 								</div>
+								<!-- Project 8 -->
 								<div class="swiper-slide">
 									<div class="wrapper">
 										<a href="#" target="_blank">
 											<div class="carousel">
 												<figure data-toggle="tooltip" title="Sistema de cadastro" style="background: url('https://i.ibb.co/tDVNk0m/loginfullpage.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
 													<i>
-														<ion-icon name="open-outline"></ion-icon>
+														<ion-icon name="logo-octocat"></ion-icon>
 													</i>
 												</figure>
 												<figcaption class="carousel-info">
 													<h2>Sistema de cadastro de itens</h2>
 												</figcaption>
 											</div>
-										</a>		
+										</a>
 									</div>
 								</div>
+								<!-- Project 9 -->
 								<div class="swiper-slide">
 									<div class="wrapper">
 										<a href="#" target="_blank">
 											<div class="carousel">
 												<figure data-toggle="tooltip" title="Cadastro de clientes" style="background: url('https://i.ibb.co/DfgkBq5/cadastrofullpage.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
 													<i>
-														<ion-icon name="open-outline"></ion-icon>
+														<ion-icon name="logo-octocat"></ion-icon>
 													</i>
 												</figure>
 												<figcaption class="carousel-info">
 													<h2>Cadastro e exibição de clientes</h2>
 												</figcaption>
 											</div>
-										</a>		
+										</a>
 									</div>
 								</div>
 							</div>

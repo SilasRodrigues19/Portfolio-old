@@ -1,12 +1,10 @@
-/* Footer */
-
 footer {
-    font-family: 'Kodchasan', sans-serif, 'Open Sans', sans-serif;
+    font-family: Kodchasan, sans-serif, 'Open Sans', sans-serif;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #111;
+    background-color: #111
 }
 
 .footer {
@@ -15,15 +13,15 @@ footer {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 50px 0 10px 0;
+    padding: 50px 0 10px 0
 }
 
 #footer h2 {
     color: #cacaca;
-    font-weight: 500;
-    font-size: 1.8rem;
-    letter-spacing: .7rem;
-    margin: 10px 0;
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: .5rem;
+    margin: 10px 0
 }
 
 .contact-icon {
@@ -31,12 +29,12 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 20px 0px 20px 20px;
+    margin: 20px 0 20px 20px
 }
 
 #smoothScroll {
     position: fixed;
-    background-color: rgba(71, 11, 169, 0.1);
+    background-color: rgba(71, 11, 169, .1);
     border: solid 2.5px;
     border-color: #470ba9;
     padding: 15px;
@@ -45,34 +43,31 @@ footer {
     right: 25px;
     font-size: 3rem;
     text-align: center;
-    line-height: 10px;
+    line-height: 10px
 }
 
 #smoothScroll:hover {
-    background-color: rgba(71, 11, 169, 0.3);
+    background-color: rgba(71, 11, 169, .3)
 }
 
 .contact-item {
     height: 50px;
     overflow: hidden;
     width: 75px;
-    margin: 0 10px;
+    margin: 0 10px
 }
 
 #footer p {
     color: #cacaca;
-    font-size: 1.3rem;
+    font-size: 1.3rem
 }
 
 .brand h1 {
     font-size: 3rem;
     text-transform: uppercase;
-    color: #cacaca;
+    color: #cacaca
 }
 
 .brand h1 span {
-    color: var(--primary-color);
+    color: var(--primary-color)
 }
-
-
-/* End Footer */

@@ -1,8 +1,6 @@
-/* Header section */
-
 #header {
     position: fixed;
-    font-family: 'Kodchasan', sans-serif, 'Open Sans', sans-serif;
+    font-family: Kodchasan, sans-serif, 'Open Sans', sans-serif;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -11,14 +9,14 @@
     left: 0;
     top: 0;
     width: 100vw;
-    height: auto;
+    height: auto
 }
 
 .header {
     min-height: 8vh;
-    background-color: rgba(31, 30, 30, 0.24);
+    background-color: rgba(31, 30, 30, .24);
     -webkit-transition: .5s ease background-color;
-    transition: .5s ease background-color;
+    transition: .5s ease background-color
 }
 
 .nav-bar {
@@ -34,13 +32,13 @@
     width: 100%;
     height: 100%;
     max-width: 1300px;
-    padding: 0 10px;
+    padding: 0 10px
 }
 
 .nav-list ul {
     list-style: none;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, .75);
     width: 100vw;
     height: 100vh;
     left: 100%;
@@ -61,11 +59,11 @@
     z-index: 1;
     overflow-x: hidden;
     -webkit-transition: .5s ease left;
-    transition: .5s ease left;
+    transition: .5s ease left
 }
 
 .nav-list ul.active {
-    left: 0%;
+    left: 0
 }
 
 .nav-list ul a {
@@ -76,7 +74,7 @@
     color: #cacaca;
     text-transform: uppercase;
     padding: 20px;
-    display: block;
+    display: block
 }
 
 .nav-list ul a::after {
@@ -91,7 +89,7 @@
     letter-spacing: 50px;
     z-index: -1;
     -webkit-transition: .3s ease letter-spacing;
-    transition: .3s ease letter-spacing;
+    transition: .3s ease letter-spacing
 }
 
 .nav-list ul li:hover a::after {
@@ -99,15 +97,15 @@
     transform: translate(-50%, -50%) scale(1);
     letter-spacing: 10px;
     -webkit-transition: 1s ease letter-spacing;
-    transition: 1s ease letter-spacing;
+    transition: 1s ease letter-spacing
 }
 
 .nav-list ul li:hover a {
     color: var(--primary-color);
-    -webkit-transform: scale(0.95);
-    transform: scale(0.95);
+    -webkit-transform: scale(.95);
+    transform: scale(.95);
     -webkit-transition: ease .4s;
-    transition: ease .4s;
+    transition: ease .4s
 }
 
 .menu {
@@ -128,9 +126,9 @@
     justify-content: center;
     z-index: 10;
     cursor: pointer;
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-    margin-right: 20px;
+    -webkit-transform: scale(.8);
+    transform: scale(.8);
+    margin-right: 20px
 }
 
 .menu:after {
@@ -138,15 +136,13 @@
     content: '';
     height: 100%;
     width: 100%;
-    border-radius: 50%;
-    border: 3px solid #cacaca;
     -webkit-animation: 1s ease infinite;
-    animation: 1s ease infinite;
+    animation: 1s ease infinite
 }
 
 .menu:hover:after {
     -webkit-animation: none;
-    animation: none;
+    animation: none
 }
 
 .menu .bar {
@@ -154,7 +150,7 @@
     width: 30px;
     position: relative;
     background-color: transparent;
-    z-index: -1;
+    z-index: -1
 }
 
 .menu .bar::after {
@@ -165,7 +161,7 @@
     left: 0;
     background-color: #cacaca;
     -webkit-transition: 1s ease;
-    transition: 1s ease;
+    transition: 1s ease
 }
 
 .menu .bar::before {
@@ -178,18 +174,18 @@
     transition: 1s ease;
     position: absolute;
     height: 100%;
-    width: 85%;
+    width: 85%
 }
 
 #hamburger {
-    display: none;
+    display: none
 }
 
 #hamburger:checked~label .menu .bar:after {
     -webkit-transform: rotate(225deg);
     transform: rotate(225deg);
     top: 0;
-    left: 0;
+    left: 0
 }
 
 #hamburger:checked~label .menu .bar:before {
@@ -197,34 +193,29 @@
     transform: rotate(-405deg);
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%
 }
 
 .menu .bar::after {
     border-radius: 20px;
-    top: 8px;
+    top: 8px
 }
 
 .menu .bar::before {
-    bottom: 8px;
+    bottom: 8px
 }
 
 .menu.active .bar::before {
-    bottom: 0;
+    bottom: 0
 }
 
 .menu.active .bar::after {
-    top: 8px;
+    top: 8px
 }
 
-/* End Header section */
-
-/* Media Query For Desktop */
-
-@media only screen and (min-width: 1200px) {
-    /* header */
+@media only screen and (min-width:1200px) {
     .menu {
-        display: none;
+        display: none
     }
     .nav-list ul {
         position: initial;
@@ -233,17 +224,15 @@
         width: -webkit-fit-content;
         width: -moz-fit-content;
         width: fit-content;
-        background-color: transparent;
+        background-color: transparent
     }
     .nav-list ul li {
-        display: inline-block;
+        display: inline-block
     }
     .nav-list ul li a {
-        font-size: 1.8rem;
+        font-size: 1.8rem
     }
     .nav-list ul a:after {
-        display: none;
+        display: none
     }
 }
-
-/* End header */

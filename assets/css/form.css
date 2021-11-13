@@ -1,22 +1,22 @@
 ::-webkit-input-placeholder {
-    letter-spacing: 1.5px;
+    letter-spacing: 1.5px
 }
 
 :-ms-input-placeholder {
-    letter-spacing: 1.5px;
+    letter-spacing: 1.5px
 }
 
 ::-ms-input-placeholder {
-    letter-spacing: 1.5px;
+    letter-spacing: 1.5px
 }
 
 ::placeholder {
-    letter-spacing: 1.5px;
+    letter-spacing: 1.5px
 }
 
 #form {
     background-image: -webkit-gradient(linear, left bottom, left top, from(#fbc2eb), to(#a6c1ee));
-    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    background-image: linear-gradient(to top, #fbc2eb 0, #a6c1ee 100%)
 }
 
 .form {
@@ -33,38 +33,31 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0
 }
 
 .error {
     margin-top: 3px;
-    color: rgba(255, 0, 0, 0.5);
+    color: rgba(255, 0, 0, .5);
     -webkit-animation: bounce;
     animation: bounce;
     -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-}
-
-.form {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 100px 0;
+    animation-duration: 1s
 }
 
 .my-form {
-    font-family: 'Kodchasan', sans-serif, 'Open Sans', sans-serif;
+    font-family: Kodchasan, sans-serif, 'Open Sans', sans-serif;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    width: 100%;
+    width: 100%
 }
 
 .my-form h1 {
-    font-family: 'Salvation Typeface Font', 'Open Sans', sans-serif;
+    font-family: 'Salvation Typeface Font', 'Open Sans', sans-serif
 }
 
 .form-control {
@@ -72,66 +65,63 @@
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 1.5rem;
-    height: calc(2.5em + .75rem + 2px);
+    height: calc(2.5em + .75rem + 2px)
 }
 
 label {
     color: #111;
     font-weight: 600;
-    margin-bottom: .5rem;
+    margin-bottom: .5rem
 }
 
 .btn-secondary,
 label {
-    font-size: 15.5px;
+    font-size: 15.5px
 }
 
 .form-control,
 .form-control:active {
     background-color: transparent;
-    border: 1px solid #000;
+    border: 1px solid #000
 }
 
 .form-control:focus {
     background-color: transparent;
     color: #000;
     outline: 0;
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.7);
-    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0 0 0 .2rem rgba(0, 0, 0, .7);
+    box-shadow: 0 0 0 .2rem rgba(0, 0, 0, .7)
 }
 
 .form-control.error,
-.form-control.error:focus,
 .form-control.error:active,
+.form-control.error:focus,
 textarea.error,
-textarea.error:focus,
-textarea.error:active {
+textarea.error:active,
+textarea.error:focus {
     color: #000;
-    background-color: rgba(255, 0, 0, 0.05);
+    background-color: rgba(255, 0, 0, .05)
 }
 
 textarea {
     min-height: 15em;
-    resize: none;
+    resize: none
 }
-
-
-/* Remove default bg from browser */
 
 input:-webkit-autofill {
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: #111;
+    -webkit-text-fill-color: #111
 }
 
-input[type="submit"],
-input[type="email"],
-input[type="text"] {
-    border-radius: 50px;
+input[type=email],
+input[type=submit],
+input[type=text] {
+    border-radius: 50px
 }
 
 #mensagem {
-    border-radius: 20px;
+    border-radius: 20px
 }
 
 .btn-secondary {
@@ -141,19 +131,19 @@ input[type="text"] {
     -webkit-transition: letter-spacing .5s;
     transition: letter-spacing .5s;
     background-color: transparent;
-    border-color: #000;
+    border-color: #000
 }
 
 .btn-secondary:hover {
-    background-color: rgba(90, 98, 104, 0.1);
+    background-color: rgba(90, 98, 104, .1);
     border-color: #545b62;
     color: #000;
     letter-spacing: 15px;
     -webkit-transition: letter-spacing .5s;
-    transition: letter-spacing .5s;
+    transition: letter-spacing .5s
 }
 
 .btn-secondary:focus {
-    color: #000 !important;
-    background-color: transparent !important;
+    color: #000!important;
+    background-color: transparent!important
 }

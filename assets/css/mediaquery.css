@@ -1,15 +1,16 @@
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width:980px) {
     .knowledge-header p {
         font-weight: 600;
         opacity: .9;
         margin: 0;
+        color: #010101
     }
     .knowledge-icons {
-        margin-right: 10px;
+        margin-right: 10px
     }
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width:960px) {
     .knowledge-wrapper {
         font-family: 'Open Sans', sans-serif;
         display: -webkit-box;
@@ -21,37 +22,34 @@
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
-        flex-direction: column;
+        flex-direction: column
     }
     .knowledge {
-        margin: 10px 0;
+        margin: 10px 0
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width:768px) {
     html {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif
     }
     .portfolioIcon {
-        font-size: 20px;
+        font-size: 20px
     }
-    h1.section-title,
-    #services .section-title {
-        font-size: 3rem;
+    #services .section-title,
+    h1.section-title {
+        font-size: 3rem
     }
-    /* Home section */
     .home h1 {
-        font-size: 3.4rem;
+        font-size: 3.4rem
     }
     .home h2 {
-        font-size: 2.4rem;
+        font-size: 2.4rem
     }
     .home .cta {
         padding: 10px 20px;
-        font-size: 1.5rem;
+        font-size: 1.5rem
     }
-    /* End Home section */
-    /* Services section */
     #services .service-item {
         text-align: center;
         -ms-flex-preferred-size: 45%;
@@ -59,163 +57,143 @@
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        margin: 2.5%;
+        margin: 2.5%
     }
-    /* End Services section */
-    /* Form Section */
     .my-form {
-        width: 80%;
+        width: 80%
     }
     .my-form h1 {
-        font-size: 3rem;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2.5rem
     }
-    /* End Form Section */
-    /* Icons */
     .social {
-        -webkit-transform: rotate(90deg) translateY(150%) !important;
-        transform: rotate(90deg) translateY(150%) !important;
+        -webkit-transform: rotate(90deg) translateY(150%)!important;
+        transform: rotate(90deg) translateY(150%)!important
     }
     .rightButton {
+        visibility: visible;
         opacity: 0;
         position: fixed;
         left: 5px;
         top: 50%;
-        font-size: 30px;
+        font-size: 30px
     }
     .rightButton:hover {
         visibility: hidden;
-        transition: ease .7s;
+        transition: ease .7s
     }
     .rightButton:hover+.social {
-        -webkit-transform: rotate(90deg) translateY(0%) !important;
-        transform: rotate(90deg) translateY(0%) !important;
+        -webkit-transform: rotate(90deg) translateY(0)!important;
+        transform: rotate(90deg) translateY(0)!important
     }
     .rightButton:hover+.social span {
         -webkit-transform: translateX(-280px);
-        transform: translateX(-280px);
+        transform: translateX(-280px)
     }
     .rightButton:hover+.social .socialBtn+.iconsBox i {
-        opacity: 1;
+        opacity: 1
     }
-    /* End Icons */
 }
 
-@media only screen and (max-width: 500px) {
-    /* Header Section, Icons and Footer Section */
+@media only screen and (max-width:500px) {
     .brand h1 {
-        font-size: 2rem;
+        font-size: 2rem
     }
     .nav-list ul {
         -webkit-clip-path: ellipse(360px 370px at right);
-        clip-path: ellipse(360px 370px at right);
+        clip-path: ellipse(360px 370px at right)
     }
     .nav-list ul a::before {
         position: absolute;
-        left: 80px;
+        left: 80px
     }
-    /* Menu icons removed when clicked */
     .nav-list ul a:hover::before {
-        opacity: 0;
+        opacity: 0
     }
     .nav-list ul li a::before {
         content: '';
         position: absolute;
-        left: -2rem;
         -webkit-filter: invert(1);
         filter: invert(1);
         background-size: cover;
         width: 25px;
-        height: 25px;
+        height: 25px
     }
     .nav-list ul li:nth-child(1) a::before {
-        background: url('https://api.iconify.design/fluent:window-dev-tools-24-regular.svg') no-repeat center center / contain;
+        background: url(https://api.iconify.design/fluent:window-dev-tools-24-regular.svg) no-repeat center center/contain
     }
     .nav-list ul li:nth-child(2) a::before {
-        background: url('https://api.iconify.design/entypo:code.svg') no-repeat center center / contain;
+        background: url(https://api.iconify.design/entypo:code.svg) no-repeat center center/contain
     }
     .nav-list ul li:nth-child(3) a::before {
-        background: url('https://api.iconify.design/clarity:certificate-solid.svg') no-repeat center center / contain;
-        left: -3rem;
+        background: url(https://api.iconify.design/clarity:certificate-solid.svg) no-repeat center center/contain;
     }
     .nav-list ul li:nth-child(4) a::before {
-        background: url('https://api.iconify.design/ri:mail-send-line.svg') no-repeat center center / contain;
+        background: url(https://api.iconify.design/ri:mail-send-line.svg) no-repeat center center/contain
     }
     .home h1 {
-        font-size: 2.4rem;
+        font-size: 2.4rem
     }
     .home h2 {
         font-size: 1.6rem;
-        margin-top: 35px;
+        margin-top: 35px
     }
     #services .service-bottom {
-        display: initial;
+        display: initial
     }
     #services .service-item {
         width: 245px;
         padding: 25px;
-        margin: 2.5% 0 10% 0;
+        margin: 2.5% 0 10% 0
     }
-    /* End Header Section and Footer Section */
-    /* Service Section */
     .service-top p {
-        width: 35rem;
+        width: 35rem
     }
     .carousel-info h2 {
-        display: none;
+        display: none
     }
     figure {
         height: 300px;
-        width: 300px;
+        width: 300px
     }
-    /* End Service Section */
-    /* Certificate Section */
     .certificate {
-        height: 200px;
+        height: 200px
     }
-    /* End Certificate Section */
-    /* Home and Footer*/
     #footer h2,
     #footer p,
+    #form,
     .brand h1,
+    .home .cta,
     .home h1,
     .home h2,
-    .home .cta,
-    #form,
     .lb-details,
     .nav-list ul a,
     .social ul li a span {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif
     }
     .social ul li a span {
-        display: none;
+        display: none
     }
     #footer h2 {
         word-break: break-all;
-        letter-spacing: .4rem;
+        letter-spacing: .4rem
     }
-    .contact-icon #smoothScroll {
-        display: none;
-    }
+    .contact-icon #smoothScroll,
     .programmer {
-        width: 230px;
-        height: 160px;
+        display: none
     }
 }
 
-@media only screen and (max-width: 386px) {
-    /* Header Section and Footer Section */
-    .brand h1,
-    #footer h2 {
+@media only screen and (max-width:386px) {
+    #footer h2,
+    .brand h1 {
         font-size: 1.6rem;
-        text-align: center;
+        text-align: center
     }
-    /* End Header Section and Footer Section */
-    /* Icons */
+    .fa-arrow-up,
     .fa-envelope,
     .fa-file-pdf,
-    .fa-globe-americas,
-    .fa-arrow-up {
-        font-size: 30px;
+    .fa-globe-americas {
+        font-size: 30px
     }
-    /* End Icons */
 }

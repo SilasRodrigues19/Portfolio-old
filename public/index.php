@@ -2,18 +2,23 @@
 session_start();
 ?>
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<meta http-equiv="Cache-control" content="public">
-	<meta name="robots" content="index, nofollow">
-	<meta http-equiv="content-language" content="pt-br, en-US">
-	<meta name="description" content="Meu nome é Silas Rodrigues e este é meu portfolio com todos os trabalhos já realizados até então,
-	sou programador e desenvolvo aplicações web">
-	<meta name="keywords" content="Silas Rodrigues, freelancer, programador, desenvolvedor">
 	<meta name="author" content="Silas Rodrigues">
+	<meta name="description" content="Meu nome é Silas Rodrigues e este é meu portfolio com os principais trabalhos já realizados até então,
+	sou programador e desenvolvo aplicações web">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta name="theme-color" content="#470ba9">
+	<meta name="copyright" content="Silas Rodrigues 2021">
+	<meta http-equiv="cache-control" content="public">
+	<meta http-equiv="content-language" content="pt-br">
+	<meta name="robots" content="index, follow">
+	<meta property="og:title" content="Silas Rodrigues - Desenvolvedor Front End - Programador">
+	<meta property="og:description" content="Meu nome é Silas Rodrigues e este é meu portfolio com todos os trabalhos já realizados até então,
+	sou programador e desenvolvo aplicações web">
+	<meta name="keywords" content="Silas Rodrigues, freelancer, programador, desenvolvedor, portfolio, frontend">
 	<title>Portfólio | Silas Rodrigues</title>
 	<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
@@ -35,7 +40,7 @@ session_start();
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css">
 
 	<!-- Aos Animate CSS -->
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
 
 	<!-- Swipper CSS -->
 	<link rel="preload" href="https://unpkg.com/swiper/swiper-bundle.min.css" as="style">
@@ -75,19 +80,18 @@ session_start();
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@200;300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+	<link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@200;300&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
 	<!-- Lightbox -->
 	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" as="style">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 
 	<!-- JQuery Compatible with JQuery Mask-->
-	<link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" as="script">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" as="script">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<!-- JQuery Validator -->
-	<link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" as="script">
 	<script defer src="../assets/js/jquery.validate.min.js"></script>
 
 	<!-- Mask Plugin JQuery -->
@@ -99,9 +103,10 @@ session_start();
 	<script defer src="../assets/js/formvalidator.js"></script>
 
 	<!-- Validator Messages -->
-	<link rel="preload" href="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_ptbr.js" as="script">
-	<script defer src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_ptbr.js"></script>
+	<link rel="preload" href="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_ptbr.js" as="script">
+	<script defer src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_ptbr.js"></script>
 	<!-- Scripts need to be imported before </head> to resolve validation messages error -->
+	<link rel="canonical" href="http://silasdev.epizy.com">
 </head>
 
 <body ondragstart="false">
@@ -118,13 +123,15 @@ session_start();
 					<!-- Mobile Menu -->
 					<input id="hamburger" type="checkbox">
 					<label for="hamburger">
-						<div class="menu" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="mobileExpanded" aria-expanded="false">
+						<div class="menu">
 							<div class="bar"></div>
 						</div>
 					</label>
-					<ul id="mobileExpanded" role="menu">
-						<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="450"><a class="scroll" href="#services" data-after="Services">Serviços</a></li>
-						<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="650"><a class="scroll" href="#projects" data-after="Projects">Projetos</a></li>
+					<ul id="mobileExpanded">
+						<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="450"><a class="scroll" href="#services" data-after="Services">Serviços</a>
+						</li>
+						<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="650"><a class="scroll" href="#projects" data-after="Projects">Projetos</a>
+						</li>
 						<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="850"><a class="scroll" href="#certificates" data-after="Courses">Cursos</a>
 						</li>
 						<li data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1050"><a class="scroll" href="#form" data-after="Contact">Contato</a>
@@ -189,7 +196,7 @@ session_start();
 						</a>
 					</i>
 					<i>
-						<a href="https://github.com/SilasRodrigues19" target="_blank" rel="noreferrer">
+						<a href="https://github.com/SilasRodrigues19" target="_blank" rel="noreferrer" aria-label="Github">
 							<span class="iconify github" data-icon="eva:github-fill" data-inline="false"></span>
 						</a>
 					</i>
@@ -339,11 +346,11 @@ session_start();
 								<!-- Project 1 -->
 								<div class="swiper-slide">
 									<div class="wrapper">
-										<a href="https://github.com/SilasRodrigues19/silasdev.epizy.com" target="_blank">
+										<a href="https://github.com/SilasRodrigues19/silasdev.epizy.com" target="_blank" rel="noopener" aria-label="Portfólio">
 											<div class="carousel">
-												<figure data-toggle="tooltip" title="Meu portfólio" style="background: url('https://i.ibb.co/WHsSZcs/portfoliofullpage.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
+												<figure data-toggle="tooltip" title="Meu portfólio" style="background: url('../assets/img/portfoliofullpage_wsdeen.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
 													<i>
-														<ion-icon data-toggle="tooltip" title="Veja no GitHub" name="logo-octocat"></ion-icon>
+														<span class="iconify" data-icon="ion:logo-github"></span>
 													</i>
 												</figure>
 												<figcaption class="carousel-info">
@@ -356,11 +363,11 @@ session_start();
 								<!-- Project 2 -->
 								<div class="swiper-slide">
 									<div class="wrapper">
-										<a href="https://axie-infinity-lp.vercel.app" target="_blank">
+										<a href="https://axie-infinity-lp.vercel.app" target="_blank" rel="noopener" aria-label="Axie Infinity Landing Page">
 											<div class="carousel">
-												<figure data-toggle="tooltip" title="Axie Infinity Landing Page" style="background: url('https://i.ibb.co/x2DpCtV/axiefullpage.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
+												<figure data-toggle="tooltip" title="Axie Infinity Landing Page" style="background: url('../assets/img/axiefullpage_tomnrb.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
 													<i>
-														<ion-icon name="open-outline"></ion-icon>
+														<span class="iconify" data-icon="ion:open-outline"></span>
 													</i>
 												</figure>
 												<figcaption class="carousel-info">
@@ -373,11 +380,11 @@ session_start();
 								<!-- Project 3 -->
 								<div class="swiper-slide">
 									<div class="wrapper">
-										<a href="http://siimpsonss.vercel.app" target="_blank">
+										<a href="https://siimpsonss.vercel.app" target="_blank" rel="noopener" aria-label="Streamer SiimpSonsS">
 											<div class="carousel">
-												<figure data-toggle="tooltip" title="Stream do SimpSonsS" style="background: url('https://i.ibb.co/5rwpGBN/simpfullpage.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
+												<figure data-toggle="tooltip" title="Stream do SimpSonsS" style="background: url('../assets/img/simpfullpage_ugxfjw.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
 													<i>
-														<ion-icon name="open-outline"></ion-icon>
+														<span class="iconify" data-icon="ion:open-outline"></span>
 													</i>
 												</figure>
 												<figcaption class="carousel-info">
@@ -390,11 +397,11 @@ session_start();
 								<!-- Project 4 -->
 								<div class="swiper-slide">
 									<div class="wrapper">
-										<a href="https://weatherproject.vercel.app" target="_blank">
+										<a href="https://weatherproject.vercel.app" target="_blank" rel="noopener" aria-label="Weather App">
 											<div class="carousel">
-												<figure data-toggle="tooltip" title="Weather App" style="background: url('https://i.ibb.co/ygnbXDf/weather.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
+												<figure data-toggle="tooltip" title="Weather App" style="background: url('../assets/img/weather_mhgrvq.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
 													<i>
-														<ion-icon name="open-outline"></ion-icon>
+														<span class="iconify" data-icon="ion:open-outline"></span>
 													</i>
 												</figure>
 												<figcaption class="carousel-info">
@@ -407,11 +414,11 @@ session_start();
 								<!-- Project 5 -->
 								<div class="swiper-slide">
 									<div class="wrapper">
-										<a href="http://dogcursos.epizy.com/" target="_blank">
+										<a href="https://github.com/SilasRodrigues19/dogcursos.epizy.com" target="_blank" rel="noopener" aria-label="Dog Cursos">
 											<div class="carousel">
-												<figure data-toggle="tooltip" title="Dog Cursos" style="background: url('https://i.ibb.co/SxqGC31/dogcursos.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
+												<figure data-toggle="tooltip" title="Dog Cursos" style="background: url('../assets/img/dogcursos_vciarw.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
 													<i>
-														<ion-icon name="open-outline"></ion-icon>
+														<span class="iconify" data-icon="ion:logo-github"></span>
 													</i>
 												</figure>
 												<figcaption class="carousel-info">
@@ -424,11 +431,11 @@ session_start();
 								<!-- Project 6 -->
 								<div class="swiper-slide">
 									<div class="wrapper">
-										<a href="https://github.com/SilasRodrigues19/Google-News-API" target="_blank">
+										<a href="https://github.com/SilasRodrigues19/Google-News-API" target="_blank" rel="noopener" aria-label="Google News API">
 											<div class="carousel">
-												<figure data-toggle="tooltip" title="Brazil Headlines" style="background: url('https://i.ibb.co/5s6Bg9B/googlefullpage.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
+												<figure data-toggle="tooltip" title="Brazil Headlines" style="background: url('../assets/img/googlefullpage_gsdblx.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
 													<i>
-														<ion-icon data-toggle="tooltip" title="Veja no GitHub" name="logo-octocat"></ion-icon>
+														<span class="iconify" data-icon="ion:logo-github"></span>
 													</i>
 												</figure>
 												<figcaption class="carousel-info">
@@ -441,11 +448,11 @@ session_start();
 								<!-- Project 7 -->
 								<div class="swiper-slide">
 									<div class="wrapper">
-										<a href="#" target="_blank">
+										<a href="#" rel="noreferrer" aria-label="GitHub API">
 											<div class="carousel">
-												<figure data-toggle="tooltip" title="Consulte perfis no GitHub" style="background: url('https://i.ibb.co/fQkPF6C/githubfullpage.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
+												<figure data-toggle="tooltip" title="Consulte perfis no GitHub" style="background: url('../assets/img/githubfullpage_xky9iz.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
 													<i>
-														<ion-icon name="open-outline"></ion-icon>
+														<span class="iconify" data-icon="ion:logo-github"></span>
 													</i>
 												</figure>
 												<figcaption class="carousel-info">
@@ -458,11 +465,11 @@ session_start();
 								<!-- Project 8 -->
 								<div class="swiper-slide">
 									<div class="wrapper">
-										<a href="#" target="_blank">
+										<a href="#" rel="noreferrer" aria-label="Sistema de Cadastro">
 											<div class="carousel">
-												<figure data-toggle="tooltip" title="Sistema de cadastro" style="background: url('https://i.ibb.co/tDVNk0m/loginfullpage.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
+												<figure data-toggle="tooltip" title="Sistema de cadastro" style="background: url('../assets/img/loginfullpage_mphiyb.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
 													<i>
-														<ion-icon name="logo-octocat"></ion-icon>
+														<span class="iconify" data-icon="ion:logo-github"></span>
 													</i>
 												</figure>
 												<figcaption class="carousel-info">
@@ -475,11 +482,11 @@ session_start();
 								<!-- Project 9 -->
 								<div class="swiper-slide">
 									<div class="wrapper">
-										<a href="#" target="_blank">
+										<a href="#" rel="noreferrer" aria-label="Cadastro de Clientes">
 											<div class="carousel">
-												<figure data-toggle="tooltip" title="Cadastro de clientes" style="background: url('https://i.ibb.co/DfgkBq5/cadastrofullpage.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
+												<figure data-toggle="tooltip" title="Cadastro de clientes" style="background: url('../assets/img/cadastrofullpage_cnvelb.webp'); background-size: cover; background-position: top center; --speed: 3.5s;">
 													<i>
-														<ion-icon name="logo-octocat"></ion-icon>
+														<span class="iconify" data-icon="ion:logo-github"></span>
 													</i>
 												</figure>
 												<figcaption class="carousel-info">
@@ -511,6 +518,9 @@ session_start();
 			<div class="certificate" data-aos="fade-up">
 				<a href="../assets/img/certificados/responsive-web-design.webp" data-lightbox="mygallery" data-title="FreeCodeCamp Responsive Web Design">
 					<img src="../assets/img/certificados/responsive-web-design.webp" width="200" height="150" loading="lazy" alt="FreeCodeCamp Responsive Web Design" data-aos="fade-up">
+				</a>
+				<a href="../assets/img/certificados/js.webp" data-lightbox="mygallery" data-title="FreeCodeCamp JavaScript Algorithms and Data Structures">
+					<img src="../assets/img/certificados/js.webp" width="200" height="150" loading="lazy" alt="FreeCodeCamp JavaScript Algorithms and Data Structures" data-aos="fade-up">
 				</a>
 				<a href="../assets/img/certificados/git.webp" data-lightbox="mygallery" data-title="Git">
 					<img src="../assets/img/certificados/git.webp" width="200" height="150" loading="lazy" alt="Certificado Git" data-aos="fade-up">
@@ -644,7 +654,7 @@ session_start();
 
 				<div class="contact-item" data-toggle="tooltip" title="Me contate por e-mail">
 					<div data-aos="fade-up" data-aos-offset="0">
-						<a href="mailto:silasrodrigues.ti@hotmail.com?subject=Contato%20Site">
+						<a href="mailto:silasrodrigues.ti@hotmail.com?subject=Contato%20Site" aria-label="Gmail">
 							<span class="iconify envelope" data-icon="emojione-monotone:closed-mailbox-with-lowered-flag" data-inline="false"></span>
 						</a>
 					</div>
@@ -652,7 +662,7 @@ session_start();
 
 				<div class="contact-item" data-toggle="tooltip" title="Veja meu curriculo">
 					<div data-aos="fade-right" data-aos-offset="0">
-						<a href="../curriculo.pdf" target="_blank">
+						<a href="../curriculo.pdf" target="_blank" aria-label="Currículo PDF">
 							<span class="iconify file-pdf" data-icon="bi:file-earmark-pdf-fill" data-inline="false"></span>
 						</a>
 					</div>
@@ -667,25 +677,19 @@ session_start();
 	<!-- End footer -->
 
 	<!-- Icons Script -->
-	<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+	<script defer src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
 
 	<!-- Smooth Scroll Function -->
 	<script src="../assets/js/smooth-scroll.js"></script>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 	<!-- Lightbox -->
-	<script src="../assets/js/lightbox-plus-jquery.min.js"></script>
-
-	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-	<!-- Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 	<!-- Aos Animate -->
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script src="../assets/js/script.js"></script>
+	<script defer src="../assets/js/script.js"></script>
 
 	<!-- Swiper JS -->
 	<link rel="preload" href="https://unpkg.com/swiper/swiper-bundle.min.js" as="script">

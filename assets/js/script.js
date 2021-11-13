@@ -1,7 +1,7 @@
 const typedTextSpan = document.querySelector(".typed-text"),
     cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Web Developer", "Programador", "Free Lancer"];
+const textArray = ["Web Developer", "Programador", "Front End"];
 const typingDelay = 50;
 const erasingDelay = 50;
 const newTextDelay = 2000; // Delay between current and next text
@@ -36,32 +36,33 @@ erase = () => {
     }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    if (textArray.length) setTimeout(type, newTextDelay + 250);
-});
-
-
 /* Tooltip alert */
 $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
 });
 
+setAttributes = (el, attrs) => {
+    for (var attr in attrs) {
+        el.setAttribute(attr, attrs[attr]);
+    }
+}
 
 /* Loader */
 window.onload = displayContent;
 
-let loader;
-
 // Add animation after the page loaded
 function displayContent() {
     loader.style.display = 'none';
-    //$(".infoText, .cta, .arrayText").addClass('infoAnimation')
     $('.home .container').addClass('infoAnimation');
+
+    // Fix  Lightbox Uncrawlable Links
+    const lightBoxCancel = document.querySelector('.lb-cancel');
+    setAttributes(lightBoxCancel, { 'rel': 'noopener', 'href': '#' })
 }
 
 /* Add warning when the user tries to access mail.php by URL */
-let buttonMailAlert = document.getElementById('btnsection');
-let mailAlert = document.getElementById('psection');
+let buttonMailAlert = document.getElementById('warningMail_button');
+let mailAlert = document.getElementById('warningMail');
 
 if (mailAlert != null) { /* Avoid null variable error when the user doesn't try to access by URL */
     buttonMailAlert.addEventListener('click', () => {
@@ -71,6 +72,7 @@ if (mailAlert != null) { /* Avoid null variable error when the user doesn't try 
 
 document.addEventListener("DOMContentLoaded", () => {
     loader = document.getElementById('loader');
+    if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
 const menu = document.querySelector('.header .nav-bar .nav-list .menu'),
@@ -97,22 +99,20 @@ menu.addEventListener('click', () => {
     }
 });
 
+
 document.addEventListener('scroll', () => {
     let scroll_position = window.scrollY;
-    if (scroll_position > 100) {
-        $(header).css('backgroundColor', '#111');
-    } else {
-        $(header).css('backgroundColor', 'transparent');
-    }
+
+    scroll_position > 100 ? header.style.backgroundColor = '#111' : header.style.backgroundColor = 'transparent';
 
     if (scroll_position < 600) {
-        $(scrollToTop).css('opacity', '0');
-        $(social).css({ 'visibility': 'hidden', 'opacity': '0', 'pointer-events': 'none' });
-        $(rightButton).css({ 'visibility:': 'hidden', 'opacity': '0' });
+        scrollToTop.style.cssText = 'opacity: 0; display: none';
+        social.style.cssText = 'visibility: hidden; opacity: 0; pointer-events: none';
+        rightButton.style.cssText = 'opacity: 0';
     } else {
-        $(scrollToTop).css('opacity', '1');
-        $(social).css({ 'visibility': 'visible', 'opacity': '1', 'pointer-events': 'auto' });
-        $(rightButton).css({ 'visibility:': 'visible', 'opacity': '1' });
+        scrollToTop.style.cssText = 'opacity: 1';
+        social.style.cssText = 'visibility: visible; opacity: 1; pointer-events: auto';
+        rightButton.style.cssText = 'opacity: 1';
     }
 
 });
@@ -130,8 +130,6 @@ menu_item.forEach((item) => {
     });
 });
 
-
-
 const textArea = document.querySelector('#mensagem');
 const count = document.querySelector('.count');
 
@@ -139,7 +137,6 @@ textArea.addEventListener("keyup", e => {
     textArea.style.height = "auto";
 
     let scrollHeight = e.target.scrollHeight;
-
     textArea.style.height = `${ scrollHeight }px`;
 });
 
@@ -148,9 +145,5 @@ countLetters = () => {
     const textLength = textArea.value.length;
     count.innerText = `${ textLength }`;
 
-    if (textLength >= 1500) {
-        $('.count').addClass('error');
-    } else {
-        $('.count').removeClass('error');
-    }
+    textLength >= 1500 ? count.classList.add("error") : count.classList.remove("error");
 }

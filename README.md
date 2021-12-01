@@ -6,6 +6,7 @@
 
 <!-- PROJECT LOGO -->
 <br />
+<samp>
 <p align="center">
   <a href="http://silasdev.epizy.com">
     <img src="https://cdn.icon-icons.com/icons2/1451/PNG/512/codefolder_99364.png" alt="Logo" width="80" height="80">

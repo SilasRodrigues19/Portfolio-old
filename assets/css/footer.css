@@ -36,7 +36,7 @@ footer {
     position: fixed;
     background-color: rgba(71, 11, 169, .1);
     border: solid 2.5px;
-    border-color: #470ba9;
+    border-color: var(--primary-color);
     padding: 15px;
     border-radius: 10px;
     bottom: 50px;

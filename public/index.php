@@ -35,10 +35,6 @@ session_start();
 	<link rel="preload" href="../assets/css/reset.css" as="style">
 	<link rel="stylesheet" href="../assets/css/reset.css">
 
-	<!-- Sweet Alert CSS -->
-	<link rel="preload" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" as="style">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css">
-
 	<!-- Aos Animate CSS -->
 	<link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
 
@@ -648,7 +644,9 @@ session_start();
 			<div class="contact-icon">
 				<div class="contact-item text" data-toggle="tooltip" title="Sumaré - São Paulo">
 					<div data-aos="fade-left" data-aos-offset="0">
-						<span class="iconify globe-americas" data-icon="gis:earth-america" data-inline="false"></span>
+						<a href="https://goo.gl/maps/Cic8v3TR64rj2RNMA" target="_blank" aria-label="Google Maps">
+							<span class="iconify globe-americas" data-icon="gis:earth-america" data-inline="false"></span>
+						</a>
 					</div>
 				</div>
 

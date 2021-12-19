@@ -103,7 +103,6 @@
 			</script>
 	<?php
 		}
-		// Caso contrário, ou seja, não clicou no botão e acessou a URL vai exibir uma caixa de alerta informando que não da pra acessar via URL direto
 	} else {
 		$_SESSION['msg'] = "<p id='warningMail' style='position:fixed; top: 90px; z-index:30; color:#000; text-transform:uppercase; border-radius:10px; animation:fadeInDown 4s;' class='alert alert-warning w-50 text-center'>Acesso negado<br> Preencha o formulário e clique em enviar ao invés de acessar via URL <br> <button id='warningMail_button' class='btn btn-outline-danger w-100'>Fechar</button></p>";
 		header("Location: ../public/index.php");

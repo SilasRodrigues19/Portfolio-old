@@ -173,6 +173,6 @@
 #smoothScroll,
 .knowledge-icons,
 .programmer {
-    -webkit-filter: drop-shadow(2px 4px 8px #470ba9);
-    filter: drop-shadow(2px 4px 8px #470ba9)
+    -webkit-filter: drop-shadow(2px 4px 8px var(--primary-color));
+    filter: drop-shadow(2px 4px 8px var(--primary-color))
 }
